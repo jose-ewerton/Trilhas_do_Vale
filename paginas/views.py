@@ -1,5 +1,5 @@
 from django.shortcuts import render
 from django.views.generic import TemplateView
 
-class IndexView(TemplateView):
-    template = '/paginas/index.html'
+class PaginaInicial(TemplateView):
+    template_name = 'paginas/index.html'
