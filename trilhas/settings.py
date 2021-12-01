@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'paginas.apps.PaginasConfig', #nome do app.app.NomedoAppconfig
+    'base.apps.BaseConfig',
 ]
 
 MIDDLEWARE = [
