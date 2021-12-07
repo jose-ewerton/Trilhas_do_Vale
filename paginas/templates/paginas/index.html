@@ -635,7 +635,7 @@
   <!-- <div id="preloader"></div> -->
 
 
-<!-- Modal cadastro-->
+<!-- Modal login-->
 <div class="modal fade" id="modalForm" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog">
       <div class="modal-content">
@@ -647,19 +647,54 @@
               <form>
                   <div class="mb-3">
                       <label class="form-label">Endereço de email</label>
-                      <input type="text" class="form-control" id="username" name="username" placeholder="Email" />
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Insira seu email" />
                   </div>
                   <div class="mb-3">
                       <label class="form-label">Senha</label>
-                      <input type="password" class="form-control" id="password" name="password" placeholder="Senha" />
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Insira sua senha" />
                   </div>
                   <div style="text-align: center">
                     <button type="submit" class="btn btn-success btn-lg btn-block">Entrar</button>
                   </div>                 
               </form>
           </div>
-          <div class="modal-footer modal-footer-primary d-block">
-            <p>Ainda não é cadastrado? <a href="#"> Torne-se trilheiro!</a></p>
+          <div class="modal-footer d-block">
+            <p>Ainda não é cadastrado? <a href="#modalForm_2"> Torne-se trilheiro!</a></p>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- Modal cadastro-->
+<div class="modal fade" id="modalForm_2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+              <h5 class="modal-title">Torne-se trilheiro!</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+              <form>
+                  <div class="mb-3">
+                      <label class="form-label">Usuário</label>
+                      <input type="text" class="form-control" id="username" name="username" placeholder="Insira seu nome de usuário" />
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Endereço de email</label>
+                      <input type="text" class="form-control" id="email" name="email" placeholder="Insira seu email" />
+                  </div>
+                  <div class="mb-3">
+                      <label class="form-label">Senha</label>
+                      <input type="password" class="form-control" id="password" name="password" placeholder="Insira sua senha" />
+                  </div>
+                  <div style="text-align: center">
+                    <button type="submit" class="btn btn-success btn-lg btn-block">Cadastrar</button>
+                  </div>                 
+              </form>
+          </div>
+          <div class="modal-footer d-block">
+            <p>Já é cadastrado? <a href="#modalForm"> Trilhar!</a></p>
         </div>
       </div>
   </div>

@@ -1333,7 +1333,7 @@ div.historia-col:hover,  div.curiosidades-col:hover{
 .modal-body{
   color:#3f9945
 }
-.modal-title{
+.title-modal{
   font-weight: bold;
 }
 .modal-header , .modal-footer{
