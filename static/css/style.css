@@ -1330,7 +1330,7 @@ div.historia-col:hover,  div.curiosidades-col:hover{
   transform: scale(1.1);
 }
 
-
+/*Modal cadastro/login*/
 .card {
   width: 400px;
   border: none
@@ -1346,6 +1346,7 @@ div.historia-col:hover,  div.curiosidades-col:hover{
 
 .btn-dark {
   color: #fff;
+  font-weight: bold;
   background-color: #3f9945;
   border-color: #3f9945
 }
@@ -1368,7 +1369,8 @@ div.historia-col:hover,  div.curiosidades-col:hover{
 
 .nav-item {
   display: table-cell;
-  background: #3f99455d
+  background: #3f9945a2;
+ 
 }
 
 .form {
@@ -1389,5 +1391,26 @@ div.historia-col:hover,  div.curiosidades-col:hover{
   margin-top: 20px
 }
 
+#pills-tab .nav-item a:hover{
+ color: rgb(255, 255, 255) !important;
+}
+
+#pills-tab .nav-item a{
+  font-weight: bold;
+  color: #091a20 !important;
+ }
+ 
+
+ #pills-tab .nav-item  .active{
+  font-weight: bold;
+  color: #ffffff !important;
+  background-color: #3f9945;
+ }
+ 
+ .card { background-color: rgba(245, 245, 245, 0); }
 
 
+.modal-body{
+background: rgb(9,26,32) !important;
+background: linear-gradient(146deg, rgba(9,26,32,1) 0%, rgba(87,138,155,1) 53%, rgba(239,237,237,1) 100%) !important;
+}

@@ -12,11 +12,12 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link rel="shortcut icon" href="static/img/favicon1.ico" type="image/x-icon"> 
+  <link rel="shortcut icon" href="static/img/favicon1.ico" type="image/x-icon">
   <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="static/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -26,10 +27,10 @@
   <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'>
- 
+
   <!-- JQuery -->
   <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-  
+
   <!-- Template Main CSS File -->
   <link href="{% static 'css/style.css' %}" rel="stylesheet">
 </head>
@@ -37,25 +38,32 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center header-transparent "> <!-- fixed top + d flex = define posição dos topicos do header/  header-transparent -->
-    <div class="container-fluid"> <!-- altera o layout do header-->
-      <div class="row justify-content-center align-items-center"> <!-- Centraliza o container fluid-->
-        <div class="col-xl-11 d-flex align-items-center justify-content-between"><!-- between: coloca o espaço entre os topicos/ col: coloca espaço nas laterais-->
-         <!-- <h1 class="logo"><a href="#">Trilhas do Vale</a></h1> --> <!--  logo: ao remover tornou o trilhas do vale somente um nome e não uma logo-->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent ">
+    <!-- fixed top + d flex = define posição dos topicos do header/  header-transparent -->
+    <div class="container-fluid">
+      <!-- altera o layout do header-->
+      <div class="row justify-content-center align-items-center">
+        <!-- Centraliza o container fluid-->
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <!-- between: coloca o espaço entre os topicos/ col: coloca espaço nas laterais-->
+          <!-- <h1 class="logo"><a href="#">Trilhas do Vale</a></h1> -->
+          <!--  logo: ao remover tornou o trilhas do vale somente um nome e não uma logo-->
           <!--Descomentar caso for usar logotipo de imagem-->
           <a href="index.html" class="logo"><img src="static/img/logo1.png" alt="" class="img-fluid"></a>
 
-          <nav id="navbar" class="navbar"> <!-- navbar: barra de navegação-->
+          <nav id="navbar" class="navbar">
+            <!-- navbar: barra de navegação-->
             <ul>
-              <li class="dropdown"><a href="#historia"><span>História</span> <i class="bi bi-chevron-down"></i></a><!-- dropdown: responsavel pelos subtopicos/ bi bi-chevron-down: adiciona a seta que mostra os subtopicos -->
+              <li class="dropdown"><a href="#historia"><span>História</span> <i class="bi bi-chevron-down"></i></a>
+                <!-- dropdown: responsavel pelos subtopicos/ bi bi-chevron-down: adiciona a seta que mostra os subtopicos -->
                 <ul>
-                  <li><a href="#"> História de Ceará-Mirim</a></li>   
+                  <li><a href="#"> História de Ceará-Mirim</a></li>
                   <li><a href="#"> História não contada</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#eventos"><span>Eventos</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="#"> Eventos Culturais</a></li>  
+                  <li><a href="#"> Eventos Culturais</a></li>
                   <li><a href="#"> Eventos Religiosos</a></li>
                 </ul>
               </li>
@@ -68,7 +76,8 @@
                 </ul>
               </li>
               </li>
-              <li class="dropdown"><a href="#curiosidades"><span>Curiosidades</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a href="#curiosidades"><span>Curiosidades</span> <i
+                    class="bi bi-chevron-down"></i></a>
                 <ul>
                   <li><a href="#"> Coisas da terra </a></li>
                   <li><a href="#"> Boca a Boca</a></li>
@@ -77,103 +86,121 @@
               </li>
               <li><a class="nav-link scrollto" href="#culinaria">Culinária</a></li>
             </ul> <!-- nav-link scrollto: indica qual link está ativo naquela janela-->
-            <i class="bi bi-list mobile-nav-toggle"></i> <!--mobile-nav-toggle: mexe com a alternancia do menu responsivo -->
+            <i class="bi bi-list mobile-nav-toggle"></i>
+            <!--mobile-nav-toggle: mexe com a alternancia do menu responsivo -->
           </nav><!-- .navbar -->
         </div>
       </div>
     </div>
   </header>
 
-</header>
+  </header>
 
 
-<!-- ======= Hero Carousel ======= -->
-<section id="hero">
-  <div class="hero-container"> <!--hero é o id da sessão, hero - container é responsavél por alinhar o conteúdo -->
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000"> <!--Carousel é responsável por percorrer os elementos, imagens ou textos/ Carousel-fade transição das imagens -->
+  <!-- ======= Hero Carousel ======= -->
+  <section id="hero">
+    <div class="hero-container">
+      <!--hero é o id da sessão, hero - container é responsavél por alinhar o conteúdo -->
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+        <!--Carousel é responsável por percorrer os elementos, imagens ou textos/ Carousel-fade transição das imagens -->
 
-      <ol id="hero-carousel-indicators" class="carousel-indicators"></ol> <!-- Carousel indicators - são as linhazinhas que demarcam o carousel -->
+        <ol id="hero-carousel-indicators" class="carousel-indicators"></ol>
+        <!-- Carousel indicators - são as linhazinhas que demarcam o carousel -->
 
-      <div class="carousel-inner" role="listbox"> <!-- Carousel inter - mexe com a parte interna, role = listbox - meio que faz com que passe as imagens do Carousel-->
+        <div class="carousel-inner" role="listbox">
+          <!-- Carousel inter - mexe com a parte interna, role = listbox - meio que faz com que passe as imagens do Carousel-->
 
-        <div class="carousel-item active" style="background-image: url(static/img/hero-carousel/história.jpeg)"> <!-- carousel-item = indica que faz parte do Carousel e background-image: responsável por colocar as imagens do Carousel-->
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">História</h2>
-              <p class="animate__animated animate__fadeInUp"> Quer conhecer a história de Ceará Mirim? Saber a origem do seu nome? Ou quer descobrir a história que ninguém nunca te contou? Então venha trilhar esse e vários outros caminhos conosco! </p>
-              <a class="btn-get-started scrollto animate__animated animate__fadeInUp" data-bs-toggle="modal" data-bs-target="#modalForm">Acesse já!</a>
-              <!--Classes responsáveis pelos textos que aparecem em cima das imagens-->
+          <div class="carousel-item active" style="background-image: url(static/img/hero-carousel/história.jpeg)">
+            <!-- carousel-item = indica que faz parte do Carousel e background-image: responsável por colocar as imagens do Carousel-->
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">História</h2>
+                <p class="animate__animated animate__fadeInUp"> Quer conhecer a história de Ceará Mirim? Saber a origem
+                  do seu nome? Ou quer descobrir a história que ninguém nunca te contou? Então venha trilhar esse e
+                  vários outros caminhos conosco! </p>
+                <a class="btn-get-started scrollto animate__animated animate__fadeInUp" data-bs-toggle="modal"
+                  data-bs-target="#modalForm">Acesse já!</a>
+                <!--Classes responsáveis pelos textos que aparecem em cima das imagens-->
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/img/hero-carousel/eventoscultereli.jpeg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Eventos Culturais e Religiosos</h2>
+                <p class="animate__animated animate__fadeInUp">Descubra o que uma cidade rica como o Vale do Ceará Mirim
+                  tem a lhe oferecer em eventos em cada época do ano.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/img/hero-carousel/turismo.jpeg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Turismo</h2>
+                <p class="animate__animated animate__fadeInUp">Venha descobrir um pouco mais sobre as nossas trilhas
+                  ecológicas, praias e engenhos que engradecem a cidade.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/img/hero-carousel/curiosidades.jpeg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Curiosidades</h2>
+                <p class="animate__animated animate__fadeInUp">Explore lendas e memórias vivas que fazem parte da vida
+                  de todo cearamirinense.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url(static/img/hero-carousel/culinaria.jpeg)">
+            <div class="carousel-container">
+              <div class="container">
+                <h2 class="animate__animated animate__fadeInDown">Culinária</h2>
+                <p class="animate__animated animate__fadeInUp">Aprecia uma boa comida caseira? O sabor da terra dos
+                  verdes canaviais pode ser apreciado em vários pratos típicos da região.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="carousel-item" style="background-image: url(static/img/hero-carousel/eventoscultereli.jpeg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Eventos Culturais e Religiosos</h2>
-              <p class="animate__animated animate__fadeInUp">Descubra o que uma cidade rica como o Vale do Ceará Mirim tem a lhe oferecer em eventos em cada época do ano.</p>
-            </div>
-          </div>
-        </div>
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
 
-        <div class="carousel-item" style="background-image: url(static/img/hero-carousel/turismo.jpeg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Turismo</h2>
-              <p class="animate__animated animate__fadeInUp">Venha descobrir um pouco mais sobre as nossas trilhas ecológicas, praias e engenhos que engradecem a cidade.</p>
-            </div>
-          </div>
-        </div>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
 
-        <div class="carousel-item" style="background-image: url(static/img/hero-carousel/curiosidades.jpeg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Curiosidades</h2>
-              <p class="animate__animated animate__fadeInUp">Explore lendas e memórias vivas que fazem parte da vida de todo cearamirinense.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="carousel-item" style="background-image: url(static/img/hero-carousel/culinaria.jpeg)">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Culinária</h2>
-              <p class="animate__animated animate__fadeInUp">Aprecia uma boa comida caseira? O sabor da terra dos verdes canaviais pode ser apreciado em vários pratos típicos da região.</p>
-            </div>
-          </div>
-        </div> 
       </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
     </div>
-  </div>
-</section>
-<!-- End Header -->
+  </section>
+  <!-- End Header -->
 
 
-<!-- ======= Seção História ======= -->
-<section id="historia"> <!--alteração do id para história o Scrollspy busca pelo id-->
+  <!-- ======= Seção História ======= -->
+  <section id="historia">
+    <!--alteração do id para história o Scrollspy busca pelo id-->
     <div class="container" data-aos="fade-up">
       <header class="section-header">
         <h3>História</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, error. Tenetur eos dolorem, praesentium voluptatum id obcaecati nulla magnam, repellendus, dicta laudantium a totam voluptate alias ullam at officia sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nulla illo, quod possimus autem velit. Veniam optio, maxime hic neque sapiente animi natus dolorem ad? Cupiditate aperiam repellat beatae id!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, error. Tenetur eos dolorem, praesentium
+          voluptatum id obcaecati nulla magnam, repellendus, dicta laudantium a totam voluptate alias ullam at officia
+          sed. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere nulla illo, quod possimus autem velit.
+          Veniam optio, maxime hic neque sapiente animi natus dolorem ad? Cupiditate aperiam repellat beatae id!</p>
       </header>
 
       <div class="row justify-content-center historia-cols">
-      
+
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
           <div class="historia-col" data-bs-toggle="modal" data-bs-target="#historiadecm">
             <div class="img">
-              <img src="static/img/história/história ofc.jpeg" alt="" class="img-fluid" >
+              <img src="static/img/história/história ofc.jpeg" alt="" class="img-fluid">
             </div>
-            <h2 class="title"><a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp" >História de Ceará-Mirim</a></h2>
+            <h2 class="title"><a href="#featured-services"
+                class="btn-get-started scrollto animate__animated animate__fadeInUp">História de Ceará-Mirim</a></h2>
           </div>
         </div>
 
@@ -184,7 +211,8 @@
             <div class="img">
               <img src="static/img/história/história não contada.jpeg" alt="" class="img-fluid">
             </div>
-            <h2 class="title"><a href="#featured-services" class="btn-get-started scrollto animate__animated animate__fadeInUp">História não contada</a></h2>
+            <h2 class="title"><a href="#featured-services"
+                class="btn-get-started scrollto animate__animated animate__fadeInUp">História não contada</a></h2>
           </div>
         </div>
       </div>
@@ -198,7 +226,11 @@
 
       <header class="section-header wow fadeInUp">
         <h3>Eventos Culturais e Religiosos</h3>
-        <p>Texto introdutório Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis dolores optio earum ab rem eveniet, aperiam a. Dolorum quo tempore, libero nemo error minima, dolor, natus placeat corporis ab blanditiis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum rerum distinctio eaque facilis, a labore dignissimos sit vel officiis, molestias quibusdam commodi. Eos fugit recusandae repudiandae explicabo, cum dicta molestias!</p>
+        <p>Texto introdutório Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis dolores optio earum
+          ab rem eveniet, aperiam a. Dolorum quo tempore, libero nemo error minima, dolor, natus placeat corporis ab
+          blanditiis? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum rerum distinctio eaque facilis,
+          a labore dignissimos sit vel officiis, molestias quibusdam commodi. Eos fugit recusandae repudiandae
+          explicabo, cum dicta molestias!</p>
       </header>
 
       <div class="row">
@@ -206,35 +238,47 @@
         <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="100">
           <div class="icon"><i class="bi bi-briefcase"></i></div>
           <h4 class="title"><a href="">Festa da Padroeira</a></h4>
-          <p class="description">Descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laboriosam. Veritatis, neque quia? Qui, non eius consequuntur nesciunt eum blanditiis aperiam praesentium est repellat hic ducimus. Quos officiis molestias nihil.</p>
+          <p class="description">Descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, laboriosam.
+            Veritatis, neque quia? Qui, non eius consequuntur nesciunt eum blanditiis aperiam praesentium est repellat
+            hic ducimus. Quos officiis molestias nihil.</p>
         </div>
         <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><i class="bi bi-card-checklist"></i></div>
           <h4 class="title"><a href="">Tributo à Raul</a></h4>
-          <p class="description">Descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus atque deserunt sunt, aliquid expedita at quasi laborum, repudiandae animi earum facere iusto tempore omnis corrupti deleniti? Fugiat voluptatum quisquam enim.</p>
+          <p class="description">Descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus atque
+            deserunt sunt, aliquid expedita at quasi laborum, repudiandae animi earum facere iusto tempore omnis
+            corrupti deleniti? Fugiat voluptatum quisquam enim.</p>
         </div>
         <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
           <div class="icon"><i class="bi bi-bar-chart"></i></div>
           <h4 class="title"><a href="">Trem do Forró</a></h4>
-          <p class="description">Descrição Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero temporibus asperiores dolor, quasi fugiat ducimus doloribus, nesciunt dolores, expedita aspernatur sint iure omnis illo debitis molestiae id unde excepturi distinctio.</p>
+          <p class="description">Descrição Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero temporibus
+            asperiores dolor, quasi fugiat ducimus doloribus, nesciunt dolores, expedita aspernatur sint iure omnis illo
+            debitis molestiae id unde excepturi distinctio.</p>
         </div>
         <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><i class="bi bi-binoculars"></i></div>
           <h4 class="title"><a href=""> Antigos Carnavais</a></h4>
-          <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, debitis nam? Voluptatibus, molestiae iusto? Temporibus vel nihil ab totam, nisi saepe perferendis laborum quaerat dignissimos inventore, veritatis molestias dicta vitae.</p>
+          <p class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam, debitis nam?
+            Voluptatibus, molestiae iusto? Temporibus vel nihil ab totam, nisi saepe perferendis laborum quaerat
+            dignissimos inventore, veritatis molestias dicta vitae.</p>
         </div>
         <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
           <div class="icon"><i class="bi bi-brightness-high"></i></div>
           <h4 class="title"><a href=""> Pastoril</a></h4>
-          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quod aut ipsa doloribus quam perspiciatis accusantium illum a repudiandae! Fuga molestias doloribus animi esse accusantium expedita soluta quod laudantium ducimus!</p>
+          <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur quod aut ipsa
+            doloribus quam perspiciatis accusantium illum a repudiandae! Fuga molestias doloribus animi esse accusantium
+            expedita soluta quod laudantium ducimus!</p>
         </div>
         <div class="col-lg-4 col-md-6 box" data-aos="fade-up" data-aos-delay="300">
           <div class="icon"><i class="bi bi-brightness-high"></i></div>
           <h4 class="title"><a href=""> Emancipação Política</a></h4>
-          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, sunt! Est eligendi nesciunt atque itaque. Quas distinctio dolore ipsa expedita alias, ab ducimus aliquam aspernatur, ipsum asperiores cumque consectetur facere?</p>
+          <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, sunt! Est eligendi
+            nesciunt atque itaque. Quas distinctio dolore ipsa expedita alias, ab ducimus aliquam aspernatur, ipsum
+            asperiores cumque consectetur facere?</p>
         </div>
-       </div>
-     </div>
+      </div>
+    </div>
   </section>
   <!-- Fim da seção Eventos Culturais e Religiosos-->
 
@@ -244,7 +288,11 @@
 
       <header class="section-header wow fadeInUp">
         <h3>Turismo</h3>
-        <p>Texto introdutório Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit error officia et, quasi voluptates cumque reiciendis corrupti illo ab distinctio recusandae nobis nostrum debitis ea. Quas quos vero harum minima Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti nobis labore praesentium reprehenderit distinctio ex ea odio neque beatae, porro veniam aut obcaecati modi, eius sint quod unde eligendi!</p>
+        <p>Texto introdutório Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit error officia et, quasi
+          voluptates cumque reiciendis corrupti illo ab distinctio recusandae nobis nostrum debitis ea. Quas quos vero
+          harum minima Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi deleniti nobis labore praesentium
+          reprehenderit distinctio ex ea odio neque beatae, porro veniam aut obcaecati modi, eius sint quod unde
+          eligendi!</p>
       </header>
 
       <div class="row">
@@ -252,229 +300,250 @@
         <div class="col-lg-6 col-md-8 box" data-aos="fade-up" data-aos-delay="100">
           <div class="icon"><i class="bi bi-briefcase"></i></div>
           <h4 class="title"><a href="">Turismo Histórico</a></h4>
-          <p class="description">Descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo facilis voluptate mollitia corrupti! Voluptatum eveniet possimus deleniti laborum odio voluptates facilis error maiores ullam iste eligendi, cum adipisci consequatur.</p>
+          <p class="description">Descrição Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure illo facilis
+            voluptate mollitia corrupti! Voluptatum eveniet possimus deleniti laborum odio voluptates facilis error
+            maiores ullam iste eligendi, cum adipisci consequatur.</p>
         </div>
         <div class="col-lg-6 col-md-8 box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><i class="bi bi-card-checklist"></i></div>
           <h4 class="title"><a href="">Turismo Ecológico</a></h4>
-          <p class="description">Descrição Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, quidem quos cupiditate ea inventore doloremque, velit facilis eveniet tenetur iusto dicta! Neque eveniet quia soluta quas fuga autem temporibus nam!</p>
+          <p class="description">Descrição Lorem ipsum dolor sit amet consectetur, adipisicing elit. Maxime, quidem quos
+            cupiditate ea inventore doloremque, velit facilis eveniet tenetur iusto dicta! Neque eveniet quia soluta
+            quas fuga autem temporibus nam!</p>
         </div>
         <div class="col-lg-6 col-md-8 box" data-aos="fade-up" data-aos-delay="300">
           <div class="icon"><i class="bi bi-bar-chart"></i></div>
           <h4 class="title"><a href="">Ruínas do Vale</a></h4>
-          <p class="description">Descrição Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur quae quod rem consectetur exercitationem ad, ratione minus doloremque sint! Odit velit inventore repudiandae sequi repellendus qui iste aliquam vitae?</p>
+          <p class="description">Descrição Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia tenetur
+            quae quod rem consectetur exercitationem ad, ratione minus doloremque sint! Odit velit inventore repudiandae
+            sequi repellendus qui iste aliquam vitae?</p>
         </div>
         <div class="col-lg-6 col-md-8 box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><i class="bi bi-binoculars"></i></div>
           <h4 class="title"><a href=""> Sol e Água Fresca</a></h4>
-          <p class="description">Descrição Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus commodi dignissimos ex, pariatur eligendi esse provident totam laudantium ipsam. Quos sequi repudiandae consequatur aperiam? Ad est et mollitia ut!</p>
+          <p class="description">Descrição Lorem, ipsum dolor sit amet consectetur adipisicing elit. Adipisci natus
+            commodi dignissimos ex, pariatur eligendi esse provident totam laudantium ipsam. Quos sequi repudiandae
+            consequatur aperiam? Ad est et mollitia ut!</p>
         </div>
-       </div>
-     </div>
+      </div>
+    </div>
   </section>
   <!-- Fim da seção Turismo-->
 
   <!-- ======= Seção curiosidades ======= -->
-<section id="curiosidades"> <!--alteração do id para história o Scrollspy busca pelo id-->
-  <div class="container" data-aos="fade-up">
-    <header class="section-header">
-      <h3>Curiosidades</h3>
-      <p>Texto introdutório</p>
-    </header>
+  <section id="curiosidades">
+    <!--alteração do id para história o Scrollspy busca pelo id-->
+    <div class="container" data-aos="fade-up">
+      <header class="section-header">
+        <h3>Curiosidades</h3>
+        <p>Texto introdutório</p>
+      </header>
 
-    <div class="row curiosidades-cols">
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-        <div class="curiosidades-col">
-          <div class="img">
-            <img src="static/img/curiosidades/CoisasDaTerra.jpg" alt="" class="img-fluid">
+      <div class="row curiosidades-cols">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="curiosidades-col">
+            <div class="img">
+              <img src="static/img/curiosidades/CoisasDaTerra.jpg" alt="" class="img-fluid">
+            </div>
+            <h2 class="title"><a href="#">Coisas da terra</a></h2>
+            <p> Conteúdo</p>
           </div>
-          <h2 class="title"><a href="#">Coisas da terra</a></h2>
-          <p> Conteúdo</p>
         </div>
-      </div>
 
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-        <div class="curiosidades-col">
-          <div class="img">
-            <img src="static/img/curiosidades/BocaABoca.jpg" alt="" class="img-fluid">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="curiosidades-col">
+            <div class="img">
+              <img src="static/img/curiosidades/BocaABoca.jpg" alt="" class="img-fluid">
+            </div>
+            <h2 class="title"><a href="#">Boca a Boca</a></h2>
+            <p>Conteúdo</p>
           </div>
-          <h2 class="title"><a href="#">Boca a Boca</a></h2>
-          <p>Conteúdo</p>
         </div>
-      </div>
-      <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
-        <div class="curiosidades-col">
-          <div class="img">
-            <img src="static/img/curiosidades/MemóriasVivas.jpg" alt="" class="img-fluid">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="curiosidades-col">
+            <div class="img">
+              <img src="static/img/curiosidades/MemóriasVivas.jpg" alt="" class="img-fluid">
+            </div>
+            <h2 class="title"><a href="#">Memórias Vivas</a></h2>
+            <p>Conteúdo</p>
           </div>
-          <h2 class="title"><a href="#">Memórias Vivas</a></h2>
-          <p>Conteúdo</p>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- Fim da seção curiosidades -->
-         
-   <!-- ======= Seção Culinária ======= -->
-   <section id="culinaria" class="section-bg">
+  </section>
+  <!-- Fim da seção curiosidades -->
+
+  <!-- ======= Seção Culinária ======= -->
+  <section id="culinaria" class="section-bg">
     <div class="container" data-aos="fade-up">
 
       <header class="section-header">
         <h3 class="section-title">Culinária</h3>
-        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam ea voluptas doloremque, officia enim facilis similique provident officiis, saepe recusandae odit et, facere molestiae? Consectetur eveniet minima doloremque quisquam.</p>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem ipsam ea voluptas doloremque, officia enim
+          facilis similique provident officiis, saepe recusandae odit et, facere molestiae? Consectetur eveniet minima
+          doloremque quisquam.</p>
       </header>
 
       <div class="row" data-aos="fade-up" data-aos-delay="100">
-    <div class=" col-lg-12">
-        <ul id="culinaria-flters">
-          <li data-filter="*" class="filter-todos">Todos</li> <!-- all / active-->
-          <li data-filter=".filter-doces" class>Doces</li> <!-- app-->
-          <li data-filter=".filter-salgados" class>Salgados</li> <!-- card-->
-          <li data-filter=".filter-bebidas" class>Bebidas</li> <!-- web-->
-        </ul>
-      </div>
-    </div>
-
-    <div class="row culinaria-container" data-aos="fade-up" data-aos-delay="200">
-
-      <div class="col-lg-4 col-md-6 culinaria-item filter-doces">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/doces1.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/doces1.jpg" data-lightbox="culinaria" data-title="Doces 1" class="link-preview"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-          </figure>
-
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Rapadura</a></h4>
-            <p>Descrição</p>
-          </div>
+        <div class=" col-lg-12">
+          <ul id="culinaria-flters">
+            <li data-filter="*" class="filter-todos">Todos</li> <!-- all / active-->
+            <li data-filter=".filter-doces" class>Doces</li> <!-- app-->
+            <li data-filter=".filter-salgados" class>Salgados</li> <!-- card-->
+            <li data-filter=".filter-bebidas" class>Bebidas</li> <!-- web-->
+          </ul>
         </div>
       </div>
 
-      <div class="col-lg-4 col-md-6 culinaria-item filter-bebidas">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/bebidas3.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/bebidas3.jpg" class="link-preview culinaria-lightbox" data-gallery="culinariaGallery" title="Bebidas 3"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a> <!-- por aqui o erro-->
-          </figure>
+      <div class="row culinaria-container" data-aos="fade-up" data-aos-delay="200">
 
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Caldo de Cana</a></h4>
-            <p>Descrição</p>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-doces">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/doces1.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/doces1.jpg" data-lightbox="culinaria" data-title="Doces 1"
+                class="link-preview"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Rapadura</a></h4>
+              <p>Descrição</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 culinaria-item filter-doces">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/doces2.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/doces2.jpg" class="link-preview culinaria-lightbox" data-gallery="culinariaGallery" title="Doces 2"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-          </figure>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-bebidas">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/bebidas3.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/bebidas3.jpg" class="link-preview culinaria-lightbox"
+                data-gallery="culinariaGallery" title="Bebidas 3"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+              <!-- por aqui o erro-->
+            </figure>
 
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Geléia (Gelé)</a></h4>
-            <p>Descrição</p>
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Caldo de Cana</a></h4>
+              <p>Descrição</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 culinaria-item filter-salgados">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/salgados2.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/salgados2.jpg" class="link-preview culinaria-lightbox" data-gallery="culinariaGallery" title="Salgados 2"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-          </figure>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-doces">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/doces2.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/doces2.jpg" class="link-preview culinaria-lightbox"
+                data-gallery="culinariaGallery" title="Doces 2"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
 
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Picado</a></h4>
-            <p>Descrição</p>
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Geléia (Gelé)</a></h4>
+              <p>Descrição</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 culinaria-item filter-bebidas">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/bebidas2.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/bebidas2.jpg" class="link-preview culinaria-lightbox" data-gallery="culinariaGallery" title="Bebidas 2"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-          </figure>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-salgados">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/salgados2.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/salgados2.jpg" class="link-preview culinaria-lightbox"
+                data-gallery="culinariaGallery" title="Salgados 2"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
 
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Pinga Extrema</a></h4>
-            <p>Deacrição</p>
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Picado</a></h4>
+              <p>Descrição</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 culinaria-item filter-doces">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/doces3.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/doces3.jpg" class="link-preview culinaria-lightbox" data-gallery="culinariaGallery" title="Doces 3"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-          </figure>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-bebidas">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/bebidas2.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/bebidas2.jpg" class="link-preview culinaria-lightbox"
+                data-gallery="culinariaGallery" title="Bebidas 2"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
 
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Cavaco Chinês</a></h4>
-            <p>Descrição</p>
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Pinga Extrema</a></h4>
+              <p>Deacrição</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 culinaria-item filter-salgados">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/salgados1.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/salgados1.jpg" class="link-preview culinaria-lightbox" data-gallery="culinariaGallery" title="Salgados 1"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-          </figure>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-doces">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/doces3.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/doces3.jpg" class="link-preview culinaria-lightbox"
+                data-gallery="culinariaGallery" title="Doces 3"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
 
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Guisado de carneiro
-            </a></h4>
-            <p>Descrição</p>
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Cavaco Chinês</a></h4>
+              <p>Descrição</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 culinaria-item filter-salgados">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/salgados3.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/salgados3.jpg" class="link-preview culinaria-lightbox" data-gallery="culinariaGallery" title="Salgados 3"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-          </figure>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-salgados">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/salgados1.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/salgados1.jpg" class="link-preview culinaria-lightbox"
+                data-gallery="culinariaGallery" title="Salgados 1"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
 
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Carne de sol com macaxeira</a></h4>
-            <p>Descrição</p>
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Guisado de carneiro
+                </a></h4>
+              <p>Descrição</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-4 col-md-6 culinaria-item filter-bebidas">
-        <div class="culinaria-wrap">
-          <figure>
-            <img src="static/img/culinaria/bebidas1.jpg" class="img-fluid" alt="">
-            <a href="static/img/culinaria/bebidas1.jpg" class="link-preview culinaria-lightbox" data-gallery="culinariaGallery" title="Bebidas 1"><i class="bi bi-plus"></i></a>
-            <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
-          </figure>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-salgados">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/salgados3.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/salgados3.jpg" class="link-preview culinaria-lightbox"
+                data-gallery="culinariaGallery" title="Salgados 3"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
 
-          <div class="culinaria-info">
-            <h4><a href="culinaria-details.html">Galinha Cabidela </a></h4>
-            <p>Descrição</p>
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Carne de sol com macaxeira</a></h4>
+              <p>Descrição</p>
+            </div>
           </div>
         </div>
-      </div>
 
-    </div>
+        <div class="col-lg-4 col-md-6 culinaria-item filter-bebidas">
+          <div class="culinaria-wrap">
+            <figure>
+              <img src="static/img/culinaria/bebidas1.jpg" class="img-fluid" alt="">
+              <a href="static/img/culinaria/bebidas1.jpg" class="link-preview culinaria-lightbox"
+                data-gallery="culinariaGallery" title="Bebidas 1"><i class="bi bi-plus"></i></a>
+              <a href="culinaria-details.html" class="link-details" title="More Details"><i class="bi bi-link"></i></a>
+            </figure>
+
+            <div class="culinaria-info">
+              <h4><a href="culinaria-details.html">Galinha Cabidela </a></h4>
+              <p>Descrição</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
 
     </div>
   </section>
@@ -483,23 +552,28 @@
 
   <!-- ======= Feedback ======= -->
   <section id="feedbacks" class="section-bg">
-    <div class="container aos-init aos-animate " data-aos="fade-up"> <!--aos-init aos-animate-->
+    <div class="container aos-init aos-animate " data-aos="fade-up">
+      <!--aos-init aos-animate-->
 
       <header class="section-header">
         <h3>Feedbacks </h3>
       </header>
 
       <div class="feedbacks-slider swiper-container " data-aos="fade-up" data-aos-delay="100">
-        <div class="swiper-wrapper"> <!-- swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events aos-init aos-animate = linha 484 -->
+        <div class="swiper-wrapper">
+          <!-- swiper-container-initialized swiper-container-horizontal swiper-container-pointer-events aos-init aos-animate = linha 484 -->
 
-          <div class="swiper-slide"> <!-- swiper-slide-duplicate-->
+          <div class="swiper-slide">
+            <!-- swiper-slide-duplicate-->
             <div class="feedback-item">
-              <img src="static/img/feedbacks/feedback-1.jpg" class="feedback-img"  alt="">
+              <img src="static/img/feedbacks/feedback-1.jpg" class="feedback-img" alt="">
               <h3>Saul Goodman</h3><!-- class= feedback id= feeedbacks-->
               <h4>Ceo &amp; Founder</h4>
               <p>
-                <img src="static/img/feedbacks/aspas-left.png" class="aspas-left" alt=""> <!--texto dos feedbacks que tem que ter interação com o usuario-->
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <img src="static/img/feedbacks/aspas-left.png" class="aspas-left" alt="">
+                <!--texto dos feedbacks que tem que ter interação com o usuario-->
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium
+                quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
                 <img src="static/img/feedbacks/aspas-right.png" class="aspas-right" alt="">
               </p>
             </div>
@@ -513,7 +587,8 @@
               <h4>Designer</h4>
               <p>
                 <img src="static/img/feedbacks/aspas-left.png" class="aspas-left" alt="">
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis
+                quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
                 <img src="static/img/feedbacks/aspas-right.png" class="aspas-right" alt="">
               </p>
             </div>
@@ -527,11 +602,13 @@
               <h4>Store Owner</h4>
               <p>
                 <img src="static/img/feedbacks/aspas-left.png" class="aspas-left" alt="">
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor
+                labore quem eram duis noster aute amet eram fore quis sint minim.
                 <img src="static/img/feedbacks/aspas-right.png" class="aspas-right" alt="">
               </p>
             </div>
-          </div><!--Fim do item do feedback -->
+          </div>
+          <!--Fim do item do feedback -->
 
           <div class="swiper-slide">
             <div class="feedback-item">
@@ -540,7 +617,8 @@
               <h4>Freelancer</h4>
               <p>
                 <img src="static/img/feedbacks/aspas-left.png" class="aspas-left" alt="">
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim
+                dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
                 <img src="static/img/feedbacks/aspas-right.png" class="aspas-right" alt="">
               </p>
             </div>
@@ -553,7 +631,8 @@
               <h4>Entrepreneur</h4>
               <p>
                 <img src="static/img/feedbacks/aspas-left.png" class="aspas-left" alt="">
-                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa
+                labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
                 <img src="static/img/feedbacks/aspas-right.png" class="aspas-right" alt="">
               </p>
             </div>
@@ -567,15 +646,16 @@
   </section>
   <!-- Fim do fedbacks -->
 
-   <!-- ======= Footer ======= -->
-   <footer id="footer">
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
     <div class="footer-top">
       <div class="container">
         <div class="row">
 
           <div class="col-lg-3 col-md-6 footer-info">
             <h3>Trilhas do Vale</h3>
-            <p> O projeto Trilhas do Vale tem como objetivo principal  expor a cultura da cidade de Ceará-Mirim em seus aspectos históricos, turísticos, culinários, dentre outros.</p>
+            <p> O projeto Trilhas do Vale tem como objetivo principal expor a cultura da cidade de Ceará-Mirim em seus
+              aspectos históricos, turísticos, culinários, dentre outros.</p>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
@@ -595,7 +675,7 @@
             <p>
               Instituto Federal do Rio Grande do Norte - Campus Ceará-Mirim <br>
               BR-406, Km 145, Bairro Planalto, Ceará-Mirim/RN<br>
-             <!--<strong>Phone:</strong> +1 5589 55488 55<br> -->
+              <!--<strong>Phone:</strong> +1 5589 55488 55<br> -->
               <strong>Email:</strong> trilhasdovale@gmail.com<br>
             </p>
 
@@ -608,7 +688,8 @@
 
           <div class="col-lg-3 col-md-6 footer-newsletter">
             <h4>Torne-se trilheiro:</h4>
-            <p>Gostou do Trilhas do Vale e quer desfrutar de mais funcionalidades como o nosso passaporte? Então cadastre-se e venha fazer parte da família Trilhas !</p>
+            <p>Gostou do Trilhas do Vale e quer desfrutar de mais funcionalidades como o nosso passaporte? Então
+              cadastre-se e venha fazer parte da família Trilhas !</p>
             <form action="" method="post">
               <input type="email" name="email"><input type="submit" value="Cadastre-se">
             </form>
@@ -634,92 +715,124 @@
     </div>
   </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
   <!-- Uncomment below i you want to use a preloader -->
   <!-- <div id="preloader"></div> -->
 
 
-<!-- Modal cadastro-->
-<div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-body">
+  <!-- Modal cadastro/login-->
+  <div class="modal fade" id="modalForm" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle"
+    aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-body">
 
-<div class="d-flex justify-content-center align-items-center mt-5">
-  <div class="card">
-      <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-          <li class="nav-item text-center"> <a class="nav-link active btl" id="pills-login-tab" data-toggle="pill"
-                  href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Trilhar</a> </li>
-          <li class="nav-item text-center"> <a class="nav-link btr" id="pills-cadastro-tab" data-toggle="pill"
-                  href="#pills-cadastro" role="tab" aria-controls="pills-cadastro" aria-selected="false">Torne-se trilheiro</a>
-          </li>
-      </ul>
-      <div class="tab-content" id="pills-tabContent">
-          <div class="tab-pane fade show active" id="pills-login" role="tabpanel" aria-labelledby="pills-login-tab">
-              <div class="form px-4 pt-5">
-                 <input type="text" name="" class="form-control" placeholder="Email ou usuário"> 
-                 <input type="password" name="" class="form-control" placeholder="Senha"> 
-                 <button class="btn btn-dark btn-block">Logar</button> 
+          <div class="d-flex justify-content-center align-items-center mt-5">
+            <div class="card">
+              <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                <li class="nav-item text-center"> <a class="nav-link active btl" id="pills-login-tab" data-toggle="pill"
+                    href="#pills-login" role="tab" aria-controls="pills-login" aria-selected="true">Trilhar</a> </li>
+                <li class="nav-item text-center"> <a class="nav-link btr" id="pills-cadastro-tab" data-toggle="pill"
+                    href="#pills-cadastro" role="tab" aria-controls="pills-cadastro" aria-selected="false">Torne-se
+                    trilheiro</a>
+                </li>
+              </ul>
+              <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-login" role="tabpanel"
+                  aria-labelledby="pills-login-tab">
+                  <div class="form px-4 pt-5">
+                    <input type="text" name="" class="form-control" placeholder="Email ou usuário">
+                    <input type="password" name="" class="form-control" placeholder="Senha">
+                    <button class="btn btn-dark btn-block">Logar</button>
+                  </div>
                 </div>
+                <div class="tab-pane fade" id="pills-cadastro" role="tabpanel" aria-labelledby="pills-cadastro-tab">
+                  <div class="form px-4">
+                    <input type="text" name="" class="form-control" placeholder="Usuário">
+                    <input type="text" name="" class="form-control" placeholder="Email">
+                    <input type="password" name="" class="form-control" placeholder="Senha">
+                    <button class="btn btn-dark btn-block">Cadastrar</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="tab-pane fade" id="pills-cadastro" role="tabpanel" aria-labelledby="pills-cadastro-tab">
-              <div class="form px-4"> 
-                <input type="text" name="" class="form-control" placeholder="Usuário"> 
-                <input type="text" name="" class="form-control" placeholder="Email">
-                <input type="password" name="" class="form-control" placeholder="Senha"> 
-                <button class="btn btn-dark btn-block">Cadastrar</button> </div>
-          </div>
+
+        </div>
       </div>
+    </div>
   </div>
-</div>
-
-</div>
-</div>
-</div>
-</div>
 
 
 
-     <!-- Modal para sessão historia -->
-    <div class="modal animate__animated animate__jackInTheBox" id="historiadecm" data-bs-keyboard="false" tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered  modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" >História de Ceará-Mirim</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-          </div>
-          <div class="modal-body">
-            <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna. 
+  <!-- Modal para sessão historia -->
+  <div class="modal animate__animated animate__jackInTheBox" id="historiadecm" data-bs-keyboard="false" tabindex="-1"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">História de Ceará-Mirim</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+            ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+            porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+            felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+            molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+            imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+            elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+            tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
 
-              Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius curae cursus convallis eleifend egestas habitant. </p>
-          </div>
-          <div class="modal-footer">
-           
-          </div>
+            Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+            tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+            imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+            dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+            vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+            quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+            curae cursus convallis eleifend egestas habitant. </p>
+        </div>
+        <div class="modal-footer">
+
         </div>
       </div>
     </div>
-    
-    <div class="modal animate__animated animate__jackInTheBox" id="historianaocontada"  tabindex="-1" aria-hidden="true">
-      <div class="modal-dialog modal-dialog-centered modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title">História não contada</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-          </div>
-          <div class="modal-body">
-            <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna. 
+  </div>
 
-              Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius curae cursus convallis eleifend egestas habitant. </p>
-          </div>
-          <div class="modal-footer">
-           
-          </div>
+  <div class="modal animate__animated animate__jackInTheBox" id="historianaocontada" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">História não contada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+        </div>
+        <div class="modal-body">
+          <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+            ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+            porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+            felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+            molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+            imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+            elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+            tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+
+            Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+            tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+            imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+            dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+            vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+            quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+            curae cursus convallis eleifend egestas habitant. </p>
+        </div>
+        <div class="modal-footer">
+
         </div>
       </div>
-
-
     </div>
+
+
+  </div>
   <!-- Vendor JS Files -->
   <script src="static/vendor/aos/aos.js"></script>
   <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -729,10 +842,12 @@
   <script src="static/vendor/purecounter/purecounter.js"></script>
   <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
-  <script type='text/javascript'src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+  <script type='text/javascript'
+    src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
 
   <!-- Template Main JS File -->
   <script src="static/js/main.js"></script>
 
 </body>
+
 </html>
