@@ -1330,21 +1330,64 @@ div.historia-col:hover,  div.curiosidades-col:hover{
   transform: scale(1.1);
 }
 
-.modal-body{
-  color:#3f9945
+
+.card {
+  width: 400px;
+  border: none
 }
-.title-modal{
-  font-weight: bold;
+
+.btr {
+  border-top-right-radius: 5px !important
 }
-.modal-header , .modal-footer{
-	color:#fff;
-  font-weight: bold;
-    padding:9px 15px;
-    background-color: #578a9b;
-    -webkit-border-top-left-radius: 5px;
-    -webkit-border-top-right-radius: 5px;
-    -moz-border-radius-topleft: 5px;
-    -moz-border-radius-topright: 5px;
-     border-top-left-radius: 5px;
-     border-top-right-radius: 5px;
+
+.btl {
+  border-top-left-radius: 5px !important
 }
+
+.btn-dark {
+  color: #fff;
+  background-color: #3f9945;
+  border-color: #3f9945
+}
+
+.btn-dark:hover {
+  color: #fff;
+  background-color: #549b58;
+  border-color: #549b58
+}
+
+.nav-pills {
+  display: table !important;
+  width: 100%
+}
+
+.nav-pills .nav-link {
+  border-radius: 0px;
+  border-bottom: 1px solid #3f9945
+}
+
+.nav-item {
+  display: table-cell;
+  background: #3f99455d
+}
+
+.form {
+  padding: 10px;
+  height: 300px
+}
+
+.form input {
+  margin-bottom: 12px;
+  border-radius: 3px
+}
+
+.form input:focus {
+  box-shadow: none
+}
+
+.form button {
+  margin-top: 20px
+}
+
+
+
