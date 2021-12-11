@@ -741,19 +741,22 @@
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-login" role="tabpanel"
                   aria-labelledby="pills-login-tab">
-                  <div class="form px-4 pt-5">
+                  <form name="form_1" id="form_1" method="POST" action="">
+                    {% csrf_token %}
                     <input type="text" name="" class="form-control" placeholder="Email ou usuário">
                     <input type="password" name="" class="form-control" placeholder="Senha">
                     <button class="btn btn-dark btn-block">Logar</button>
-                  </div>
+                  </form>
                 </div>
+
                 <div class="tab-pane fade" id="pills-cadastro" role="tabpanel" aria-labelledby="pills-cadastro-tab">
-                  <div class="form px-4">
-                    <input type="text" name="" class="form-control" placeholder="Usuário">
-                    <input type="text" name="" class="form-control" placeholder="Email">
-                    <input type="password" name="" class="form-control" placeholder="Senha">
+                  <form name="form" id="form" method="POST" action="{% url 'salva_cadastro' %}">
+                    {% csrf_token %}
+                    <input type="text" name="nome" class="form-control" placeholder="Usuário">
+                    <input type="text" name="email" class="form-control" placeholder="Email">
+                    <input type="password" name="senha" class="form-control" placeholder="Senha">
                     <button class="btn btn-dark btn-block">Cadastrar</button>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
