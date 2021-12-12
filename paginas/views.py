@@ -22,6 +22,7 @@ def salva_cadastro(request):
         form = UsuarioForm(request.POST)
         if form.is_valid():
             form.save()
+            messages.success(request, 'Cadastrado com sucesso!')
         return redirect (reverse('index') + '#modalForm')
 
 

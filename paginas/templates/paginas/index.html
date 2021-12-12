@@ -738,24 +738,27 @@
                     trilheiro</a>
                 </li>
               </ul>
+            </br>
               <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active" id="pills-login" role="tabpanel"
                   aria-labelledby="pills-login-tab">
                   <form name="form_1" id="form_1" method="POST" action="">
                     {% csrf_token %}
-                    <input type="text" name="" class="form-control" placeholder="Email ou usuário">
-                    <input type="password" name="" class="form-control" placeholder="Senha">
+                    <input type="text" name="" class="form-control" placeholder="Email ou usuário"> </br>
+                    <input type="password" name="" class="form-control" placeholder="Senha"> </br>
                     <button class="btn btn-dark btn-block">Logar</button>
+                  </br>
                   </form>
                 </div>
 
                 <div class="tab-pane fade" id="pills-cadastro" role="tabpanel" aria-labelledby="pills-cadastro-tab">
                   <form name="form" id="form" method="POST" action="{% url 'salva_cadastro' %}">
                     {% csrf_token %}
-                    <input type="text" name="nome" class="form-control" placeholder="Usuário">
-                    <input type="text" name="email" class="form-control" placeholder="Email">
-                    <input type="password" name="senha" class="form-control" placeholder="Senha">
+                    <input type="text" name="nome" class="form-control" placeholder="Usuário"> </br>
+                    <input type="text" name="email" class="form-control" placeholder="Email"> </br>
+                    <input type="password" name="senha" class="form-control" placeholder="Senha"> </br>
                     <button class="btn btn-dark btn-block">Cadastrar</button>
+                  </br>
                   </form>
                 </div>
               </div>
@@ -847,6 +850,23 @@
   <script src="static/vendor/waypoints/noframework.waypoints.js"></script>
   <script type='text/javascript'
     src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+
+   <!-- Alerta de messagem -->
+   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+   {% if messages %}
+     {% for m in messages %}
+        <script>
+          Swal.fire({
+             title: '{{m}}',
+             width: 600,
+             padding: '3em',
+             color: '#000',
+             background: '#fff url(static/img/cana.png) no-repeat',
+             ButtonColor: '#3f9945'
+           })
+        </script>
+     {% endfor %}
+   {% endif %}
 
   <!-- Template Main JS File -->
   <script src="static/js/main.js"></script>
