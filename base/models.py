@@ -66,16 +66,23 @@ class Usuario(models.Model):
     nome = models.CharField(unique=True, max_length=50)
     email = models.CharField(unique=True, max_length=45)
     senha = models.CharField(max_length=12)
+    
 
 class Meta:
     managed = False
     db_table = 'Usuario'
-
+    
 def __str__(self):
         
         return "{} ({})" .format(self.nome, self.email)
 
+#def __repr__(self):
+        
+#       return "{} ({})" .format(self.nome, self.email)
 
+
+# no admin aparece Usuario object (3).
+# utilize o método __repr__ para formatar o nome do objeto que aparece no admin.
 
 class Usuarioavalialocal(models.Model):
     comentario = models.TextField(blank=True, null=True)
