@@ -259,6 +259,10 @@ html,body{height: 100%;}
     transition: .3s linear;
 }
 
+.single-how-works img{
+    padding-bottom: 25px
+}
+
 
 .single-how-works h2 a {
     font-size:  18px;
