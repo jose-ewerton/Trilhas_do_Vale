@@ -6,13 +6,10 @@ class Administrador(models.Model):
     orgaopublico = models.CharField(db_column='orgaoPublico', max_length=40) # Field name made lowercase.
     senha = models.CharField(max_length=12)
 
-class Meta:
-    managed = False
-    db_table = 'Administrador'
 
-def __str__(self):
-        
-        return "{} ({})" .format(self.nome, self.orgaopublico)
+    def __str__(self):
+            
+            return "{} ({})" .format(self.nome, self.orgaopublico)
 
 
 
@@ -21,9 +18,6 @@ class Avaliacaosite(models.Model):
     nota = models.PositiveIntegerField(blank=True, null=True)
     idusuario = models.ForeignKey('Usuario', models.DO_NOTHING, db_column='idUsuario') # Field name made lowercase.
 
-class Meta:
-    managed = False
-    db_table = 'AvaliacaoSite'
 
     def __str__(self):
         
@@ -33,17 +27,12 @@ class Meta:
 
 class Local(models.Model):
     nome = models.CharField(max_length=40)
-    foto = models.ImageField()
+    foto = models.ImageField(upload_to = 'locais/')
     localizacaoexata = models.CharField(db_column='localizacaoExata', max_length=60) # Field name made lowercase.
     descricao = models.TextField()
 
-class Meta:
-    managed = False
-    db_table = 'Local'
-
-def __str__(self):
-        
-        return "{} ({})" .format(self.nome, self.foto)
+    def __str__(self):  
+            return self.nome
 
 
 
@@ -51,14 +40,10 @@ class Localcategoria(models.Model):
     idlocal = models.OneToOneField(Local, models.DO_NOTHING, db_column='idLocal', primary_key=True) # Field name made lowercase.
     categoria = models.CharField(max_length=30)
 
-class Meta:
-    managed = False
-    db_table = 'LocalCategoria'
-    unique_together = (('idlocal', 'categoria'),)
 
-def __str__(self):
-        
-    return "{} ({})" .format(self.idlocal, self.categoria)
+    def __str__(self):
+            
+        return "{} ({})" .format(self.idlocal, self.categoria)
 
 
 
@@ -68,21 +53,12 @@ class Usuario(models.Model):
     senha = models.CharField(max_length=12)
     
 
-class Meta:
-    managed = False
-    db_table = 'Usuario'
     
-def __str__(self):
-        
-        return "{} ({})" .format(self.nome, self.email)
-
-#def __repr__(self):
-        
-#       return "{} ({})" .format(self.nome, self.email)
+    def __str__(self):
+            
+            return "{} ({})" .format(self.nome, self.email)
 
 
-# no admin aparece Usuario object (3).
-# utilize o método __repr__ para formatar o nome do objeto que aparece no admin.
 
 class Usuarioavalialocal(models.Model):
     comentario = models.TextField(blank=True, null=True)
@@ -90,23 +66,15 @@ class Usuarioavalialocal(models.Model):
     idusuario = models.OneToOneField(Usuario, models.DO_NOTHING, db_column='idUsuario', primary_key=True) # Field name made lowercase.
     idlocal = models.ForeignKey(Local, models.DO_NOTHING, db_column='idLocal') # Field name made lowercase.
 
-class Meta:
-    managed = False
-    db_table = 'UsuarioAvaliaLocal'
-    unique_together = (('idusuario', 'idlocal'),)
 
     def __str__(self):
         
         return "{} ({})" .format(self.idusuario, self.idlocal)
 
+
 class Usuariolocal(models.Model):
     idusuario = models.OneToOneField(Usuario, models.DO_NOTHING, db_column='idUsuario', primary_key=True) # Field name made lowercase.
     idlocal = models.ForeignKey(Local, models.DO_NOTHING, db_column='idLocal') # Field name made lowercase.
-
-class Meta:
-    managed = False
-    db_table = 'UsuarioLocal'
-    unique_together = (('idusuario', 'idlocal'),)
 
 
     def __str__(self):
@@ -119,11 +87,7 @@ class Usuariopergunta(models.Model):
     idusuario = models.OneToOneField(Usuario, models.DO_NOTHING, db_column='idUsuario', primary_key=True) # Field name made lowercase.
     perguntapersonalizada = models.CharField(db_column='perguntaPersonalizada', max_length=25) # Field name made lowercase.
 
-class Meta:
-    managed = False
-    db_table = 'UsuarioPergunta'
-    unique_together = (('idusuario', 'perguntapersonalizada'),)
 
-def __str__(self):
-        
-        return "{} ({})" .format(self.idusuario)
+    def __str__(self):
+            
+            return "{} ({})" .format(self.idusuario)
