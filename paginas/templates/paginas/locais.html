@@ -116,10 +116,11 @@
 				</div><!--/.section-header-->
 				<div class="works-content">
 					<div class="row">
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-								
-								<h2><a href="#">Prefeitura</a></h2>
+						<ul>
+							{% for local in locais %}
+						<li><div class="col-md-4 col-sm-6">
+							<div class="single-how-works">	
+								<h2><a href="/local/{{local.id}}">{{local.nome}}</a></h2>
 								<p>
 									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
 								</p>
@@ -127,106 +128,9 @@
 									ler mais
 								</button>
 							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-							
-								<h2><a href="#">Museu</a></h2>
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									ler mais
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-							
-								<h2><a href="#">Mercado do café</a></h2>
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									ler mais
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-							
-								<h2><a href="#">Tumulo da Emma</a></h2>
-								<img style="width: 60%;" src="../../../static/img/curiosidades/BocaABoca.jpg">
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									ler mais
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-							
-								<h2><a href="#">Engenho ...</a></h2>
-								<img style="width: 60%;" src="../../../static/img/curiosidades/CoisasDaTerra.jpg">
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									ler mais
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-							
-								<h2><a href="#">Mercado da fruta</a></h2>
-								<img src="../../../static/img/hero-carousel/culinaria.jpeg">
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									ler mais
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-							
-								<h2><a href="#">Mercado do café</a></h2>
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									ler mais
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-							
-								<h2><a href="#">Mercado do café</a></h2>
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									ler mais
-								</button>
-							</div>
-						</div>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-							
-								<h2><a href="#">Mercado do café</a></h2>
-								<p>
-									Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor incididunt ut laboremagna aliqua. 
-								</p>
-								<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
-									ler mais
-								</button>
-							</div>
-						</div>
+						</div> </li>
+							{% endfor %}
+						</ul>
 					</div>
 				</div>
 			</div><!--/.container-->

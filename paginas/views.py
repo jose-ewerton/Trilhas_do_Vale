@@ -4,14 +4,15 @@ from django.shortcuts import redirect, render
 from django.urls import reverse
 from django.views.generic import TemplateView
 
-from base.models import Usuario
+from base.models import Usuario, Local
 from paginas.forms import UsuarioForm
 
 class PaginaInicial(TemplateView):
     template_name = 'paginas/index.html'
 
 def Locais(request):
-    return render(request,'paginas/locais.html') 
+    locais = Local.objects.all()
+    return render(request,'paginas/locais.html', {'locais': locais}) 
 
 def salva_cadastro(request):
     nome= request.POST.get('nome')
