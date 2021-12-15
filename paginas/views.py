@@ -11,7 +11,16 @@ class PaginaInicial(TemplateView):
     template_name = 'paginas/index.html'
 
 def Locais(request):
-    locais = Local.objects.all()
+
+    busca = request.GET.get('busca')
+
+    if busca:
+
+        locais = Local.objects.filter(nome__icontains=busca)
+
+    else:
+
+        locais = Local.objects.all()
     return render(request,'paginas/locais.html', {'locais': locais}) 
 
 def salva_cadastro(request):
