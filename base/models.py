@@ -43,7 +43,7 @@ class Localcategoria(models.Model):
 
     def __str__(self):
             
-        return "{} ({})" .format(self.idlocal, self.categoria)
+        return self.categoria
 
 
 
