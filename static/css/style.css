@@ -1420,7 +1420,7 @@ background: linear-gradient(146deg, rgba(9,26,32,1) 0%, rgba(87,138,155,1) 53%, 
 }
 
 .modal-header{
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   background-color: #578a9b
 }
