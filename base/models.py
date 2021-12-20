@@ -39,7 +39,7 @@ class Categoria(models.Model):
 
 class Local(models.Model):
     nome = models.CharField(max_length=40)
-    foto = models.ImageField(upload_to = 'media/')
+    foto = models.ImageField()
     localizacaoexata = models.CharField(db_column='localizacaoExata', max_length=60) # Field name made lowercase.
     descricao = models.TextField()
     categorias = models.ManyToManyField(Categoria)
