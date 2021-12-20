@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class Administrador(models.Model):
     name = models.CharField(unique=True, max_length=50)
     email = models.EmailField(unique=True, max_length=45)
@@ -25,25 +26,27 @@ class Avaliacaosite(models.Model):
 
 
 
-class Local(models.Model):
-    nome = models.CharField(max_length=40)
-    foto = models.ImageField(upload_to = 'locais/')
-    localizacaoexata = models.CharField(db_column='localizacaoExata', max_length=60) # Field name made lowercase.
-    descricao = models.TextField()
+
+class Categoria(models.Model):
+    nome = models.CharField(unique=True, max_length=30)
+    
 
     def __str__(self):  
             return self.nome
 
 
 
-class Localcategoria(models.Model):
-    idlocal = models.OneToOneField(Local, models.DO_NOTHING, db_column='idLocal', primary_key=True) # Field name made lowercase.
-    categoria = models.CharField(max_length=30)
 
+class Local(models.Model):
+    nome = models.CharField(max_length=40)
+    foto = models.ImageField(upload_to = 'locais/')
+    localizacaoexata = models.CharField(db_column='localizacaoExata', max_length=60) # Field name made lowercase.
+    descricao = models.TextField()
+    categorias = models.ManyToManyField(Categoria)
 
-    def __str__(self):
-            
-        return self.categoria
+    def __str__(self):  
+            return self.nome
+
 
 
 

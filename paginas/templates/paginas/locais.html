@@ -1,13 +1,7 @@
-<!doctype html>
-<html lang="pt-br">
+{%  extends 'paginas/base.html'   %}
+ {% load static %} 
 
-<head>
-	<!-- meta data -->
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
+ {% block styles %}
 	<!--font-family-->
 	<link
 		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
@@ -28,10 +22,10 @@
 	<!--responsive.css-->
 	<link rel="stylesheet" href="../../../static/css/css_local/responsive.css">
 
-</head>
+	{% endblock %}
 
-<body>
 
+	{% block conteudo %}
 
 	<!--welcome-hero start -->
 	<section id="home" class="welcome-hero">
@@ -55,7 +49,7 @@
 
 				</div>
 				<div class="welcome-hero-serch">
-					<button class="welcome-hero-btn" onclick="window.location.href='#'">
+					<button class="welcome-hero-btn">
 						<i style="margin: 0 10px 5px 0; font-size: 15px;" class="bi bi-search"></i> Buscar
 					</button>
 				</form>
@@ -68,45 +62,18 @@
 	<!--welcome-hero end -->
 
 	<!--list-topics start -->
-	<section id="list-topics" class="list-topics">
+	<section id="list-categories" class="list-categories">
 		<div class="container">
-			<div class="list-topics-content">
-				<ul>
+			<div style="position: absolute; z-index: 999;" class="categorias">
+				<ul  style="position:relative; margin-top: -200px;">
+					{% for categoria in categorias %}
 					<li>
-						<div class="single-list-topics-content">
-							<i style=" font-size: 50px; color: yellow;" class="bi bi-egg-fried"></i>
-							<h2><a href="#">Restaurantes</a></h2>
-						</div>
+						<a class="btn" href="#">
+							<span>{{categoria.nome}}</span>
+						  </a>  
 					</li>
-					<li>
-						<div class="single-list-topics-content">
-							<i style=" margin-right: 50px; font-size: 50px; color: rgb(228, 190, 22);"
-								class="bi bi-brightness-high-fill"></i>
-							<i style=" margin-left: 50px; margin-top: -71px; ; font-size: 50px; color: rgb(0, 0, 0);"
-								class="bi bi-sunglasses"></i>
-							<h2><a href="#">Praias</a></h2>
-
-						</div>
-					</li>
-					<li>
-						<div class="single-list-topics-content">
-							<i style="font-size: 50px; color: black;" class="bi bi-signpost-2-fill"></i>
-							<h2><a href="#">Trilhas Ecológicas</a></h2>
-						</div>
-					</li>
-					<li>
-						<div class="single-list-topics-content">
-							<i style="font-size: 50px; color: rgb(122, 106, 102);" class="bi bi-building"></i>
-							<h2><a href="#">Monumentos históricos</a></h2>
-						</div>
-					</li>
-					<li>
-						<div class="single-list-topics-content">
-							<i style="font-size: 50px; color: rgb(151, 70, 50);" class="bi bi-house-fill"></i>
-							<h2><a href="#">Engenhos</a></h2>
-						</div>
-					</li>
-				</ul>
+					{% endfor %}
+					</ul>
 			</div>
 		</div>
 		<!--/.container-->
@@ -156,6 +123,4 @@
 	<!--works end -->
 
 	<!-- Include all js compiled plugins (below), or include individual files as needed -->
-</body>
-
-</html>
+	{% endblock %}

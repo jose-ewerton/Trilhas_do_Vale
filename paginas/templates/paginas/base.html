@@ -1,0 +1,207 @@
+{% load static %}
+
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    {% block titulo %}
+    <title>Trilhas do Vale</title>
+    {% endblock %}
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+  
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="{% static 'img/favicon1.ico' %}">
+    <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700"
+      rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/aos/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+    <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css' rel='stylesheet'>
+  
+    <!-- JQuery -->
+    <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+  
+    <!-- Template Main CSS File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+
+   
+    <!-- Bloco destinado aos estilos para cada página -->
+    {% block styles %}
+
+    {% endblock %}
+
+</head>
+
+<body >
+
+
+        <!-- Bloco com o menu principal -->
+        {% block menu %}
+        <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent ">
+    <!-- fixed top + d flex = define posição dos topicos do header/  header-transparent -->
+    <div class="container-fluid">
+      <!-- altera o layout do header-->
+      <div class="row justify-content-center align-items-center">
+        <!-- Centraliza o container fluid-->
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <!-- between: coloca o espaço entre os topicos/ col: coloca espaço nas laterais-->
+          <!-- <h1 class="logo"><a href="#">Trilhas do Vale</a></h1> -->
+          <!--  logo: ao remover tornou o trilhas do vale somente um nome e não uma logo-->
+          <!--Descomentar caso for usar logotipo de imagem-->
+          <a href="{% url 'index' %}" class="logo"><img src="{% static 'img/logo1.png' %}" alt="" class="img-fluid"></a>
+
+          <nav id="navbar" class="navbar">
+            <!-- navbar: barra de navegação-->
+            <ul>
+              <li class="dropdown"><a href="{% url 'locais' %}"><span>Locais</span></a>
+              <li class="dropdown"><a href="#historia"><span>História</span> <i class="bi bi-chevron-down"></i></a>
+                <!-- dropdown: responsavel pelos subtopicos/ bi bi-chevron-down: adiciona a seta que mostra os subtopicos -->
+                <ul>
+                  <li><a href="#"> História de Ceará-Mirim</a></li>
+                  <li><a href="#"> História não contada</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#eventos"><span>Eventos</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#"> Eventos Culturais</a></li>
+                  <li><a href="#"> Eventos Religiosos</a></li>
+                </ul>
+              </li>
+              <li class="dropdown"><a href="#turismo"><span>Turismo</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#"> Turismo Histórico </a></li>
+                  <li><a href="#"> Turismo Ecológico </a></li>
+                  <li><a href="#"> Ruínas do Vale </a></li>
+                  <li><a href="#"> Sol e Água Fresca </a></li>
+                </ul>
+              </li>
+              </li>
+              <li class="dropdown"><a href="#curiosidades"><span>Curiosidades</span> <i
+                    class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><a href="#"> Coisas da terra </a></li>
+                  <li><a href="#"> Boca a Boca</a></li>
+                  <li><a href="#"> Memórias Vivas </a></li>
+                </ul>
+              </li>
+              <li><a class="nav-link scrollto" href="#culinaria">Culinária</a></li>
+            </ul> <!-- nav-link scrollto: indica qual link está ativo naquela janela-->
+            <i class="bi bi-list mobile-nav-toggle"></i>
+            <!--mobile-nav-toggle: mexe com a alternancia do menu responsivo -->
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+    </div>
+  </header>
+        {% endblock %}
+
+
+        <!-- Bloco de conteúdo -->
+            {% block conteudo %}
+           
+            {% endblock %}
+    
+
+             <!-- ======= Footer ======= -->
+    {% block rodape %}
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-3 col-md-6 footer-info">
+            <h3 style="color:#efeded;">Trilhas do Vale</h3>
+            <p> O projeto Trilhas do Vale tem como objetivo principal expor a cultura da cidade de Ceará-Mirim em seus
+              aspectos históricos, turísticos, culinários, dentre outros.</p>
+          </div>
+
+          <div class="col-lg-3 col-md-6 footer-links">
+            <h4>Links:</h4>
+            <ul style=" padding-top: 10px;">
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Página Inicial</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">História</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Eventos</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Turismo</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Curiosidades</a></li>
+              <li><i class="bi bi-chevron-right"></i> <a href="#">Culinária</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-6 col-md-6 footer-contact">
+            <h4>Contatos:</h4>
+            <p style="color:#efeded; font-size:16px; padding-top: 10px; text-align: center;">
+              Instituto Federal do Rio Grande do Norte - Campus Ceará-Mirim <br>
+              BR-406, Km 145, Bairro Planalto, Ceará-Mirim/RN<br>
+              <!--<strong>Phone:</strong> +1 5589 55488 55<br> -->
+              <strong>Email:</strong> trilhasdovale@gmail.com
+            </p>
+
+            <div style=" text-align: center;" class="social-links">
+              <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+              <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Trilhas do Vale</strong>. Todos os direitos reservados.
+      </div>
+      <div class="credits">
+        <!--
+        All the links in the footer should remain intact.
+        You can delete the links only if you purchased the pro version.
+        Licensing information: https://bootstrapmade.com/license/
+        Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=BizPage
+      -->
+        Design por <a style="color:#1138A3; font-size:13px;" href="https://trilhasdovale.com.br/">Trilhas do Vale</a>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+    {% endblock %}
+
+
+    <!-- Importação do JS -->
+    <!-- Vendor JS Files -->
+  <script src="{% static 'vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/glightbox/js/glightbox.min.js' %}" ></script>
+  <script src="{% static 'vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'vendor/php-email-form/validate.js' %}"></script>
+  <script src="{% static 'vendor/purecounter/purecounter.js' %}"></script>
+  <script src="{% static 'vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'vendor/waypoints/noframework.waypoints.js' %}"></script>
+  <script type='text/javascript'
+    src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
+
+    <!-- Bloco destinado aos scripts para cada página -->
+    {% block scripts %}
+
+    {% endblock %}
+    
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
