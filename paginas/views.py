@@ -12,22 +12,26 @@ class PaginaInicial(TemplateView):
 
 def Locais(request):
 
+    categorias = Categoria.objects.all()
+    locais = Local.objects.all()
     busca = request.GET.get('busca')
-   
-    if busca:
+    categorias_id = request.GET.get('categoria', None)
+
+    if categorias_id is not None:    
+         locais = Local.getLocaisByID(categorias_id)
+
+    elif busca:
 
         locais = Local.objects.filter(nome__icontains=busca)
 
     else:
-        
+        categorias = Categoria.objects.all()
         locais = Local.objects.all()
-        allcategorias = Categoria.objects.all()
+    return render(request,'paginas/locais.html', {'locais': locais, 'categorias': categorias})
 
-    data = {
-        'categorias': allcategorias,
-        'locais': locais
-    }
-    return render(request,'paginas/locais.html', data) 
+
+    
+
 
 def salva_cadastro(request):
     nome= request.POST.get('nome')

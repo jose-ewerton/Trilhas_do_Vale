@@ -44,6 +44,14 @@ class Local(models.Model):
     descricao = models.TextField()
     categorias = models.ManyToManyField(Categoria)
 
+    @staticmethod
+    def getLocaisByID(id):
+        if id:
+            return Local.objects.filter(categorias = id)
+        else:
+            return Local.objects.all()
+
+
     def __str__(self):  
             return self.nome
 
