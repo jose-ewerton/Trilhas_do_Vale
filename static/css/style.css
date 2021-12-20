@@ -9,7 +9,7 @@
 # Gerais - Estudar a partir daqui
 --------------------------------------------------------------*/
 body {
-  background: #efeded; /* comentar cada atributo que tiver dúvidas e sua alteração no código, sempre procurando melhorias se for o caso */ /* não conzsegimos vizualizar a alteração na pagina*/
+  background: #efeded; /* comentar cada atributo que tiver dÃºvidas e sua alteraÃ§Ã£o no cÃ³digo, sempre procurando melhorias se for o caso */ /* nÃ£o conzsegimos vizualizar a alteraÃ§Ã£o na pagina*/
   color: #efeded;
   font-family: "Open Sans", sans-serif;
 }
@@ -136,12 +136,12 @@ h1, h2, h3, h4, h5, h6 {
 
 #header .logo {
   font-size: 34px; /* altera o tamanho da fonte da logo*/
-  margin: 0; /* espaçamento da margem da logo*/
+  margin: 0; /* espaÃ§amento da margem da logo*/
   padding: 0; /* tamanho da barrinha */
   font-family: "Montserrat", sans-serif; /* tipo da fonte*/
   font-weight: 700; /* largura da fonte*/
-  letter-spacing: 3px; /* enpaço entre as letras*/
-  padding-left: 10px; /* espaço entre a barrinha e  logo */
+  letter-spacing: 3px; /* enpaÃ§o entre as letras*/
+  padding-left: 10px; /* espaÃ§o entre a barrinha e  logo */
   border-left: 4px solid #3f9945; /* altera a cor  da barrinha ao lado da logo*/
 }
 
@@ -204,7 +204,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar a:hover, .navbar .active, .navbar li:hover > a {
-  color: #efeded; /*quando coloca o mouse em cima de dos tópicos do menu, muda a cor, de branco para verde*/
+  color: #efeded; /*quando coloca o mouse em cima de dos tÃ³picos do menu, muda a cor, de branco para verde*/
 }
 
 .navbar .dropdown ul {
@@ -217,7 +217,7 @@ h1, h2, h3, h4, h5, h6 {
   z-index: 99;
   opacity: 0;
   visibility: hidden;
-  background: #efeded; /*altera a cor do quadradinho que fica os subtópicos*/
+  background: #efeded; /*altera a cor do quadradinho que fica os subtÃ³picos*/
   box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
   transition: 0.3s;
 }
@@ -229,7 +229,7 @@ h1, h2, h3, h4, h5, h6 {
 .navbar .dropdown ul a {
   padding: 10px 20px;
   text-transform: none;
-  color: #3f9945; /*dar cor a letra dos subtópicos*/
+  color: #3f9945; /*dar cor a letra dos subtÃ³picos*/
 }
 
 .navbar .dropdown ul a i {
@@ -237,7 +237,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .navbar .dropdown ul a:hover, .navbar .dropdown ul .active:hover, .navbar .dropdown ul li:hover > a {
-  color: #579a9b; /*quando arrasta para clicar no subtópico muda a cor, de verde para azul*/
+  color: #579a9b; /*quando arrasta para clicar no subtÃ³pico muda a cor, de verde para azul*/
 }
 
 .navbar .dropdown:hover > ul {
@@ -490,7 +490,7 @@ h1, h2, h3, h4, h5, h6 {
 #hero .carousel-indicators li {
   cursor: pointer;
 }
-/* css do botão */
+/* css do botÃ£o */
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
@@ -516,8 +516,8 @@ section {
 /* Sections Header
 --------------------------------*/
 .section-header h3 {
-  font-size: 32px; /*fonte do nome história*/
-  color: #3f9945; /*cor do texto história*/
+  font-size: 32px; /*fonte do nome histÃ³ria*/
+  color: #3f9945; /*cor do texto histÃ³ria*/
   text-transform: uppercase;
   text-align: center;
   font-weight: 700;
@@ -560,7 +560,7 @@ section {
 }
 
 
-/* Sobre Seção história
+/* Sobre SeÃ§Ã£o histÃ³ria
 --------------------------------*/
 #historia {
   background-size: cover;
@@ -741,7 +741,7 @@ section {
 }
 
 #turismo .box {
-  margin-bottom: 30px; /* espaço no meio */
+  margin-bottom: 30px; /* espaÃ§o no meio */
  
 }
 
@@ -944,7 +944,7 @@ section {
 }
 
 #culinaria .culinaria-item figure .link-preview:hover, #culinaria .culinaria-item figure .link-details:hover {
-  background: #578a9b; /* cor de transição da bolinha*/
+  background: #578a9b; /* cor de transiÃ§Ã£o da bolinha*/
 }
 
 #culinaria .culinaria-item figure .link-preview:hover i, #culinaria .culinaria-item figure .link-details:hover i {
@@ -998,7 +998,7 @@ section {
 #culinaria .culinaria-item .culinaria-info p {
   padding: 0;
   margin: 0;
-  color: #333; /* descrição da comida*/
+  color: #333; /* descriÃ§Ã£o da comida*/
   font-weight: 500;
   font-size: 14px;
   text-transform: uppercase;
@@ -1006,7 +1006,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Culinária details
+# CulinÃ¡ria details
 --------------------------------------------------------------*/
 .culinaria-details {
   padding-top: 40px;
@@ -1410,7 +1410,21 @@ div.historia-col:hover,  div.curiosidades-col:hover{
  .card { background-color: rgba(245, 245, 245, 0); }
 
 
-.modal-body{
+#modal-cadastro{
 background: rgb(9,26,32) !important;
 background: linear-gradient(146deg, rgba(9,26,32,1) 0%, rgba(87,138,155,1) 53%, rgba(239,237,237,1) 100%) !important;
+}
+
+.modal-body{
+  color:black
+}
+
+.modal-header{
+  color: black;
+  font-weight: bold;
+  background-color: #578a9b
+}
+
+.modal-footer{
+  background-color: #578a9b
 }
