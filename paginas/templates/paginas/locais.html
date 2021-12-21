@@ -1,126 +1,126 @@
-{%  extends 'paginas/base.html'   %}
- {% load static %} 
+{% extends 'paginas/base.html' %}
+{% load static %}
 
- {% block styles %}
-	<!--font-family-->
-	<link
-		href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
-		rel="stylesheet">
-	<link rel="stylesheet" href="../../../static/vendor/bootstrap-icons/bootstrap-icons.css">
+{% block styles %}
+<!--font-family-->
+<link
+	href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i"
+	rel="stylesheet">
+<link rel="stylesheet" href="../../../static/vendor/bootstrap-icons/bootstrap-icons.css">
 
-	<!--animate.css-->
-	<link rel="stylesheet" href="../../../static/css/css_local/animate.css">
-
-
-	<!--bootstrap.min.css-->
-	<link rel="stylesheet" href="../../../static/css/css_local/bootstrap.min.css">
+<!--animate.css-->
+<link rel="stylesheet" href="../../../static/css/css_local/animate.css">
 
 
-	<!--style.css-->
-	<link rel="stylesheet" href="../../../static/css/css_local/style.css">
-
-	<!--responsive.css-->
-	<link rel="stylesheet" href="../../../static/css/css_local/responsive.css">
-
-	{% endblock %}
+<!--bootstrap.min.css-->
+<link rel="stylesheet" href="../../../static/css/css_local/bootstrap.min.css">
 
 
-	{% block conteudo %}
+<!--style.css-->
+<link rel="stylesheet" href="../../../static/css/css_local/style.css">
 
-	<!--welcome-hero start -->
-	<section id="home" class="welcome-hero">
-		<div class="container">
-			<div class="welcome-hero-txt">
-				<h2>Pesquise locais da Cidade de Ceará-Mirim e explore </h2>
-				<p>
-					Encontre os melhores Restaurantes, Praias... tudo isso e muito mais em apenas um click!
-				</p>
-			</div>
-			<div class="welcome-hero-serch-box">
-				<div class="welcome-hero-form">
-					<div id="text-pesquisa">
-						<h3>O que está procurando?</h3>
-					</div>
-					<div class="single-welcome-hero-form">
+<!--responsive.css-->
+<link rel="stylesheet" href="../../../static/css/css_local/responsive.css">
 
-						<form method="GET" id="busca-form">
-							<input id="busca" name="busca" type="text" placeholder="digite o que está procurando" />			
-					</div>
+{% endblock %}
 
+
+{% block conteudo %}
+
+<!--welcome-hero start -->
+<section id="home" class="welcome-hero">
+	<div class="container">
+		<div class="welcome-hero-txt">
+			<h2>Pesquise locais da Cidade de Ceará-Mirim e explore </h2>
+			<p>
+				Encontre os melhores Restaurantes, Praias...Tudo isso e muito mais em apenas um click!
+			</p>
+		</div>
+		<div class="welcome-hero-serch-box">
+			<div class="welcome-hero-form">
+				<div id="text-pesquisa">
+					<h3>O que está procurando?</h3>
 				</div>
-				<div class="welcome-hero-serch">
-					<button class="welcome-hero-btn">
-						<i style="margin: 0 10px 5px 0; font-size: 15px;" class="bi bi-search"></i> Buscar
-					</button>
+				<div class="single-welcome-hero-form">
+
+					<form method="GET" id="busca-form">
+						<input autocomplete="off" id="busca" name="busca" type="text"
+							placeholder="Digite aqui o nome do local ou parte dele" />
+				</div>
+
+			</div>
+			<div class="welcome-hero-serch">
+				<button class="welcome-hero-btn">
+					<i style="margin: 0 10px 5px 0; font-size: 15px;" class="bi bi-search"></i> Buscar
+				</button>
 				</form>
-				</div>
 			</div>
 		</div>
+	</div>
 
-	</section>
-	<!--/.welcome-hero-->
-	<!--welcome-hero end -->
+</section>
+<!--/.welcome-hero-->
+<!--welcome-hero end -->
 
-	<!--list-topics start -->
-	<section id="list-categories" class="list-categories">
-		<div class="container">
-			<div style="position: absolute; z-index: 999;" class="categorias">
-				<ul  style="position:relative; margin-top: -200px;">
-					{% for categoria in categorias %}
+<!--list-topics start -->
+<section id="list-categories" class="list-categories">
+	<div class="container">
+		<div style="position: absolute; z-index: 999;" class="categorias">
+			<ul style="position:relative; margin-top: -200px;">
+				{% for categoria in categorias %}
+				<li>
+					<a class="btn" href="/locais/?categoria={{categoria.id}}">
+						<span>{{categoria.nome}}</span>
+					</a>
+				</li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<!--/.container-->
+
+</section>
+<!--/.list-topics-->
+<!--list-topics end-->
+
+<!--works start -->
+<section id="works" class="works">
+	<div class="container">
+		<div class="section-header">
+			<h2>Explore:</h2>
+		</div>
+		<!--/.section-header-->
+		<div class="works-content">
+			<div class="row">
+				<ul>
+					{% for local in locais %}
 					<li>
-						<a class="btn" href="/locais/?categoria={{categoria.id}}">
-							<span>{{categoria.nome}}</span>
-						  </a>  
-					</li>
-					{% endfor %}
-					</ul>
-			</div>
-		</div>
-		<!--/.container-->
-
-	</section>
-	<!--/.list-topics-->
-	<!--list-topics end-->
-
-	<!--works start -->
-	<section id="works" class="works">
-		<div class="container">
-			<div class="section-header">
-				<h2>Explore:</h2>
-			</div>
-			<!--/.section-header-->
-			<div class="works-content">
-				<div class="row">
-					<ul>
-						{% for local in locais %}
-						<li>
-							<div class="col-md-4 col-sm-6">
-								<div class="single-how-works">
-									<div class="container_local">
-										<h2><a href="/local/{{local.id}}">{{local.nome}}</a></h2>
-										<img style="border-radius: 10px" src="{{local.foto.url}}" alt="">
-										<p>
-											Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor
-											incididunt ut laboremagna aliqua.
-										</p>
-										<button class="welcome-hero-btn how-work-btn"
-											onclick="window.location.href='#'">
-											ler mais
-										</button>
-									</div>
+						<div class="col-md-4 col-sm-6">
+							<div class="single-how-works">
+								<div class="container_local">
+									<h2><a href="/local/{{local.id}}">{{local.nome}}</a></h2>
+									<img style="border-radius: 10px" src="{{local.foto.url}}" alt="">
+									<p>
+										Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor
+										incididunt ut laboremagna aliqua.
+									</p>
+									<button class="welcome-hero-btn how-work-btn" onclick="window.location.href='#'">
+										ler mais
+									</button>
 								</div>
 							</div>
-						</li>
-						{% endfor %}
-					</ul>
-				</div>
+						</div>
+					</li>
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
-		<!--/.container-->
+	</div>
+	<!--/.container-->
 
-	</section>
-	<!--/.works-->
-	<!--works end -->
+</section>
+<!--/.works-->
+<!--works end -->
 
-	<!-- Include all js compiled plugins (below), or include individual files as needed -->
-	{% endblock %}
+<!-- Include all js compiled plugins (below), or include individual files as needed -->
+{% endblock %}
