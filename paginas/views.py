@@ -1,6 +1,6 @@
 from django.contrib import messages
-from django.contrib.auth import authenticate, login
-from django.shortcuts import redirect, render
+from django.contrib.auth import authenticate, login, logout
+from django.shortcuts import redirect, render, HttpResponse
 from django.urls import reverse
 from django.views.generic import TemplateView
 
@@ -49,4 +49,27 @@ def salva_cadastro(request):
         return redirect (reverse('index') + '#modalForm')
 
 
-        
+
+
+def Login(request):
+    if request.method=="POST":
+      
+        loginusuario=request.POST['loginusuario']
+        loginsenha=request.POST['loginsenha']
+
+        user=authenticate(username= loginusuario, password= loginsenha)
+        if user is not None:
+            login(request, user)
+            messages.success(request, "Logado com sucesso!")
+            return redirect("index")
+        else:
+            messages.error(request, "Usuário/Senha inválido,tente novamente!")
+            return redirect("index")
+
+    return HttpResponse("login")
+
+def Logout(request):
+    logout(request)
+    messages.success(request, "Deslogado")
+    return redirect('index')
+      
