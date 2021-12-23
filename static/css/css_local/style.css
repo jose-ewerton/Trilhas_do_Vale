@@ -21,15 +21,7 @@ body{
 	overflow-x:hidden;
 }
 
-a,a:hover,a:active,a:focus {
-	display:inline-block;
-	text-decoration:none;
-	color: #343a3f;
-	font-size:16px;
-	padding:0;
-    font-weight: 500;
-    text-transform: capitalize;
-}
+
 h1,h2,h3,h4,h5,h6 { 
 	margin: 0;
 	color:#343a3f;
@@ -54,6 +46,7 @@ ul li {
 	list-style: none;
 	
 }
+a{ text-decoration:none;}
 input,textarea,button{box-shadow:none;outline:0!important;}
 button {background: transparent;border: 0;font-size: 12px;}
 
@@ -205,16 +198,19 @@ html,body{height: 100%;}
         5. List-topuics
 --------------------------------------*/
 
-.categorias ul li { display: inline-block;}
+.categorias ul li { 
+    display: inline-block;
+    vertical-align: top;
+    }
 
 .btn {
 	background-image: linear-gradient(to right, #578a9b 0%, #3f9945 100%);
 	border-radius: 20px;
     box-sizing: border-box;
 	color: #3f9945;
+	letter-spacing: 1px;
 	display: block;
 	height: 140px;
-	letter-spacing: 1px;
 	margin: 0 auto;
     margin-left: 25px;
 	padding: 4px;
@@ -234,8 +230,9 @@ html,body{height: 100%;}
 	background: #e7e8e9;
 	border-radius: 20px;
 	display: flex;
-    font-size: 10px;
+    font-size: 14px;
 	justify-content: center;
+    font-weight: 600;
 	height: 100%;
 	transition: background .5s ease;
 	width: 100%;
@@ -250,19 +247,12 @@ html,body{height: 100%;}
 	background: transparent;
 }
 
-.header-categoria h2{
-        color: #ffffff;
-        font-size:24px;
-        font-weight: 500;
-        margin-bottom: 24px;
-        text-transform: uppercase;
-        letter-spacing: 1.3px;
-    }
-
 /*-------------------------------------
         6. Works 
 --------------------------------------*/
 .works{padding: 0 0 90px;}
+
+   
 .works-content {margin-top: 73px;}
 
 .single-how-works{
@@ -283,9 +273,15 @@ html,body{height: 100%;}
 }
 
 
+
 .single-how-works h2 a {
     font-size:  18px;
     margin: 35px 0 20px;
+    display:inline-block;
+    text-decoration:none;
+    color: #343a3f;
+    font-weight: 500;
+    text-transform: capitalize;
 }
 
 .single-how-works  {

@@ -21,11 +21,19 @@ def Locais(request):
     categorias_id = request.GET.get('categoria', None)
 
     if categorias_id is not None:    
-         locais = Local.getLocaisByID(categorias_id)
+        locais = Local.getLocaisByID(categorias_id)
+        paginator = Paginator(locais, 1)
+
+        page = request.GET.get('page')
+        locais = paginator.get_page(page)
 
     elif busca:
 
         locais = Local.objects.filter(nome__icontains=busca)
+        paginator = Paginator(locais, 1)
+
+        page = request.GET.get('page')
+        locais = paginator.get_page(page)
 
     else:
         categorias = Categoria.objects.all()

@@ -6,8 +6,6 @@
 }/*max-width:1440px*/
 
 @media screen and (max-width:1199px){
-	nav.navbar.bootsnav ul.nav > li > a { padding: 35px 10px;}
-	
 	.welcome-hero-txt h2{font-size: 40px;}
 
 	.single-welcome-hero-form input {width: 177px;}
@@ -25,13 +23,6 @@
 @media screen and (max-width:1008px){
 
 }/*max-width:1008px*/
-
-@media screen and (max-width:992px){
-	nav.navbar.bootsnav .navbar-collapse.collapse.in {padding-bottom: 30px;}
-	nav.navbar.bootsnav .navbar-brand {padding: 25px;}
-	nav.navbar.bootsnav ul.nav > li > a {padding: 15px 0px;border: transparent;}
-	.wrap-sticky nav.navbar.bootsnav.sticked ul.nav > li > a {padding: 15px 0px;}
-}/*max-width:992px*/
 
 @media screen and (max-width:991px){
 	.welcome-hero-serch-box {display: flex; flex-direction: column;align-items: center;}
