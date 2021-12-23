@@ -1,5 +1,6 @@
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
+from django.contrib.auth.decorators import login_required 
 from django.shortcuts import redirect, render, HttpResponse
 from django.urls import reverse
 from django.views.generic import TemplateView
@@ -10,6 +11,7 @@ from paginas.forms import UsuarioForm
 class PaginaInicial(TemplateView):
     template_name = 'paginas/index.html'
 
+@login_required(login_url='index')
 def Locais(request):
 
     categorias = Categoria.objects.all()
