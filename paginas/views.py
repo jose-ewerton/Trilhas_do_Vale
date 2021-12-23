@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import redirect, render, HttpResponse
 from django.urls import reverse
 from django.views.generic import TemplateView
+from django.core.paginator import Paginator
 
 from base.models import Categoria, Usuario, Local
 from paginas.forms import UsuarioForm
@@ -29,6 +30,10 @@ def Locais(request):
     else:
         categorias = Categoria.objects.all()
         locais = Local.objects.all()
+        paginator = Paginator(locais, 1)
+
+        page = request.GET.get('page')
+        locais = paginator.get_page(page)
     return render(request,'paginas/locais.html', {'locais': locais, 'categorias': categorias})
 
 
