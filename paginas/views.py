@@ -22,7 +22,7 @@ def Locais(request):
 
     if categorias_id is not None:    
         locais = Local.getLocaisByID(categorias_id)
-        paginator = Paginator(locais, 1)
+        paginator = Paginator(locais, 6)
 
         page = request.GET.get('page')
         locais = paginator.get_page(page)
@@ -30,7 +30,7 @@ def Locais(request):
     elif busca:
 
         locais = Local.objects.filter(nome__icontains=busca)
-        paginator = Paginator(locais, 1)
+        paginator = Paginator(locais, 6)
 
         page = request.GET.get('page')
         locais = paginator.get_page(page)
@@ -38,7 +38,7 @@ def Locais(request):
     else:
         categorias = Categoria.objects.all()
         locais = Local.objects.all()
-        paginator = Paginator(locais, 1)
+        paginator = Paginator(locais, 6)
 
         page = request.GET.get('page')
         locais = paginator.get_page(page)

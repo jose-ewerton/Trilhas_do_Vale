@@ -101,63 +101,67 @@
 									<h2><a href="/local/{{local.id}}" style="font-weight: bold;">{{local.nome}}</a></h2>
 									<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
 										<div class="carousel-inner" role="listbox">
-										<div class="carousel-item active">
-										<img class="d-block img-fluid"  src="{{local.foto.url}}">
+											<div class="carousel-item active">
+												<img class="d-block img-fluid" src="{{local.foto.url}}">
+											</div>
+											<div class="carousel-item">
+												<img class="d-block img-fluid" src="{{local.foto2.url}}">
+											</div>
+											<div class="carousel-item">
+												<img class="d-block img-fluid" src="{{local.foto3.url}}">
+											</div>
 										</div>
-										<div class="carousel-item">
-										<img class="d-block img-fluid" src="{{local.foto2.url}}">
-										</div>
-										<div class="carousel-item">
-										<img class="d-block img-fluid" src="{{local.foto3.url}}">
-										</div>
-										</div>
-										<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-										<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-										<span class="sr-only">Antes</span>
+										<a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+											data-slide="prev">
+											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+											<span class="sr-only">Antes</span>
 										</a>
-										<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-										<span class="carousel-control-next-icon" aria-hidden="true"></span>
-										<span class="sr-only">Próximo</span>
+										<a class="carousel-control-next" href="#carouselExampleControls" role="button"
+											data-slide="next">
+											<span class="carousel-control-next-icon" aria-hidden="true"></span>
+											<span class="sr-only">Próximo</span>
 										</a>
-										</div>
-				
+									</div>
+
 									<p>
 										Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor
 										incididunt ut laboremagna aliqua.
 									</p>
-						
-									<p> 
+
+									<p>
 										<b>Localização:</b>
-										{{local.localizacaoexata}}
+										{{local.localizacaoexata}}.
 									</p>
-									
+
 								</div>
 							</div>
 						</div>
 					</li>
 					{% endfor %}
 				</ul>
-			
+
 			</div>
 			<div class="text-center">
 				{% if locais.has_previous %}
-					<a href="?page={{ locais.previous_page_number }}"><i style="color: #3f9945" class="bi bi-arrow-left"></i></a>
+				<a href="?page={{ locais.previous_page_number }}"><i style="color: #3f9945"
+						class="bi bi-arrow-left"></i></a>
 				{% endif %}
-				
+
 				{% if locais.paginator.num_pages %}
 				<span style="color: #578a9b" class="current">
 					{{ locais.number }} de {{ locais.paginator.num_pages }}
 				</span>
 				{% endif %}
-			
+
 				{% if locais.has_next %}
-					<a href="?page={{ locais.next_page_number }}"><i style="color: #3f9945" class="bi bi-arrow-right"></i></a>
+				<a href="?page={{ locais.next_page_number }}"><i style="color: #3f9945"
+						class="bi bi-arrow-right"></i></a>
 				{% endif %}
-		</div>
+			</div>
 		</div>
 	</div>
 	<!--/.container-->
-	
+
 </section>
 <!--/.works-->
 <!--works end -->

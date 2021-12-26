@@ -272,7 +272,10 @@ html,body{height: 100%;}
     padding-bottom: 25px
 }
 
+.works-content .row ul li{ 
+    display: inline-block;
 
+    }
 
 .single-how-works h2 a {
     font-size:  18px;
