@@ -289,3 +289,13 @@ html,body{height: 100%;}
 }
 
 .card:hover{box-shadow: 0 0px 10px rgba(71,71,71,.4);background: #3f9945}
+
+#box-text {
+    height:160px;
+    overflow-y: scroll;
+      
+  }
+  
+
+  
+  
