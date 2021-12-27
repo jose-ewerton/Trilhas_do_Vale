@@ -83,82 +83,87 @@
 
 <!--works start -->
 <section id="works" class="works">
-	<div class="container">
-		<div class="section-header">
-			<h2>Explore:</h2>
-		</div>
-		<!--/.section-header-->
-		<div class="works-content">
-			<div class="row">
-				<ul>
-					{% for local in locais %}
-					<li>
-						<div class="col-md-4 col-sm-6">
-							<div class="single-how-works">
-								<div class="container_local">
-									<h2><a href="/local/{{local.id}}" style="font-weight: bold;">{{local.nome}}</a></h2>
-									<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-										<div class="carousel-inner" role="listbox">
-											<div class="carousel-item active">
-												<img class="d-block img-fluid" src="{{local.foto.url}}">
-											</div>
-											<div class="carousel-item">
-												<img class="d-block img-fluid" src="{{local.foto2.url}}">
-											</div>
-											<div class="carousel-item">
-												<img class="d-block img-fluid" src="{{local.foto3.url}}">
-											</div>
-										</div>
-										<a class="carousel-control-prev" href="#carouselExampleControls" role="button"
-											data-slide="prev">
-											<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-											<span class="sr-only">Antes</span>
-										</a>
-										<a class="carousel-control-next" href="#carouselExampleControls" role="button"
-											data-slide="next">
-											<span class="carousel-control-next-icon" aria-hidden="true"></span>
-											<span class="sr-only">Próximo</span>
-										</a>
-									</div>
+	<div class="container py-3">
+        <div class="section-header">
+            <h2>Explore:</h2>
+        </div>
+    </div>
+    
+    <ul style=" display: flex;
+    flex-direction: column;
+    align-items: center;">
+    
+    {% for local in locais %}
 
-									<p>
-										Lorem ipsum dolor sit amet, consecte adipisicing elit, sed do eiusmod tempor
-										incididunt ut laboremagna aliqua.
-									</p>
+        <li>
+            <!-- Card Start -->
+            <div class="card mb-3" style="max-width: 1000px;">
+                <div class="row g-0">
+                        <div class="col-md-7 px-3" >
 
-									<p>
-										<b>Localização:</b>
-										{{local.localizacaoexata}}.
-									</p>
+                            <div class="card-block px-6">
+                                <h2 class="card-title">{{local.nome}}</h2>
+                               
+                                <p class="card-text">
+                                    {{local.descricao}}
+                                </p>
+                                <p class="card-text"><small class="text-muted"><b>Localização: {{local.localizacaoexata}}.</b></small> </p>
 
-								</div>
-							</div>
-						</div>
-					</li>
-					{% endfor %}
-				</ul>
+                            </div>
+                        </div>
+                        <!-- Carousel start -->
+                        <div class="col-md-5">
 
-			</div>
-			<div class="text-center">
-				{% if locais.has_previous %}
-				<a href="?page={{ locais.previous_page_number }}"><i style="color: #3f9945"
-						class="bi bi-arrow-left"></i></a>
-				{% endif %}
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="d-block img-fluid"  src="{{local.foto.url}}" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid"  src="{{local.foto2.url}}" alt="">
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="d-block img-fluid" src="{{local.foto3.url}}" alt="">
+                                </div>
+                                <a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+                                data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Antes</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carouselExampleControls" role="button"
+                                data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Próximo</span>
+                            </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-				{% if locais.paginator.num_pages %}
-				<span style="color: #578a9b" class="current">
-					{{ locais.number }} de {{ locais.paginator.num_pages }}
-				</span>
-				{% endif %}
+            </div>
 
-				{% if locais.has_next %}
-				<a href="?page={{ locais.next_page_number }}"><i style="color: #3f9945"
-						class="bi bi-arrow-right"></i></a>
-				{% endif %}
-			</div>
-		</div>
-	</div>
-	<!--/.container-->
+
+        </li>
+    {% endfor %}
+      
+    </ul>
+
+    <div class="text-center">
+        {% if locais.has_previous %}
+        <a href="?page={{ locais.previous_page_number }}"><i style="color: #3f9945"
+                class="bi bi-arrow-left"></i></a>
+        {% endif %}
+
+        {% if locais.paginator.num_pages %}
+        <span style="color: #578a9b" class="current">
+            {{ locais.number }} de {{ locais.paginator.num_pages }}
+        </span>
+        {% endif %}
+
+        {% if locais.has_next %}
+        <a href="?page={{ locais.next_page_number }}"><i style="color: #3f9945"
+                class="bi bi-arrow-right"></i></a>
+        {% endif %}
+    </div>
 
 </section>
 <!--/.works-->

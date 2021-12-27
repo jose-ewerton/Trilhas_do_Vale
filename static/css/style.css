@@ -1331,7 +1331,7 @@ div.historia-col:hover,  div.curiosidades-col:hover{
 }
 
 /*Modal cadastro/login*/
-.card {
+#card-login {
   width: 400px;
   border: none
 }
@@ -1407,7 +1407,7 @@ div.historia-col:hover,  div.curiosidades-col:hover{
   background-color: #3f9945;
  }
  
- .card { background-color: rgba(245, 245, 245, 0); }
+ #card-login { background-color: rgba(245, 245, 245, 0); }
 
 
 #modal-cadastro{
