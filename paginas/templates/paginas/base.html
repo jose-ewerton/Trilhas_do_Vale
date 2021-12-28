@@ -74,8 +74,8 @@
               <li class="dropdown"><a href="#historia"><span>História</span> <i class="bi bi-chevron-down"></i></a>
                 <!-- dropdown: responsavel pelos subtopicos/ bi bi-chevron-down: adiciona a seta que mostra os subtopicos -->
                 <ul>
-                  <li><a href="#"> História de Ceará-Mirim</a></li>
-                  <li><a href="#"> História não contada</a></li>
+                  <li><a href="" data-bs-toggle="modal" data-bs-target="#historiadecm"> História de Ceará-Mirim</a></li>
+                  <li><a href=""  data-bs-toggle="modal" data-bs-target="#historianaocontada"> História não contada</a></li>
                 </ul>
               </li>
               <li class="dropdown"><a href="#eventos"><span>Eventos</span> <i class="bi bi-chevron-down"></i></a>
@@ -185,6 +185,76 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
       class="bi bi-arrow-up-short"></i></a>
+
+
+
+
+  <!-- Modal para sessão historia -->
+  <div class="modal animate__animated animate__jackInTheBox" id="historiadecm" data-bs-keyboard="false" tabindex="-1"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered  modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">História de Ceará-Mirim</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+          ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+          porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+          felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+          molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+          imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+          elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+          tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+
+          Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+          tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+          imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+          dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+          vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+          quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+          curae cursus convallis eleifend egestas habitant. </p>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal animate__animated animate__jackInTheBox" id="historianaocontada" tabindex="-1" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">História não contada</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+      </div>
+      <div class="modal-body">
+        <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+          ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+          porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+          felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+          molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+          imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+          elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+          tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+
+          Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+          tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+          imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+          dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+          vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+          quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+          curae cursus convallis eleifend egestas habitant. </p>
+      </div>
+      <div class="modal-footer">
+
+      </div>
+    </div>
+  </div>
+
+
     {% endblock %}
 
 
