@@ -8,6 +8,25 @@
 /*--------------------------------------------------------------
 # Gerais - Estudar a partir daqui
 --------------------------------------------------------------*/
+
+::-webkit-scrollbar-track
+{
+	border: 5px solid white;
+
+}
+
+::-webkit-scrollbar
+{
+	width: 10px;
+	
+}
+
+::-webkit-scrollbar-thumb
+{
+	background-color: #3f9945;
+	
+}
+
 body {
   background: #efeded; /* comentar cada atributo que tiver dÃºvidas e sua alteraÃ§Ã£o no cÃ³digo, sempre procurando melhorias se for o caso */ /* nÃ£o conzsegimos vizualizar a alteraÃ§Ã£o na pagina*/
   color: #efeded;
@@ -655,9 +674,9 @@ section {
   float: left;
 }
 
-#eventos .icon i {
+#eventos .icon svg {
   color: #578a9b;
-  font-size: 36px;
+  height: 36px;
   line-height: 0;
   transition: 0.5s;
 }
@@ -667,14 +686,7 @@ section {
   font-weight: 700;
   margin-bottom: 15px;
   font-size: 18px;
-}
-
-#eventos .title a {
   color: #111;
-}
-
-#eventos .box:hover .title a {
-  color: #3f9945;
 }
 
 #eventos .description {
@@ -685,49 +697,6 @@ section {
   margin-bottom: 0;
 }
 
-#eventos {
-  background: #fff;
-  background-size: cover;
-  padding: 150px 0 80px 0;
-}
-
-#eventos .box {
-  margin-bottom: 30px;
-}
-
-#eventos .icon {
-  float: left;
-}
-
-#eventos .icon i {
-  color: #578a9b;
-  font-size: 36px;
-  line-height: 0;
-  transition: 0.5s;
-}
-
-#eventos .title {
-  margin-left: 60px;
-  font-weight: 700;
-  margin-bottom: 15px;
-  font-size: 18px;
-}
-
-#eventos .title a {
-  color: #111;
-}
-
-#eventos .box:hover .title a {
-  color: #3f9945;
-}
-
-#eventos .description {
-  color: #111;
-  font-size: 14px;
-  margin-left: 60px;
-  line-height: 24px;
-  margin-bottom: 0;
-}
 
 /*Turismo*/
 
@@ -749,9 +718,9 @@ section {
   float: left;
 }
 
-#turismo .icon i {
+#turismo .icon svg {
   color: #578a9b;
-  font-size: 36px;
+  height: 36px;
   line-height: 0;
   transition: 0.5s;
 }
