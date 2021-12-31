@@ -66,43 +66,49 @@
           <nav id="navbar" class="navbar">
             <!-- navbar: barra de navegação-->
             <ul>
-              {% if user.is_authenticated %}
-              <li class="dropdown"><a href="{% url 'locais' %}"><span>Locais</span></a>
-              {% else %}
-              <li class="dropdown"><a href="#" data-bs-toggle="modal" data-bs-target="#modalForm" ><span>Entrar</span></a>
-              {% endif %}
-              <li class="dropdown"><a href="#historia"><span>História</span> <i class="bi bi-chevron-down"></i></a>
+
+              <li class="dropdown"><a href="../#historia"><span>História</span> <i class="bi bi-chevron-down"></i></a>
                 <!-- dropdown: responsavel pelos subtopicos/ bi bi-chevron-down: adiciona a seta que mostra os subtopicos -->
                 <ul>
-                  <li><a href="" data-bs-toggle="modal" data-bs-target="#historiadecm"> História de Ceará-Mirim</a></li>
-                  <li><a href=""  data-bs-toggle="modal" data-bs-target="#historianaocontada"> História não contada</a></li>
+                  <li><a href="../#historia" data-bs-toggle="modal" data-bs-target="#historiadecm"> História de
+                      Ceará-Mirim</a></li>
+                  <li><a href="../#historia" data-bs-toggle="modal" data-bs-target="#historianaocontada"> História não
+                      contada</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="#eventos"><span>Eventos</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a href="../#eventos"><span>Eventos</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="#"> Eventos Culturais</a></li>
-                  <li><a href="#"> Eventos Religiosos</a></li>
+                  <li><a href="../#eventos" data-bs-toggle="modal" data-bs-target="#eventos_culturais"> Eventos Culturais</a></li>
+                  <li><a href="../#eventos" data-bs-toggle="modal" data-bs-target="#eventos_religiosos"> Eventos Religiosos</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="#turismo"><span>Turismo</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a href="../#turismo"><span>Turismo</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="#"> Turismo Histórico </a></li>
-                  <li><a href="#"> Turismo Ecológico </a></li>
-                  <li><a href="#"> Ruínas do Vale </a></li>
-                  <li><a href="#"> Sol e Água Fresca </a></li>
+                  <li><a href="../#turismo" data-bs-toggle="modal" data-bs-target="#turismo_historico"> Turismo Histórico </a></li>
+                  <li><a href="../#turismo" data-bs-toggle="modal" data-bs-target="#turismo_ecologico"> Turismo Ecológico </a></li>
+                  <li><a href="../#turismo" data-bs-toggle="modal" data-bs-target="#turismo_ruinas"> Ruínas do Vale </a></li>
+                  <li><a href="../#turismo" data-bs-toggle="modal" data-bs-target="#turismo_soleagua"> Sol e Água Fresca </a></li>
                 </ul>
               </li>
               </li>
-              <li class="dropdown"><a href="#curiosidades"><span>Curiosidades</span> <i
+              <li class="dropdown"><a href="../#curiosidades"><span>Curiosidades</span> <i
                     class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="#"> Coisas da terra </a></li>
-                  <li><a href="#"> Boca a Boca</a></li>
-                  <li><a href="#"> Memórias Vivas </a></li>
+                  <li><a href="../#curiosidades" data-bs-toggle="modal" data-bs-target="#coisas_da_terra"> Coisas da terra </a></li>
+                  <li><a href="../#curiosidades" data-bs-toggle="modal" data-bs-target="#boca_a_boca"> Boca à Boca</a></li>
+                  <li><a href="../#curiosidades" data-bs-toggle="modal" data-bs-target="#memorias_vivas"> Memórias Vivas </a></li>
                 </ul>
               </li>
               <li><a class="nav-link scrollto" href="#culinaria">Culinária</a></li>
               {% if user.is_authenticated %}
+              <li class="dropdown"><a href="{% url 'locais' %}"><span>Locais</span></a>
+                {% else %}
+              <li class="dropdown"><button
+                  style="font-weight: bold; font-size: 15px; margin-left: 15px; border-radius: 25px;"
+                  class="btn btn-success" type="button" href="#" data-bs-toggle="modal"
+                  data-bs-target="#modalForm"><span>Entrar</span></button>
+                {% endif %}
+                {% if user.is_authenticated %}
               <li><a class="nav-link scrollto" href="/logout">Sair</a></li>
               {% endif %}
             </ul> <!-- nav-link scrollto: indica qual link está ativo naquela janela-->
@@ -253,6 +259,312 @@
       </div>
     </div>
   </div>
+  </div>
+
+   <!-- Modal para sessão eventos -->
+   <div class="modal animate__animated animate__lightSpeedInRight" id="eventos_culturais" data-bs-keyboard="false" tabindex="-1"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered  modal-lg">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Eventos Culturais</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+       </div>
+       <div class="modal-body">
+         <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+           ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+           porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+           felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+           molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+           imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+           elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+           tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+
+           Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+           tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+           imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+           dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+           vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+           quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+           curae cursus convallis eleifend egestas habitant. </p>
+       </div>
+       <div class="modal-footer">
+
+       </div>
+     </div>
+   </div>
+ </div>
+
+ <div class="modal animate__animated animate__lightSpeedInRight" id="eventos_religiosos" tabindex="-1" aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered modal-lg">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Eventos Religiosos</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+       </div>
+       <div class="modal-body">
+         <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+           ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+           porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+           felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+           molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+           imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+           elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+           tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+
+           Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+           tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+           imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+           dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+           vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+           quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+           curae cursus convallis eleifend egestas habitant. </p>
+       </div>
+       <div class="modal-footer">
+
+       </div>
+     </div>
+   </div>
+ </div>
+
+
+     <!-- Modal para sessão turismo -->
+     <div class="modal animate__animated animate__zoomInRight" id="turismo_historico" data-bs-keyboard="false" tabindex="-1"
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered  modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">Turismo Histórico</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+         </div>
+         <div class="modal-body">
+           <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+             ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+             porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+             felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+             molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+             imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+             elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+             tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+ 
+             Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+             tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+             imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+             dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+             vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+             quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+             curae cursus convallis eleifend egestas habitant. </p>
+         </div>
+         <div class="modal-footer">
+ 
+         </div>
+       </div>
+     </div>
+   </div>
+ 
+   <div class="modal animate__animated animate__zoomInRight" id="turismo_ecologico" data-bs-keyboard="false" tabindex="-1"
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered  modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">Turismo Ecológico</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+         </div>
+         <div class="modal-body">
+           <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+             ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+             porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+             felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+             molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+             imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+             elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+             tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+ 
+             Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+             tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+             imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+             dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+             vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+             quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+             curae cursus convallis eleifend egestas habitant. </p>
+         </div>
+         <div class="modal-footer">
+ 
+         </div>
+       </div>
+     </div>
+   </div>
+   
+ 
+   <div class="modal animate__animated animate__zoomInRight" id="turismo_ruinas" data-bs-keyboard="false" tabindex="-1"
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered  modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">Ruínas do Vale</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+         </div>
+         <div class="modal-body">
+           <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+             ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+             porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+             felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+             molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+             imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+             elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+             tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+ 
+             Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+             tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+             imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+             dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+             vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+             quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+             curae cursus convallis eleifend egestas habitant. </p>
+         </div>
+         <div class="modal-footer">
+ 
+         </div>
+       </div>
+     </div>
+   </div>
+ 
+ 
+   <div class="modal animate__animated animate__zoomInRight" id="turismo_soleagua" data-bs-keyboard="false" tabindex="-1"
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered  modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">Sol e Água Fresca</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+         </div>
+         <div class="modal-body">
+           <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+             ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+             porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+             felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+             molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+             imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+             elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+             tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+ 
+             Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+             tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+             imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+             dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+             vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+             quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+             curae cursus convallis eleifend egestas habitant. </p>
+         </div>
+         <div class="modal-footer">
+ 
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+  <!-- Modal para sessão curiosidades -->
+   <div class="modal animate__animated animate__swing" id="coisas_da_terra" data-bs-keyboard="false" tabindex="-1"
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered  modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">Coisas da terra</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+         </div>
+         <div class="modal-body">
+           <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+             ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+             porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+             felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+             molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+             imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+             elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+             tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+ 
+             Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+             tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+             imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+             dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+             vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+             quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+             curae cursus convallis eleifend egestas habitant. </p>
+         </div>
+         <div class="modal-footer">
+ 
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+   <div class="modal animate__animated animate__swing" id="memorias_vivas" data-bs-keyboard="false" tabindex="-1"
+     aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered  modal-lg">
+       <div class="modal-content">
+         <div class="modal-header">
+           <h5 class="modal-title">Memórias Vivas</h5>
+           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+         </div>
+         <div class="modal-body">
+           <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+             ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+             porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+             felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+             molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+             imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+             elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+             tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+ 
+             Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+             tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+             imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+             dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+             vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+             quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+             curae cursus convallis eleifend egestas habitant. </p>
+         </div>
+         <div class="modal-footer">
+ 
+         </div>
+       </div>
+     </div>
+   </div>
+
+
+   <div class="modal animate__animated animate__swing" id="boca_a_boca" data-bs-keyboard="false" tabindex="-1"
+   aria-hidden="true">
+   <div class="modal-dialog modal-dialog-centered  modal-lg">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title">Boca à Boca</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+       </div>
+       <div class="modal-body">
+         <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
+           ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
+           porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
+           felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
+           molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
+           imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
+           elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
+           tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+
+           Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
+           tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
+           imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
+           dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
+           vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
+           quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
+           curae cursus convallis eleifend egestas habitant. </p>
+       </div>
+       <div class="modal-footer">
+
+       </div>
+     </div>
+   </div>
+ </div>
 
 
     {% endblock %}
