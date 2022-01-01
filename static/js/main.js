@@ -319,3 +319,21 @@
   });
 
 })()
+
+
+ var swiper = new Swiper('.swiper-container', {
+  
+        slidesPerView: 'auto',
+        paginationClickable: true,
+        spaceBetween: 0,
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        // Navigation arrows
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+    });

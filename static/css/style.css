@@ -1073,20 +1073,11 @@ section {
   margin: 0 0 15px 0;
 }
 
-#feedbacks .feedback-item .aspas-left {
-  margin-top: -15px;
-  padding-right: 10px;
-  display: inline-block;
-  width: 37px;
+#feedbacks .swiper-button-next, #feedbacks .swiper-button-prev{
+  color: #3f9945;
 }
 
-#feedbacks .feedback-item .aspas-right {
-  margin-bottom: -15px;
-  padding-left: 10px;
-  display: inline-block;
-  max-width: 100%;
-  width: 37px;
-}
+
 
 #feedbacks .feedback-item p {
   font-style: italic;
@@ -1109,11 +1100,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #18d26e;
+  border: 1px solid #3f9945;
 }
 
 #feedbacks .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #18d26e;
+  background-color: #3f9945;
 }
 
 
