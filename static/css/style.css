@@ -840,6 +840,7 @@ section {
 
 #culinaria #culinaria-flters li {
   cursor: pointer;
+  font-weight: 700;
   margin: 15px 15px 15px 0;
   display: inline-block;
   padding: 10px 20px;
@@ -853,7 +854,7 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
-#culinaria #culinaria-flters li:hover, #culinaria #culinaria-flters li.filter-todos {
+#culinaria #culinaria-flters li:hover, #culinaria #culinaria-flters li.filter-active {
   background: #578a9b; /* cor ao passar a seta nos subtopicos*/
   color: #efeded; /* cor da letra no backgraund*/
 }
