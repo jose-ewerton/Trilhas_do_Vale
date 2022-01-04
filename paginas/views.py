@@ -23,7 +23,7 @@ def Locais(request):
 
     if categorias_id is not None:    
         locais = Local.getLocaisByID(categorias_id)
-        paginator = Paginator(locais, 6)
+        paginator = Paginator(locais, 10)
 
         page = request.GET.get('page')
         locais = paginator.get_page(page)

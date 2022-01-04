@@ -38,7 +38,7 @@ class Categoria(models.Model):
 
 
 class Local(models.Model):
-    nome = models.CharField(max_length=40)
+    nome = models.CharField(max_length=55)
     foto = models.ImageField()
     foto2 = models.ImageField()
     foto3 = models.ImageField()
