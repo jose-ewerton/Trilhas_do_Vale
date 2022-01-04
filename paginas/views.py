@@ -5,9 +5,10 @@ from django.shortcuts import redirect, render, HttpResponse
 from django.urls import reverse
 from django.views.generic import TemplateView
 from django.core.paginator import Paginator
+from django.contrib.auth.models import User
 
-from base.models import Categoria, Usuario, Local
-from paginas.forms import UsuarioForm
+from base.models import Categoria, Local
+
 
 class PaginaInicial(TemplateView):
     template_name = 'paginas/index.html'
@@ -49,30 +50,34 @@ def Locais(request):
 
 
 def salva_cadastro(request):
-    nome= request.POST.get('nome')
-    email= request.POST.get('email')
-    senha= request.POST.get('senha')
-    count = Usuario.objects.filter(email=email).count()
-    if count > 0:
-        messages.error(request, 'Dados já existente, tente outro email ou usuário!')
-        return redirect (reverse('index') + '#modalForm')
+    if request.method=="GET":
+        return render (request, 'paginas/index.html')
     else:
-        form = UsuarioForm(request.POST)
-        if form.is_valid():
-            form.save()
+        nome= request.POST.get('nome')
+        email= request.POST.get('email')
+        senha= request.POST.get('senha')
+
+        user = User.objects.filter(email=email).count()
+        if user > 0:
+            messages.error(request, 'Dados já existente, tente outro email!')
+            return redirect (reverse('index') + '#modalForm')
+        else:
+            user = User.objects.create_user(username=nome, email=email, password=senha)
+            user.save()
             messages.success(request, 'Cadastrado com sucesso!')
-        return redirect (reverse('index') + '#modalForm')
+            return redirect (reverse('index') + '#modalForm')
 
 
 
 
 def Login(request):
-    if request.method=="POST":
-      
-        loginusuario=request.POST['loginusuario']
-        loginsenha=request.POST['loginsenha']
+    if request.method=="GET":
+           return render (request, 'paginas/index.html')
+    else:
+        loginusuario = request.POST['loginusuario']
+        loginsenha = request.POST['loginsenha']
 
-        user=authenticate(username= loginusuario, password= loginsenha)
+        user = authenticate(username=loginusuario, password=loginsenha)
         if user is not None:
             login(request, user)
             messages.success(request, "Logado com sucesso!")
@@ -80,8 +85,6 @@ def Login(request):
         else:
             messages.error(request, "Usuário/Senha inválido,tente novamente!")
             return redirect("index")
-
-    return HttpResponse("login")
 
 def Logout(request):
     logout(request)
