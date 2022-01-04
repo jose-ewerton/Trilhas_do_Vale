@@ -697,6 +697,14 @@ section {
   margin-bottom: 0;
 }
 
+#eventos .title a {
+  color: #111;
+}
+
+#eventos .box:hover .title a {
+  color: #3f9945;
+}
+
 
 /*Turismo*/
 
@@ -1388,4 +1396,29 @@ background: linear-gradient(146deg, rgba(9,26,32,1) 0%, rgba(87,138,155,1) 53%, 
 
 .modal-footer{
   background-color: #578a9b
+}
+
+/*modal eventos*/
+
+#eventos_culturais h6, #eventos_religiosos h6{
+  font-size: 17px;
+  text-align: center;
+  font-weight: 600;
+  font-style: oblique;
+}
+#eventos_culturais .underline--magical, #eventos_religiosos .underline--magical {
+  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+  background-repeat: no-repeat;
+  background-size: 100% 0.2em;
+  background-position: 0 88%;
+  transition: background-size 0.25s ease-in;
+}
+#eventos_culturais .underline--magical:hover, #eventos_religiosos .underline--magical:hover {
+    background-size: 100% 88%;
+  }
+
+#eventos_culturais hr.divisor{ 
+  border: 0; 
+  height: 3px; 
+  background-image: -webkit-linear-gradient(left, #a8d1a8, #3f9945, #a8d1a8);
 }
