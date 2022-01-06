@@ -293,7 +293,7 @@ html,body{height: 100%;}
 #box-text {
     height:160px;
     overflow-y: scroll;
-      
+    text-align: justify;
   }
   
 
