@@ -965,11 +965,11 @@ section {
   padding-bottom: 0;
 }
 
-#culinaria .culinaria-item .culinaria-info h4 a {
+#culinaria .culinaria-item .culinaria-info h4 {
   color: #000; /* nome da comida*/
 }
 
-#culinaria .culinaria-item .culinaria-info h4 a:hover {
+#culinaria .culinaria-item .culinaria-info h4:hover {
   color: #3f9945;
 }
 
