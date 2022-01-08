@@ -99,17 +99,15 @@
               {% if user.is_authenticated %}
               <li class="dropdown"><a href="{% url 'locais' %}"><span>Locais</span></a></li>
               {% else %}
-              <li class="dropdown"><button
-                  style="border-color: white;border-style:solid;
+              <li class="dropdown"><button style="border-color: white;border-style:solid;
                   border-width:2px; font-weight: bold; font-size: 12px; margin-left: 15px; border-radius: 25px;"
                   class="btn btn-success" type="button" href="#" data-bs-toggle="modal"
                   data-bs-target="#modalForm"><span>ENTRAR</span></button></li>
               {% endif %}
               {% if user.is_authenticated %}
-              <li class="dropdown"><a class="btn" role="button"
-                  style="background-color:#578a9b; margin-left: 15px; font-size: 10px;border-color: white;border-style:solid;
-                  border-width:2px; border-radius: 20px;"
-                  href="/logout"><span style="margin-left:-15px; margin-right: 15px;">SAIR</span></a></li>
+              <li class="dropdown"><a class="btn" role="button" style="background-color:#578a9b; margin-left: 15px; font-size: 10px;border-color: white;border-style:solid;
+                  border-width:2px; border-radius: 20px;" href="/logout"><span
+                    style="margin-left:-15px; margin-right: 15px;">SAIR</span></a></li>
               {% endif %}
             </ul> <!-- nav-link scrollto: indica qual link está ativo naquela janela-->
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -1123,8 +1121,8 @@
             belo painel produzido pelo artista visual Francisco Trajano, retratando imagens da paisagem cearamirinense,
             tais como o Engenho Verde Nasce, o Museu Nilo Pereira, e o Túmulo de Emma.
             Vale ressaltar que onde hoje se encontra a praça da Intendência já foi a residência do senhor ngelo Varela
-            proprietário do Engenho Cumbe, padrinho da professora, jornalista e poetisa Adele de Oliveira. Ao lado da
-            praça existe também o local onde Adele fundou o Externato ngelo Varela para meninos e meninas, onde ela era
+            proprietário do Engenho Cumbe, padrinho da professora, jornalista e poetisa Adelle de Oliveira. Ao lado da
+            praça existe também o local onde Adelle fundou o Externato ngelo Varela para meninos e meninas, onde ela era
             professora, diretora, inspetora, porteira e zeladora, lecionando para figuras como Nilo Pereira, Franklin
             Marinho e Ubaldo Bezerra de Melo.
           </p>
@@ -1349,6 +1347,34 @@
                 text-align: center;
                 font-style: italic;">Acervo Gibson Machado</figcaption>
           </figure>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Parque Municipal Boca da Mata</span></h6>
+          <p>
+            O lançamento da pedra fundamental do Parque Boca da Mata aconteceu dia 5 de junho de 2014. O Parque
+            Municipal Boca da Mata está localizado às margens da BR 406, em uma área de 68,9 hectares de mata atlântica
+            cedida pela Usina São Francisco através de um termo de Ajustamento de Conduta (TAC), onde a empresa entregou
+            o terreno como uma compensação ambiental devido à degradação à natureza provocada pela plantação de cana.
+            Porém, sua criação somente foi oficializada em 14 de fevereiro de 2019.
+            O parque Municipal Boca da Mata, é o segundo parque municipal do Rio Grande do Norte e tem como objetivo a
+            preservação dos ecossistemas naturais relevantes ao município, a realização de pesquisas científicas, a
+            recuperação de áreas degradadas, o desenvolvimento de atividades de educação ambiental, de recreação em
+            contato com a natureza, culturais e esportiva. Carcarás, guaxinins, pau brasil e palmeiras, são espécies da
+            fauna e flora da Mata Atlântica presentes no parque.
+            Em 2020, o parque sofreu muitos prejuízos com queimadas oriundas da queima do período de colheita de cana de
+            açúcar. Logo, em maio de 2021 precisou passar por um processo de reflorestamento onde recebeu 46 novas
+            espécies de mudas.
+            Atualmente o parque não se encontra à disposição da população.
+          </p>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/turismo/boca_da_mata.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Fonte: http://parquebocadamata.blogspot.com/2012/01/boca-da-mata.html</figcaption>
+          </figure>
+
         </div>
         <div class="modal-footer">
 
@@ -1826,13 +1852,55 @@
             <figcaption style="
                 font-size: 12px;
                 text-align: center;
-                font-style: italic;">Fonte: https://marazulreceptivo.com.br/blog/lagoa-de-jacuma//figcaption>
+                font-style: italic;">Fonte: https://marazulreceptivo.com.br/blog/lagoa-de-jacuma/</figcaption>
           </figure>
           <hr class="divisor">
-          <h6><span class="underline--magical">Cachoeirinha de Jacumã</span></h6>
+          <h6><span class="underline--magical">Cachoeirinha de Jacumã/Pitangui</span></h6>
           <p>
-
+            A nomenclatura da Cachoeirinha varia conforme as pesquisas feitas, alguns guias turísticos a chamam de
+            Cachoeirinha de Pitangui, pela sua proximidade também com a lagoa e praia de Pitangui, que pertence ao
+            município de Extremoz/RN, é quase que localizada na divisa entre os municípios, mas, pertence a cidade de
+            Ceará-Mirim/RN. Ademais, essa localização um tanto quanto estratégica atrai turistas de ambas regiões,
+            incluindo também aqueles que moram na capital do estado, Natal/RN.
+            A Cachoeirinha de Pitangui está localizada no meio das Dunas e também do bioma Mata Atlântica. Além do mais,
+            toda essa diversidade pode ser aproveitada por meio de uma trilha de aproximadamente 3 km que leva
+            diretamente para uma parte da Lagoa de Jacumã. Tanto a Cachoeirinha, quanto a região aos arredores da Lagoa,
+            disponibilizam barracas que vendem comidas deliciosas e drinks de frutas naturais. Se você procura relaxar
+            em águas calmas e observar belas paisagens, esse é o lugar certo!
           </p>
+          <div class="image">
+            <img src="{% static 'img/turismo/cachoeirinha_jacuma.png'%}">
+          </div>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Praia de Muriú</span></h6>
+          <p>
+            Localizada em Ceará-Mirim e somente a 30 quilômetros de Natal, a Praia de Muriú, é formada por uma beleza
+            natural com dunas, coqueirais e um belo mar verde que banha a pequena vila de pescadores, transformando o
+            lugar num cenário paradisíaco no litoral norte do Rio Grande do Norte.
+            A Praia oferece um artesanato rico em diversidade e uma culinária que encanta. Além das trilhas ecológicas e
+            esquibunda, também oferece ao visitante passeio de barco, para levá-lo de maneira segura e confortável aos
+            Parrachos (piscinas naturais de água cristalina), localizados a quilômetros da costa e perfeitos para
+            mergulhos.
+            Ademais, é uma das preferidas para veraneio pelos potiguares e turistas vindos dos Estados vizinhos. Pode-se
+            dizer que o local é dividido em dois lados. O primeiro, a parte Norte, conhecida como “Prainha” é desértico
+            e formado por uma ampla faixa de areia e um mar bastante tranquilo, ideal para aqueles visitantes que buscam
+            calmaria. Já a parte Sul, possui uma estrutura de bares e restaurantes com barquinhos e jangadas à beira
+            mar. É a parte de mais agitação da costa.
+            Por fim, o “Buraco da Velha” é o ponto mais conhecido pelos visitantes que praticam o mergulho. Na alta
+            estação o turista encontra com toda facilidade para alugar barcos, jet-ski e banana-boat para um passeio
+            tranquilo e divertido pelas águas. <br />
+            <b>Fonte:</b><a
+              href="https://marazulreceptivo.com.br/blog/praia-de-muriu/">https://marazulreceptivo.com.br/blog/praia-de-muriu/</a>
+          </p>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/turismo/muriu.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Fonte: https://www.feriasbrasil.com.br/rn/cearamirim/muriu.cfm</figcaption>
+          </figure>
         </div>
         <div class="modal-footer">
 
@@ -1963,22 +2031,418 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
-            ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
-            porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
-            felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
-            molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
-            imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
-            elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
-            tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+          <h6><span class="underline--magical">Gibson Machado</span></h6>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/curiosidades/gibson.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Fonte: http://gibsonmachadocm.blogspot.com</figcaption>
+          </figure>
+          <p>
+            Gibson Machado Alves nasceu em Ceará-Mirim em 07 de janeiro de 1960. Aos 19 anos concluiu o curso técnico em
+            mineração pela Escola Técnica Federal do Rio Grande do Norte, o que lhe possibilitou trabalhar com pesquisas
+            a
+            respeito de pedras preciosas (diamantes). Essa atividade o levou a viajar pelo Brasil, entrando em contato
+            com
+            diversas e diversificadas culturas. Nesse empreendimento, o que mais lhe chamou a atenção, foi,
+            particularmente, a
+            arte rupestre, presente em grutas da Chapada Diamantina, na Bahia e Serra da Capivara, no Piauí. A partir
+            dessa
+            experiência começou a se interessar pela pintura, muito embora só tenha se iniciado nesta arte a partir do
+            ano de
+            2000. Nesse período, realizou um curso específico na área, tendo como mestre o artista plástico argentino
+            Angel
+            Valdez.
+            Gibson é professor de Educação Artística, graduado pela UFRN. É pesquisador da história e cultura de
+            Ceará-Mirim e
+            produtor de eventos culturais.
+            Sua atividade criativa é infinita, como bem o demonstram diversos trabalhos produzidos por ele. Entre eles
+            destacam-se:
+          <ul>
+            <li> O projeto cultural “ARTE ITINERANTE”;</li>
+            <li> O Projeto Cultural ARTE NA PRAÇA”;</li>
+            <li> Realizou a I FEIRAT no ano de 2000;</li>
+            <li> Criou e produziu o Projeto Cultural “SÁBADO À NOITE”;</li>
+            <li>Participou do projeto de criação do MUSEU DE ARTE SACRA da Matriz de Nossa Senhora da Conceição, nesta
+              cidade;</li>
 
-            Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
-            tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
-            imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
-            dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
-            vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
-            quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
-            curae cursus convallis eleifend egestas habitant. </p>
+            <li> Pesquisa a história de Ceará-Mirim, através de sua iconografia, possuindo um acervo fotográfico desde o
+              final
+              do século XIX;</li>
+            <li> É Diretor de Cultura do Centro Esportivo e Cultural desde 1996;</li>
+            <li> Em 2002 colaborou com o acervo fotográfico no livro: Álbum de versos antigos de Adelle de Oliveira –
+              organizado
+              por Ciro José Tavares;</li>
+            <li> Em 2004 foi monitor do PROJETO MOVA BRASIL – alfabetização de Jovens e Adultos, pesquisando a cultura
+              popular.
+              Seu projeto foi classificado para ser apresentado no FÓRUM SOCIAL NORDESTINO em Recife no ano de 2004;
+            </li>
+            <li> No ano de 2005 participou como colaborador e organizador do livro CEARÁ-MIRIM TRADIÇÃO, ENGENHO E ARTE
+              publicado pela UFRN, SEBRAE e Prefeitura de Ceará-Mirim;</li>
+            <li> Criou em 2005 o PROJETO CANTILENAS – encontro musical mensal com artistas de Ceará-Mirim;</li>
+            <li> Em 2006 participou como colaborador no livro BELEZARIAS publicado pelo Canal Futura;</li>
+            Foi coordenador de cultura do município de Ceará-Mirim de 2005 a 2008 atuando junto à Fundação Nilo Pereira;
+            </li>
+            <li> Em 2007 participou e colaborou efetivamente na pesquisa e execução do projeto A BELEZA DO MEU LUGAR
+              realizado pelo
+              Canal Futura e Fundação Roberto Marinho em que homenageou o Mestre do Congo de Guerra Tião Oleiro;</li>
+            <li> Em 2007 através do Centro Esportivo e Cultural criou PROJETO VIDA NOVA, voltado para a terceira idade;
+            </li>
+            <li> É PROFESSOR DA DISCIPLINA DE ARTES na Escola Municipal Prof. Cícero Varela no município de João
+              Câmara/RN;</li>
+            <li> É PROFESSOR DE ARTES nas Escolas Estaduais Prof. Otto de Brito Guerra, Professor Edgar Barbosa e
+              Interventor
+              Ubaldo Bezerra de Melo em Ceará-Mirim/RN;</li>
+            <li> Em 2008 intensificou as pesquisas com a cultura popular, gravando em estúdio, as músicas folclóricas
+              dos grupos
+              CONGO DE GUERRA, PASTORIL E BOI DE REIS;</li>
+            <li> Colaborou, através da Fundação Nilo Pereira e Canal Futura, com o documentário sobre o MESTRE TIÃO
+              OLEIRO DO CONGO
+              DE GUERRA, o qual concorreu ao 19º prêmio internacional de curtas em São Paulo no ano de 2008;</li>
+            <li> Colaborou com o documentário sobre o CONGO DE GUERRA realizado pelo Projeto Vernáculo em junho de 2008.
+              Este
+              documentário concorreu ao 9º prêmio de curtas potiguares 2009;</li>
+            <li> Organizou fragmentos da história de Ceará-Mirim através de fotografias publicadas no livro de sua
+              autoria,
+              CEARÁ-MIRIM MEMÓRIA ICONOGRÁFICA publicado em dezembro de 2008;</li>
+            <li> É colunista da Revista VITRINE divulgando e registrado os fatos históricos e culturais de Ceará-Mirim;
+            </li>
+            <li> Em setembro de 2009 colaborou na inscrição do Grupo Folclórico Cabocolinhos e Mestre Tião Oleiro para
+              seleção do
+              PROJETO PATRIMÔNIO VIVO DO RIO GRANDE DO NORTE. Ambos foram classificados;</li>
+            <li> Organizou a inscrição do Mestre Tião Oleiro no PREMIO CULTURAS POPULARES 2009 realizado pelo Ministério
+              da
+              Cultura, no qual o mestre Tião foi classificado entre mais de 2000 candidatos;</li>
+            <li> Em 2010 exerceu a monitoria do PROJETO DESPERTAR - curso de Empreendedorismo realizado pelo Sebrae e
+              Secretaria de
+              Educação do Estado do RN, para 32 alunos do ensino médio da escola Estadual Otto de Brito Guerra, em
+              Ceará-Mirim/RN;</li>
+            <li> Criou o CONCURSO FOTOGRÁFICO DR. JULIO GOMES DE SENA, pelo Centro Esportivo e Cultural de Ceará-Mirim;
+            </li>
+            <li> É Sócio fundador da ACLA - Academia Cearamirinense de Letras e Artes;</li>
+            <li> Em 2011, representou Ceará-Mirim no 47º FESTIVAL DE FOLCLORE DE OLIMPIA/SP, com a EXPOSIÇÃO
+              FOTOGRÁFICA:
+              CEARÁ-MIRIM E SUAS TRADIÇÕES;</li>
+            <li> Ainda em 2011 participou da CIENTEC apresentando seu projeto O PAPEL RECICLADO E SUA REUTILIZAÇÃO
+              SUSTENTÁVEL,
+              representando a 5ª Dired e a Escola Estadual Prof. Otto de Brito Guerra;</li>
+            <li> Em 2012, seu projeto O PAPEL RECICLADO E SUA REUTILIZAÇÃO SUSTENTÁVEL, foi classificado para o PROGRAMA
+              MISSÃO
+              PEDAGÓGICA NO PARLAMENTO, que se realizou de 19 a 24/08/2012, no Congresso Nacional;</li>
+            <li> Em 2014 foi selecionado novamente para participar como professor convidado do MISSÃO PEDAGÓGICA NO
+              PARLAMENTO
+              2014, com o projeto “Ceará-Mirim conhecer para preservar”;</li>
+            <li> Colaborou na apresentação e inscrição do Mestre Tião Oleiro na Ordem do Mérito Cultural 2014,
+              representando o
+              Mestre na entrega da insígnia de Cavaleiro em Brasília;</li>
+            <li> Pesquisa a história e cultura popular de Ceará-Mirim, através dos folguedos populares, romanceiros,
+              rendeiras e
+              registros de memórias de várias personagens da cidade;</li>
+            <li> Em 2015 realizou o projeto Patrimônio e fotografia pelo PROEMI na Escola Estadual Professor Edgar
+              Barbosa. O
+              projeto foi selecionado para a II FEREC do Estado do Rio Grande do Norte;</li>
+            <li> Colaborou com o projeto Mais Cultura nas Escolas na Escola Estadual Imaculada Conceição criando, junto
+              com mestre
+              Luiz Chico, o grupo parafolclórico Boi de Reis;</li>
+            <li> Em 2016 realizou o projeto Literatura de cordel e xilogravura em parceria com a professora Samaya
+              Fagundes na
+              Escola Estadual Professor Otto de Brito Guerra. O projeto foi selecionado para participar da II FEREC do
+              Estado do
+              Rio Grande do Norte;</li>
+            <li> Em 2018 organizou o livro Ceará-Mirim conhecer para preservar com fotografias e textos produzidos pelos
+              alunos da
+              Escola Estadual Prof. Otto de Brito Guerra;</li>
+            <li> Em 2019 iniciou suas atividades como professor no Ceep Ruy Antunes Pereira e criou o grupo de danças
+              populares
+              apresentando o folguedo popular O Pastoril e performances contemporâneas;</li>
+            <li> É professor colaborador junto a professora Susete Câmara no Projeto de Reutilização e reciclagem de
+              papel no Ceep
+              Ruy Antunes Pereira;</li>
+            <li> É professor orientador em parceria com a professora Francisca Tavares no projeto de iniciação
+              científica sobre
+              patrimônio cultural de Ceará-Mirim;</li>
+            <li>Em 2021 foi professor orientador da equipe do Ceep Ruy Antunes Pereira, classificada em 12º lugar no
+              Prêmio Carcará
+              de audiovisual.</li>
+          </ul>
+          </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Júlio Senna</span></h6>
+          <div class="image">
+            <img src="{% static 'img/curiosidades/julio_senna.jpg'%}">
+          </div>
+          <p>
+            Júlio Gomes de Senna nasceu em Ceará-Mirim a 20 de maio de 1897, era filho de Galdino Gomes de Senna e Maria
+            Gomes de Senna e casado com Maria Salomé Fernandes de Senna. Do casamento teve três filhos, Nilton Fernandes
+            Senna (falecido), José Fernandes Senna e Nedy Fernandes Senna. Faleceu no Rio de Janeiro em 10 de junho de
+            1972.
+            Concluiu o curso secundário no Atheneu Norte Riograndense, em Natal, formou-se em 1933, como Engenheiro
+            Topógrafo e Rural, na Escola Superior de Medicina Veterinária e Agronomia de Belo Horizonte/MG e como
+            Engenheiro Agrônomo pela Escola Agrícola da Bahia, Salvador, em 1935. No Rio de Janeiro, fez o Curso Normal
+            de Técnico em Assuntos Postais-Telegráficos, na Escola de Aperfeiçoamento dos Correios e Telégrafos, em
+            1940. Recebeu títulos do Curso de Agrônomo Regional pelo Ministério de Agricultura e do Curso de Ecologia
+            Agrícola do Professor Girolamo Azzi, da Escola Nacional de Agronomia. Foi também diretor, em 1938, do Campo
+            Experimental “Octavio Lamartine”, em Jundiaí – Macaíba – RN, do Ministério da Agricultura..
+            No DCT (Departamento de Comunicações Terrestres), exerceu ainda, entre outras chefias, a de chefe de tráfego
+            postal da Diretoria Regional do Distrito Federal (GB-Rio); de Inspetor Geral do DCT e de Presidente de
+            várias Comissões de Inquéritos Administrativos.
+            A experiência com pesquisas científicas se deu a partir da defesa da tese de graduação “O algodão e as secas
+            do Nordeste”, em 1935, quando colava grau de Engenheiro-Agrônomo na Escola Agrícola da Bahia.
+            Em 1939 foi convidado pelo então prefeito de Ceará-Mirim, Pedro Heráclito Pinheiro, para fazer o
+            levantamento geográfico do município, ainda não existente, em obediência aos dispositivos do Decreto 311, de
+            2 de março de 1938 e, naquela ocasião completou suas anotações anteriores, já enriquecidas de dados colhidos
+            em 1915, quando, como diarista da “Comissão de Estudos do Vale do Ceará-Mirim”, do Governo Federal e sob a
+            direção do engenheiro Abreu e Lima, foram encarregados de fazer a medição e o alargamento do leito do Rio
+            Água Azul, no trecho Usina São Francisco – Bacia do Pirpiri, além de outros trabalhos.
+
+            As anotações registradas por Dr. Julio Senna durante o período em que prestou serviços no vale do rio
+            Ceará-Mirim, resultaram na publicação dos livros Ceará-Mirim exemplo nacional volumes I e II, que trata de
+            um estudo detalhado sobre o município porque é Geografia, uma História, uma Sociologia, um trabalho de
+            reflexão e pesquisa, em que o autor deixa fluir todo o sentimento pela terra e um apelo às novas gerações
+            para que estudem os problemas da cidade. Vale ressaltar que, o acesso à obra de Júlio Senna está restrita a
+            poucos livros e são muito difíceis de serem encontrados. <br />
+
+            <b>Fonte:</b> Gibson Machado, alterado.
+          </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Madalena Antunes</span></h6>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/curiosidades/madalena.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Fonte: http://www.tribunadonorte.com.br/</figcaption>
+          </figure>
+          <p>
+            Maria Madalena Antunes Pereira nasceu em Ceará-Mirim, no dia 25/05/1880. Filha do tenente-coronel José
+            Antunes de Oliveira, senhor do engenho Oiteiro, e da Sra. Joana Soares Antunes de Oliveira. Tinha por irmãos
+            Juvenal Antunes e Etelvina Antunes de Lemos.
+            Tida como a “Sinhazinha do Oiteiro", dedicou-se a escrita sendo uma mulher à frente de seu tempo, e mesmo
+            sendo sinhá, abominava a escravidão. Escritora e memorialista, escreveu o primeiro livro de memória feminina
+            do nordeste brasileira, intitulado “ Oiteiro: Memórias de uma sinhá-moça”, onde descreve sua infância e
+            adolescência no Engenho Oiteiro e na cidade de Ceará-Mirim.
+            Segundo José Lívio Dantas, pertencia ao seleto grupo de escritores do Ceará-Mirim, que, pelas
+            características que têm em comum, configuram uma escola literária. A “Escola do Ceará-Mirim”,tem seus
+            membros que fazem do particular com o geral, da aldeia com o mundo, do detalhe com a macrovisão. Faleceu no
+            dia 11 de Junho de 1969, aos 79 anos de idade.
+          </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Franklin Marinho</span></h6>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/curiosidades/franklin.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Fonte: http://gibsonmachadocm.blogspot.com</figcaption>
+          </figure>
+          <p>
+            Franklin Marinho Barbosa de Queiroz nasceu em Ceará-Mirim, no dia 4 de abril de 1947, filho de Aurelino
+            Marinho de Queiroz e de Maria Augusta Barbosa de Queiroz. Está casado com Maria das Graças Barbosa de
+            Queiroz, há 49 anos, com quem tem 5 filhos: Franklin Marinho Barbosa de Queiroz Filho, Kívia Kécia Barbosa
+            de Queiroz, Kaline Kécia Barbosa de Queiroz, Aurelino Marinho de Queiroz Neto e Kércia Katilene Barbosa de
+            Queiroz, que lhe deram 15 netos. Tem uma outra filha, Valeska Frankelina F. L de Queiroz.
+            Iniciou os seus estudos no Grupo Escolar Barão do Ceará-Mirim, passando pelo Instituto Imaculada Conceição,
+            Ginásio Monsenhor Celso Cicco e concluiu o segundo grau na Escola de Comércio Edgar Barbosa.
+            Durante o período estudantil, caracterizou-se como um grande líder estudantil, tendo fundado e sido o
+            primeiro presidente da União Estudantil de Ceará-Mirim, se insurgindo, na época, contra a ditadura que se
+            instalara no Brasil.
+            Franklin Marinho não se graduou em faculdades formais, mas é um autodidata de inestimável valor cultural.
+            Escreveu e escreve para diversas revistas culturais e compôs inúmeras coletâneas literárias. É,
+            constantemente, convidado a proferir conferências em várias instituições culturais públicas e privadas do
+            Estado do Rio Grande do Norte.
+            Atualmente dedica-se a fazer palestras nos diversos colégios do município e para grupos de outras
+            instituições em visita à cidade.
+            Franklin Marinho é a “Memória Viva” do Ceará-Mirim, reconhecido como o maior conhecedor da sua história, sob
+            todos os aspectos.
+            Foi Vereador de Ceará-Mirim, durante 22 anos, exercendo as funções de Presidente e Vice-Presidente da Câmara
+            Municipal, relator e presidente de inúmeras Comissões Técnicas. Foi Assessor Parlamentar da Prefeitura
+            Municipal e Secretário de Obras e Secretário de Assuntos Comunitários, também da Prefeitura Municipal.
+            Tem publicado – ainda não lançado – a plaqueta “As Santas Cruzes do Ceará-Mirim”, escrito em parceria com
+            Joana D'Arc Arruda Câmara e já pronto para ser editado, um livro de “Causos” do Ceará-Mirim.
+            É sócio efetivo fundador da Academia Cearamirinense de Letras e Artes “Pedro Simões Neto” e sócio efetivo do
+            Instituto Histórico e Geográfico do Rio Grande do Norte.
+          </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Gerinaldo Moura da Silva</span></h6>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/curiosidades/gerinaldo.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Fonte: http://gibsonmachadocm.blogspot.com</figcaption>
+          </figure>
+          <p>
+            Gerinaldo Moura da Silva nasceu em 28 de novembro, na praia de Pititinga, que pertencia ao município de
+            Barra de Maxaranguape RN. Seu pai é o Ex-Combatente da Marinha do Brasil, Antonio Moura da Silva e sua mãe,
+            a senhora Nair Salustino da Silva. Da família, fizeram parte várias mulheres, cuja prole se resume nos
+            seguintes filhos: João Moura (in memoriam), Raimundo Moura, Geralda Henrique Ferreira, Maria Gedalva de
+            Oliveira, Elizabete Moura e Silva, Djair Moura da Silva, Hélio Moura e Silva, Wagno Moura da Silva, Cosme
+            Moura da Sila, Damião Moura da Silva e Emanuelle Moura da Silva.
+            Sua formação teve início no próprio lar com a professora particular Marlene Rosado, em Natal e em seguida
+            foi aluno da professora dona Inês Miranda Morais, na Rua General João Varela, em Ceará-Mirim, saindo para a
+            Escola Municipal Professora Adele de Oliveira onde cursou o Primário (iniciando pelo 2º ano) e que teve como
+            professoras Josilda Fonseca, Maria das Graças Sobral e Marisa Barreto. O Curso Ginasial foi no Ginásio
+            Estadual de Ceará Mirim, atual Escola Estadual Interventor Ubaldo Bezerra de Melo, onde iniciou o Segundo
+            Grau, sendo transferido para estudar na Escola Estadual Professor Luís Soares, em Natal, onde concluiu.
+            Tornou-se Bacharel em História pela UFRN-Universidade Federal do Rio Grande do Norte e também cursou
+            Licenciatura Plena em História pela mesma Universidade, onde também se pós-graduou em História da Cultura.
+            Ingressou na UNP- Universidade Potiguar onde fez uma pós-graduação em Cultura Norte-Rio-Grandense, e
+            tornou-se Especialista em Educação Ambiental. De volta à UFRN, fez o Mestrado no Ensino da Geografia e
+            pós-graduação em Literatura e História da Cultura do Rio Grande do Norte.
+            Gerinaldo Moura é professor de História, Geografia, Filosofia, Sociologia e Artes no Colégio de Santa Águeda
+            e professor de História na Escola Estadual Interventor Ubaldo Bezerra de Melo, atuando ainda como Presidente
+            do Conselho Municipal dos Direitos da Criança e do Adolescente e Articulador Municipal do Selo UNICEF.
+            Sua atuação na área do Meio Ambiente, teve início em 2002, quando foi nomeado pela prefeita Ednólia Melo,
+            para o cargo de Coordenador-Geral do Curso de Formação Continuada PCNs em Ação: Meio Ambiente na Escola.
+            Nesse período, foi o responsável pela formação dos professores do 6º ao 9º em Educação Ambiental, nos
+            municípios de Ceará-Mirim, Taipu, Maxaranguape, São Miguel do Gostoso, Touros e Rio do Fogo.
+            Coordenou a realização de vários Estudos do Meio, destacando-se o Estudo no Rio Ceará-Mirim, no Rio Punaú,
+            no Rio Maceió- (na Praia de Touros), nas praias de Muriú, Jacumã e Porto Mirim, na Praia de São Miguel do
+            Gostoso, na parte do Rio Ceará-Mirim que corta a cidade de Taipu, desde a Barragem de Poço Branco.
+            Coordenou um estudo do Rio Ceará-Mirim iniciando em sua nascente, na cidade de Lajes até onde deságua, em
+            Barra do Rio no município de Extremoz.
+            Implantou a COM VIDA-Comissão de Meio Ambiente e Qualidade de Vida em todas as escolas municipais de Ensino
+            Fundamental II, na cidade e zona rural de Ceará-Mirim, depois, ampliou para as escolas estaduais e
+            particulares.
+            Criou a I Semana Municipal do Meio Ambiente, coordenando a realização da mesma por 06 anos consecutivos.
+            Como coordenador das COM-VIDAS, conseguiu sempre classificar a cidade de Ceará-Mirim, através dos trabalhos
+            de alunos das escolas municipais, bem como eleger 02 representantes do Colégio de Santa Águeda como
+            Delegados Nacionais para representar o Ceará-Mirim nas I e II Conferências Nacional pelo Meio Ambiente, em
+            Brasília e Mato Grosso.
+            Criou e implantou o PROCEA – Programa de Formação Continuada em Educação Ambiental, que proporcionou a
+            formação para todos os professores da rede municipal de ensino.
+            Criou também o PROFAGE – Programa de Formação Continuada para Implantação da Agenda 21 na Escola,
+            inicialmente foi iniciado nas escolas municipais do Ensino Fundamental II.
+            No ano 2000, coordenou a implantação da Disciplina de Cultura Norte-Rio-Grandense no Colégio Santa Águeda,
+            na gestão da Irmã Maria de Fátima Ferreira Meira, e consequentemente, tornando o CSA a primeira escola do
+            Rio Grande do Norte a implantar essa disciplina. Para a aula inaugural, foi convidado o professor e
+            folclorista Deífilo Gurgel.
+            No ano seguinte, em 2001, a convite da professora Margarida Lima, então secretária municipal de educação,
+            implantou e coordenou o processo de implementação do Curso de Cultura Norte-rio-grandense em todas as
+            escolas municipais.
+            Gerinaldo Moura da Silva atuou como professor na Escola Municipal Dr. Augusto Meira, (lecionando História,
+            OSPB- Organização Social e Política Brasileira, EMC- Educação Moral e Cívica), desempenhou a função de
+            Secretário Escolar da Escola Municipal Dr. Júlio Senna, professor da Escola de Comércio Professor Edgar
+            Barbosa (lecionando OSPB e EMC) e professor da Escola Estadual Dom Marcolino Dantas em Barra de Maxaranguape
+            (lecionando História e Geografia), professor da Escola Municipal Ana de Paiva em Punaú( lecionando História
+            e Geografia), professor do Colégio Nossa Senhora das Neves (lecionando História) e da Escola Estadual Miriam
+            Coelly em Natal (lecionando História), secretário escolar e professor da Escola Estadual Barão de
+            Ceará-Mirim( lecionando História) professor da Escola Estadual Augusto Xavier de Góis, em Muriú (lecionando
+            História, Matemática, Ensino Religioso e Ciências) e na Escola Estadual Interventor Ubaldo Bezerra de Melo
+            lecionou Arte, Ensino Religioso, Literatura, História, Geografia, Economia do Rio do Norte e Cultura
+            norte-rio-grandense.
+            Exerceu alguns cargos e funções públicas relevantes em Ceará-Mirim, tais como: Diretor da Biblioteca Pública
+            Municipal Dr. José Pacheco Dantas, onde foi responsável pela criação do Prêmio Literário de Poesia “Poetisa
+            Adelle de Oliveira” – criado oficialmente pela Prefeita Therezinha Mello. Criou o Projeto “A Biblioteca nas
+            Escolas”. Foi o mentor da criação da Biblioteca Escolar Izabel Poti (na Escola Mário Pinheiro), da
+            Biblioteca Escolar Francisco Jussier Barreto (na Escola Municipal Dr. Júlio Senna), da Biblioteca pedagógica
+            Professor Fernando Agostinho Barros (na Secretaria Municipal de Educação), da Escola de Artes José Lemos de
+            Oliveira e da Biblioteca Infantil “Poetisa Anete Varela”.
+            Gerinaldo Moura da Silva foi nomeado para o cargo de Chefe da Assessoria de Cultura do gabinete da Prefeita
+            Therezinha Mello, tornando-se o primeiro secretário de cultura do Ceará-Mirim. Foi gestor da Escola Estadual
+            Augusto Xavier de Góis em Muriú e também foi diretor da Escola Estadual Interventor Ubaldo Bezerra de Melo,
+            sendo nomeado pelo Governador Garibaldi Alves Filho.
+            Foi eleito para a ACLA- Academia Ceará-Mirinense de Letras e Artes “Pedro Simões Neto”, ocupando a cadeira
+            que tem como patrona a poetisa Anete Varela, tendo sido eleito como vice-presidente na gestão da Dra.
+            Joventina Simões. É historiador e pesquisador dedicado da história, cultura e memória do Ceará-Mirim, sendo
+            também Sócio do Instituto Histórico e Geográfico do Rio Grande do Norte. Está no cargo de vice-presidente da
+            ACLA, que tem na presidência o Dr. André Felipe Pignataro.
+            Gerinaldo Moura da Silva é sócio fundador da APAE Ceará-Mirim, onde atuou como secretário. E fez parte do
+            Conselho Econômico e Administrativo da Paróquia de Nossa Senhora da Conceição no vicariato do Padre
+            Francisco Bianor Júnior. É integrante do grupo Terço dos Homens, da Venerável Irmandade do Santíssimo
+            Sacramento e do Ministério de Leitores.
+            Gerinaldo Moura da Silva criou o Projeto “Figuras do Verde Vale”. É responsável pela página Ceará-Mirim vale
+            de cultura no FACEBOOK. Idealizou e realizou o Cordelizando na Biblioteca Pública Municipal Dr. José Pacheco
+            Dantas, e a I EXPALT- Mostra de Profissões, Arte, Literatura e Tecnologia no Colégio de Santa Águeda
+            realizando ainda o Projeto Viagem Literária Feminina Através da Poesia que está na sua XXI versão.
+          </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Monsenhor Rui Miranda</span></h6>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/curiosidades/monsenhor.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Fonte: https://genealogia83.rssing.com/chan-53046976/all_p3.html</figcaption>
+          </figure>
+          <p>
+            O Monsenhor Rui Miranda nasceu no dia 12 de abril de 1928 e foi ordenado no dia 15 de novembro de 1953.
+            Faleceu aos 83 anos de idade, já com a saúde frágil, sob os cuidados da Paróquia de Ceará-Mirim.
+            No dia 30 de outubro de 1937, 09 nove anos de idade fez sua primeira comunhão, na cidade de João Câmara/RN,
+            entrou no pré seminário em Angicos/RN e, no ano de 1948 entrou no seminário maior onde cursou teologia e
+            filosofia na cidade de Fortaleza/CE. No dia 21 de março de 1953, foi ordenado diácono e, no dia 15 de
+            novembro deste mesmo ano, foi ordenado sacerdote em frente à antiga catedral em uma missa campal. Sua
+            primeira missa foi celebrada no colégio Imaculada Conceição, em Natal, e no dia 29 de novembro celebrou em
+            sua terra natal Taipu, junto aos seus familiares e amigos. Foi vigário cooperador da catedral no ano de
+            1953, Nísia Floresta e Arês entre 1954 a 1956 e no dia 04 de fevereiro de 1956 foi nomeado vigário colado de
+            Ceará-Mirim/RN. No ano de 1965 e 1978 visitou Roma (Vaticano) e Jerusalém.
+            No decorrer do tempo, o povo da cidade, o considerou muito novo para estar à frente da paróquia, mas, ele
+            mostrou que era capaz. Na época, não existia transporte algum na paróquia, dificultando a locomoção para que
+            pudesse celebrar em outras comunidades. Depois de alguns meses, comprou um Jipe, do tempo da guerra, e com o
+            passar dos dias o Senhor arcebispo o nomeou vigário de outras cidades como Bento Fernandes, João Câmara,
+            Pureza, Rio do fogo, Touros e Maxaranguape.
+            O monsenhor Rui teve desavenças com algumas pessoas da cidade, por causa do prédio do Instituto Imaculada
+            Conceição, mas, por fim, obteve posse do prédio e fundou o Instituto e posteriormente a escola de comércio.
+            Assim como também, restaurou o abrigo dos idosos e deu condições de vida melhores para eles. Instalou o
+            Centro Social Leci Câmara e foi convidado pelo governador para ser diretor da escola Monsenhor Celso Cicco,
+            no início recusou, e então o governador procurou o bispo Dom Eugênio e o mesmo pediu que o padre Rui
+            aceitasse e ele acata a decisão do Senhor arcebispo. Passou 50 anos trabalhando sem cessar na paróquia de
+            Ceará-Mirim e obteve muito prestígio por parte dos cearamirinenses .
+            Em vida, monsenhor Rui havia externado o desejo de ser sepultado dentro da Igreja, ao lado do Altar de Nossa
+            Senhora de Fátima. Desejo este que foi atendido pelo Senhor arcebispo Dom Matias Patrício de Macedo
+            (administrador Apostólico por ocasião da nomeação do novo arcebispo, Dom Jaime Vieira Rocha, por sua
+            santidade o papa Bento XVI). <br>
+            <b>Fonte:</b> <a
+              href="http://altovalecm.blogspot.com/2011/12/rui-miranda-volta-casa-do-pai.html">http://altovalecm.blogspot.com/2011/12/rui-miranda-volta-casa-do-pai.html</a>
+          </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Adelle de Oliveira</span></h6>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/curiosidades/adelle.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Única foto de Adelle de Oliveira <br>
+              Fonte: http://franciscoguiacm.blogspot.com</figcaption>
+          </figure>
+          <p>
+            Adelle Sobral de Oliveira, filha do casal João Henrique de Oliveira e Ana Sobral de Oliveira, nasceu em 22
+            de maio de 1884, num lugarejo conhecido como Villar, pertencente ao município de Ceará-Mirim. Tinha por
+            irmãs Anita Sobral de Oliveira e Maria Tereza Sobral de Oliveira, a Maitê.
+            Aos cinco anos, Adelle e sua família se mudaram para Belém do Pará, onde professores particulares lhe
+            ensinaram as primeiras letras. Em decorrência da saúde frágil de seu pai, decidem retornar ao Vale do
+            Ceará-Mirim, porém ainda durante a viagem ele vem a falecer. Esse fato marcante levou a poetisa a escrever
+            seu primeiro poema “A Bordo” aos 15 anos.
+            Assim que Adelle, sua mãe e suas irmãs chegam em Ceará-Mirim se hospedam no casarão de ngelo Varella,
+            padrinho de Adelle e senhor do engenho Cumbe, e Maria Augusta, tia de Adelle. O casarão hoje já não existe
+            mais, em seu lugar há a Praça da Intendência. Nos finais de semana e longos feriados, a família deslocava-se
+            para o Cumbe e os veraneios passavam na praia de Muriú.
+            No contexto da história da educação do Vale de Ceará Mirim, Adelle de Oliveira torna-se educadora criando o
+            externato no próprio casarão da Rua São José, residência ngelo Varela.
+            Pela pedagogia de Adelle passaram figuras importantes da cidade, tais como Nilo Pereira, Franklin Marinho,
+            Edgar Barbosa, entre outros.
+            Nilo Pereira cita em seu livro Imagens do Ceará-Mirim o carinho tido por Adelle: “ [...] minha primeira
+            professora, a poetisa Adelle de Oliveira. [...] Seria imperdoável, dessa vez, não remontar às origens; e
+            remontar às origens, era, no caso, beijar as mão daquela que pôs diante dos olhos do menino tímido a Carta
+            de ABC”.
+            Como jornalista publicou crônica e poemas de maneira enigmática, em seu periódico "O SONHO", evidenciando
+            uma posição feminista em relação á politica local, que pode ser observado no poema "protestos e conselho",
+            escrito com o pseudônimo de Adelaide como resposta a uma das publicações do paraibano Cyro Tavares.
+            Faleceu em sua casa, em 15 de agosto de 1969, lúcida, aos 85 anos de idade.
+          </p>
         </div>
         <div class="modal-footer">
 

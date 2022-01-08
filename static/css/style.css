@@ -1434,7 +1434,7 @@ background: linear-gradient(146deg, rgba(9,26,32,1) 0%, rgba(87,138,155,1) 53%, 
 }
 
 /*imagem do modal eventos religiosos e turismo ecologico*/
-#eventos_religiosos .image, #turismo_ecologico .image, #turismo_soleagua .image {
+#eventos_religiosos .image, #turismo_ecologico .image, #turismo_soleagua .image, #memorias_vivas .image {
   margin: 0 auto;
   overflow: hidden;
   display: flex;
