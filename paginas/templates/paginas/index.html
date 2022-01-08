@@ -98,14 +98,16 @@
               <li><a class="nav-link scrollto" href="#culinaria">Culinária</a></li>
               {% if user.is_authenticated %}
               <li class="dropdown"><a href="{% url 'locais' %}"><span>Locais</span></a></li>
-                {% else %}
+              {% else %}
               <li class="dropdown"><button
                   style="font-weight: bold; font-size: 12px; margin-left: 15px; border-radius: 25px;"
                   class="btn btn-success" type="button" href="#" data-bs-toggle="modal"
                   data-bs-target="#modalForm"><span>ENTRAR</span></button></li>
-                {% endif %}
-                {% if user.is_authenticated %}
-              <li class="dropdown"><a class="btn" role="button" style="background-color:#578a9b; margin-left: 15px; font-size: 10px; border-radius: 20px;" href="/logout"><span style="margin-left:-15px; margin-right: 15px;">SAIR</span></a></li>
+              {% endif %}
+              {% if user.is_authenticated %}
+              <li class="dropdown"><a class="btn" role="button"
+                  style="background-color:#578a9b; margin-left: 15px; font-size: 10px; border-radius: 20px;"
+                  href="/logout"><span style="margin-left:-15px; margin-right: 15px;">SAIR</span></a></li>
               {% endif %}
             </ul> <!-- nav-link scrollto: indica qual link está ativo naquela janela-->
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -375,7 +377,10 @@
             </svg></div>
           <h4 class="title"><a href="#turismo" data-bs-toggle="modal" data-bs-target="#turismo_historico">Turismo
               Histórico</a></h4>
-          <p class="description">"Se o passado não fosse importante, não haveria necessidade de se escrever história " - Sirpaul tavares. Pensando nisso, o turismo histórico te convida a fazer um tour pelos prédios que fizeram e ainda fazem parte da história da cidade até os dias de hoje. Você irá se encantar diante da belíssima arquitetura fruto de diferentes épocas da história.</p>
+          <p class="description">"Se o passado não fosse importante, não haveria necessidade de se escrever história " -
+            Sirpaul tavares. Pensando nisso, o turismo histórico te convida a fazer um tour pelos prédios que fizeram e
+            ainda fazem parte da história da cidade até os dias de hoje. Você irá se encantar diante da belíssima
+            arquitetura fruto de diferentes épocas da história.</p>
         </div>
         <div class="col-lg-6 col-md-8 box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tree"
@@ -387,7 +392,9 @@
             </svg></div>
           <h4 class="title"><a href="#turismo" data-bs-toggle="modal" data-bs-target="#turismo_ecologico">Turismo
               Ecológico</a></h4>
-          <p class="description">Se você ama estar em contato com a natureza, ao mesmo tempo que amplia seu conhecimento nas mais diversas áreas da história, biologia, entre tantas outras, o turismo ecológico do Vale do Ceará-Mirim te proporcionará tudo isso e muito mais. Seja um verdadeiro trilheiro e venha se aventurar!</p>
+          <p class="description">Se você ama estar em contato com a natureza, ao mesmo tempo que amplia seu conhecimento
+            nas mais diversas áreas da história, biologia, entre tantas outras, o turismo ecológico do Vale do
+            Ceará-Mirim te proporcionará tudo isso e muito mais. Seja um verdadeiro trilheiro e venha se aventurar!</p>
         </div>
         <div class="col-lg-6 col-md-8 box" data-aos="fade-up" data-aos-delay="300">
           <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="house-damage"
@@ -399,7 +406,10 @@
             </svg></div>
           <h4 class="title"><a href="#turismo" data-bs-toggle="modal" data-bs-target="#turismo_ruinas">Ruínas do
               Vale</a></h4>
-          <p class="description">Você deve estar curioso(a) para saber o porquê do nome "Ruínas do Vale"?! Por mais que pareça óbvio, o tópico Ruínas do Vale não aborda os antigos Engenhos e Casas Grandes somente como ruínas, pelo contrário, partimos da perspectiva de levar você trilheiro a realizar uma volta ao tempo diante de tantas memórias singulares que existiram em cada um desses lugares.</p>
+          <p class="description">Você deve estar curioso(a) para saber o porquê do nome "Ruínas do Vale"?! Por mais que
+            pareça óbvio, o tópico Ruínas do Vale não aborda os antigos Engenhos e Casas Grandes somente como ruínas,
+            pelo contrário, partimos da perspectiva de levar você trilheiro a realizar uma volta ao tempo diante de
+            tantas memórias singulares que existiram em cada um desses lugares.</p>
         </div>
         <div class="col-lg-6 col-md-8 box" data-aos="fade-up" data-aos-delay="200">
           <div class="icon"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="umbrella-beach"
@@ -411,7 +421,9 @@
             </svg></div>
           <h4 class="title"><a href="#turismo" data-bs-toggle="modal" data-bs-target="#turismo_soleagua"> Sol e Água
               Fresca</a></h4>
-          <p class="description">Se assim como o ilustre cantor Charlie Brown Jr, seu escritório é na praia, essa sessão é perfeita para você! Além das belíssima praias de mar calmo e ótimo para banho, você poderá se desfrutar de lagoas de água doces e paisagens dignas de tirar o fôlego.</p>
+          <p class="description">Se assim como o ilustre cantor Charlie Brown Jr, seu escritório é na praia, essa sessão
+            é perfeita para você! Além das belíssima praias de mar calmo e ótimo para banho, você poderá se desfrutar de
+            lagoas de água doces e paisagens dignas de tirar o fôlego.</p>
         </div>
       </div>
     </div>
@@ -443,7 +455,7 @@
         <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
           <div class="curiosidades-col">
             <div class="img">
-              <img  src="static/img/curiosidades/boca_a_boca.jpg" alt="" class="img-fluid">
+              <img src="static/img/curiosidades/boca_a_boca.jpg" alt="" class="img-fluid">
             </div>
             <h2 class="title"><a href="#curiosidades" data-bs-toggle="modal" data-bs-target="#boca_a_boca">Boca à
                 Boca</a></h2>
@@ -1145,7 +1157,10 @@
             Hoje, o prédio da velha estação é hoje um centro cultural da prefeitura. A estação dos trens metropolitanos
             fica ao lado e no outro lado o Olheiro Dom Pedro II, uma fonte de água pura que servia de água para beber a
             população da cidade.
-            Atualmente, a única linha em funcionamento é a NORTE (Ceará-Mirim ➞ Natal) que tem 14 estações, partindo de Ceará Mirim e terminando em Natal (Estação Da Ribeira). A grade horária da linha NORTE começa a operar às 05:05 e termina às 17:08 todos os dias úteis. Para mais informações acesse o link: <a href=" https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-NORTE-Natal-1742-775280-419615-0">https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-NORTE-Natal-1742-775280-419615-0</a>
+            Atualmente, a única linha em funcionamento é a NORTE (Ceará-Mirim ➞ Natal) que tem 14 estações, partindo de
+            Ceará Mirim e terminando em Natal (Estação Da Ribeira). A grade horária da linha NORTE começa a operar às
+            05:05 e termina às 17:08 todos os dias úteis. Para mais informações acesse o link: <a
+              href=" https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-NORTE-Natal-1742-775280-419615-0">https://moovitapp.com/index/pt-br/transporte_p%C3%BAblico-line-NORTE-Natal-1742-775280-419615-0</a>
 
           </p>
           <hr class="divisor">
@@ -1202,13 +1217,19 @@
             pessoas, era realizado lá. Além disso, muitas decisões importantes na área do esporte foram realizadas nas
             suas dependências. Assim como também, muitos shows musicais, por volta dos anos 70 e meados da década de 80
             foram muitos os artistas de nome nacional que vieram para Ceará-Mirim se apresentar e tiveram a quadra do
-            <b>Fontes:</b><br />
-            <a Palácio como palco, tal como, Márcio Greyck, Waldick Soriano, José Ribeiro, entre tantos outros.</p>
-              href="http://www.cearamirimlivre.com/2014/12/homenagem-aderson-eloy.html">http://www.cearamirimlivre.com/2014/12/homenagem-aderson-eloy.html</a>
-            <br />
-            <a
-              href="http://ptdarocha.blogspot.com/2010/04/ginasio-de-esportes-aderson-eloy-de.html">http://ptdarocha.blogspot.com/2010/04/ginasio-de-esportes-aderson-eloy-de.html</a>
-            <hr class="divisor">
+            Palácio como palco, tal como, Márcio Greyck, Waldick Soriano, José Ribeiro, entre tantos outros.
+          </p>
+          <b>Fontes:</b> <br />
+          <ul>
+            <li><a
+                href="http://www.cearamirimlivre.com/2014/12/homenagem-aderson-eloy.html">http://www.cearamirimlivre.com/2014/12/homenagem-aderson-eloy.html</a>
+            </li>
+
+            <li><a
+                href="http://ptdarocha.blogspot.com/2010/04/ginasio-de-esportes-aderson-eloy-de.html">http://ptdarocha.blogspot.com/2010/04/ginasio-de-esportes-aderson-eloy-de.html</a>
+            </li>
+          </ul>
+          <hr class="divisor">
           <h6><span class="underline--magical">Grupo Escolar Barão de Ceará-Mirim</span></h6>
           <p>
             A Escola Estadual Barão de Ceará-Mirim iniciou a sua trajetória educacional no dia 05 de novembro de 1878,
@@ -1221,6 +1242,30 @@
             Funcionou até a década de 1950 quando foi demolida para, em seu lugar, serem construídas residências.
             A escola foi reconstruída em outro ponto da cidade. Gravado em sua fachada ainda está GRUPO ESCOLAR BARÃO DE
             CEARÁ-MIRIM, porém hoje em dia tem por título Escola Estadual Barão de Ceará-Mirim.
+          </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Casa dos Leões</span></h6>
+          <p>
+            A famosa “Casa dos Leões” foi construída na esquina da Rua Dr. Heráclio Villar com a Praça Barão de
+            Ceará-Mirim. Sua construção data do início do século XX, provavelmente, entre os anos de 1910 a 1915. O
+            professor Francisco Cláudio Soares Júnior, informou que a Casa dos Leões havia sido construída pelo senhor
+            Manoel Marques, um afamado mestre de obras do Ceará-Mirim.
+            Os proprietários da suntuosa residência, foram o senhor Clóvis Soares e a senhora Cremilda Varela Soares,
+            remanescentes de tradicionais famílias instaladas no vale verde do Rio Ceará-Mirim e na cidade, ligadas à
+            economia açucareira proveniente dos engenhos e hoje, a casa encontra-se em poder de seus herdeiros.
+            Muito já se especulou sobre seu estilo arquitetônico, recebendo opiniões de que seria Art. Nouveau,
+            Neocolonial ou Colonial, porém, sabe-se que ela possui vários desses elementos, formando um belo prédio de
+            características do estilo eclético, mesmo tendo em sua cobertura as famosas telhas francesas. Por outro
+            lado, os custos não encareceram a obra devido ao grande número de madeiras de lei em abundância nas
+            propriedades da zona rural canavieira.
+            A casa tornou-se conhecida na cidade e região pelas estátuas de dois leões que guarneciam a residência e
+            estavam postados nas colunas do portão de ferro. Até que um dia, toda a cidade recebeu a triste notícia de
+            que os leões haviam sido roubados depois de anos embelezando a casa, a rua e a praça, sem que ninguém até
+            hoje tenha tido um paradeiro, restando apenas as imagens na memória de que teve a honra de vê-los.
+            Mudanças foram poucas. Não mexeram na estrutura apenas algumas intervenções ou adequações, exigências de um
+            tempo como as “mãos francesas” para protegerem as janelas e a implantação de grades de ferro para reforçar a
+            segurança. Atualmente, a casa encontra-se em reforma, entretanto por se tratar de um patrimônio histórico,
+            os donos devem manter ao máximo a forma original da casa.
           </p>
           <hr class="divisor">
           <h6><span class="underline--magical"> Feira Livre</span></h6>
@@ -1268,22 +1313,40 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
-            ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
-            porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
-            felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
-            molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
-            imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
-            elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
-            tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
-
-            Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
-            tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
-            imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
-            dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
-            vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
-            quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
-            curae cursus convallis eleifend egestas habitant. </p>
+          <h6><span class="underline--magical">Trilha Banho das Escravas</span></h6>
+          <p>
+            Na propriedade onde existiu o Engenho Santa Teresa, cuja lembrança é uma enorme chaminé que resistiu ao
+            tempo e permanece de pé, há uma nascente de água cristalina, chamada de “Banho das Escravas”. Como o nome
+            sugere, era o local onde as escravas se banhavam e lavavam as roupas dos seus senhores.
+            O acesso à trilha pode ser feito através de caminhada ou bicicleta, possui uma placa de identificação na
+            entrada, mas, ainda não desfruta de uma sinalização adequada para trilheiros iniciantes.
+          </p>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/turismo/banho_das_escravas.png'%}">
+            </div>
+            <figcaption style="
+             font-size: 12px;
+             text-align: center;
+             font-style: italic;">Fonte: http://chaopotiguar.blogspot.com/2009/01/cear-mirim.html</figcaption>
+          </figure>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Trilha Ilha Bela</span></h6>
+          <p>A Trilha de Ilha Bela é um dos passatempos dos jovens cearamirinenses. O caminho pode ser feito a pé ou de
+            bicicleta. A trilha passa pelas ruínas da balança e da usina ilha bela e termina num delicioso banho de rio
+            dentro da propriedade. É uma perfeita conexão entre história e ecologia. Vale ressaltar que, só é possível
+            obter acesso a trilha por meio de pessoas da comunidade local que já realizaram a mesma, pois não possui uma
+            placa de sinalização específica para trilha.
+          </p>
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/turismo/ilha_bela.jpg'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Acervo Gibson Machado</figcaption>
+          </figure>
         </div>
         <div class="modal-footer">
 
@@ -1434,6 +1497,52 @@
             consigo um grande teor cultural e histórico para a cidade de Ceará-Mirim.
 
           </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Ginásio Santa Águeda/Colégio de Santa Águeda</span></h6>
+          <p>
+            O colégio surgiu da necessidade da sociedade de Ceará-Mirim, de educar e implantar valores para as jovens da
+            época, sabendo que muitas destas meninas eram da elite, que procurava um ensino diferenciado das outras
+            camadas. E era o sonho para as jovens do município estudar na instituição, pois seriam bem vistas e
+            consequentemente teriam um futuro diferenciado.
+            O referido colégio faz parte da Congregação de Nossa Senhora do Bom Conselho, fundada por Frei Caetano de
+            Messina, da ordem dos Franciscanos, que nasceu em Castânea (Sicília), na Itália.
+            Foi fundado em 14 de Abril de 1937 pelo decreto Diocesano de 26 de novembro de 1936 que diz que: "Aos que o
+            presente Decreto virem paz e benção no senhor. (...) Havemos por bem crear, na cidade de Ceará – Mirim, um
+            Collegio Catholico, sob a direção de religiosas que ficará subordinado à Nossa Jurisdição(...)" (Jornal da
+            Ordem, 1937, num 500). O antigo prédio, o Ginásio Santa Águeda, foi residência do Dr. José Inácio Fernandes
+            de Barros, sendo posteriormente adquirido pelo Major Onofre José Soares no início do século XX, e o mesmo
+            transferiu o prédio para as religiosas.
+            A Madre Gabriela, religiosa da congregação que saiu de Bom Conselho, interior de Pernambuco, foi a primeira
+            diretora do Ginásio Santa Águeda, que foi concretizado graças ao Sr. Mirabeau da Cunha Melo que, na época,
+            era Prefeito da cidade e solicitou ao Bispo D. Marcolino Dantas que o ajudasse na implantação de uma escola
+            religiosa dedicada a meninas.Vale salientar que, as escolas religiosas foram implantadas pelo Bispo sendo
+            vinculado a projetos sociais e isto era na época algo natural, já que o governo não tinha muitas estruturas
+            para investir na educação. O Padre Celso Cicco que estava à frente da paróquia de Ceará - Mirim também
+            auxiliou na implantação da instituição.
+            O Colégio sempre se encontrou próximo a Praça Barão de Ceará – Mirim, mas o atual prédio não é o de sua
+            fundação, este foi erguido no ano de 1953 , com a ajuda de Café Filho, importante político da época que
+            exercia o cargo de vice-presidente da república e que após suicídio de Getulio Vargas em 24 de Agosto de
+            1954, se tornou presidente.
+            A princípio, o Colégio funcionava como internato e recebia meninas de todas as regiões do estado, como de
+            Poço Branco, Taipu, Canguaretama, e de todo o litoral. No internato existiam duas modalidades, o chamado
+            "patronato", que acolhia cerca de 45 meninas que não pagavam mensalidades e que diante desta condição tinham
+            que ajudar nos afazeres domésticos, segundo a irmã Irene esta era única distinção entre estas meninas, pois
+            o resto, como alimentação, estudos, momentos de recreio eram iguais as jovens da modalidade de "pensionato",
+            nesta as mensalidades eram destinadas a manter o funcionamento da instituição, tendo em média 53 meninas.
+            No colégio as internas aprendiam as primeiras letras e a serem boas donas de casa, aprendendo a cozinhar,
+            bordar, costurar, e tinham ainda aulas de etiqueta, sempre alicerçado em bases religiosas. No início, apenas
+            as irmãs davam aulas para as jovens, e com o tempo a instituição foi crescendo, e o número de religiosas se
+            tornou incapaz para atender a demanda, tendo que ampliar, contratando mulheres que fossem capacitadas para
+            ensinar a ler, a contar, e enquanto as irmãs cuidavam ainda das aulas de religião.
+            Sendo assim, sabe-se que Ceará- Mirim é um município rodeado de histórias e de personagens que a construíram
+            de maneira próspera e o Colégio Santa Águeda, sem dúvidas, fez e faz parte dela. A instituição que
+            iniciou-se como internato, depois com o externato, e posteriormente com o modelo misto, permanece em pleno
+            funcionamento até hoje, e tanto o seu antigo prédio, quanto o atual estão mantidos e com a estrutura
+            devidamente conservada.
+          </p>
+          <b>Fonte:</b><a href="https://www.colegiosantaagueda.com.br/about-us
+        ">https://www.colegiosantaagueda.com.br/about-us
+          </a>
           <hr class="divisor">
           <h6><span class="underline--magical">Engenho Mucuripe - Ruy Pereira</span></h6>
           <p>
@@ -1688,22 +1797,28 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <p>Lorem ipsum fringilla vitae orci gravida consequat, vel dui vulputate ut potenti egestas, nulla fringilla
-            ut posuere at. conubia aliquam potenti sagittis hac facilisis aliquam habitant posuere, class netus torquent
-            porttitor proin pellentesque quisque. viverra potenti posuere tortor eu bibendum per ipsum faucibus risus
-            felis, fringilla gravida nunc hac pretium tempor sem donec ultrices ante, sem tellus cubilia praesent
-            molestie pretium augue fringilla elementum. congue sapien mollis viverra in adipiscing potenti maecenas
-            imperdiet posuere felis a, lacus molestie faucibus auctor id pellentesque imperdiet rhoncus integer. vel
-            elementum cras vestibulum per in odio scelerisque vitae orci, cursus sagittis netus vel habitasse etiam
-            tortor praesent, netus vestibulum ipsum sodales enim lorem enim urna.
+          <h6><span class="underline--magical">Lagoa de Jacumã</span></h6>     
+          <p>
+            A Lagoa de Jacumã é o lugar perfeito para aqueles que buscam aventura, tendo em vista que disponibiliza atrativos como Skibunda, Aerobunda e Kamikaze. Além disso, também é o lugar perfeito para aqueles que buscam relaxar e passar o dia em família desfrutando do delicioso banho de águas cristalinas ofertado pela lagoa.
+            Para chegar ao local existem 2 formas, indo pelas dunas ou pela estrada de barro. Se optar por ir pelas dunas é necessário contratar um serviço de buggy, que te levará com toda segurança até a lagoa proporcionando momentos de aventura. 
+            Caso você tenha ficado curioso(a) para saber um pouco mais sobre os atrativos, aqui vai uma breve explicação sobre cada um deles: Skibunda - é utilizado uma prancha para escorregar sobre as dunas até a lagoa, Kamikaze - existe uma lona sobre as dunas, então a pessoa irá se deitar sobre uma prancha e deslizará nessa lona, e por fim, Aerobunda - é uma tirolesa que também cai na água da Lagoa, através de um cabo de aço que inicia no topo da duna, o aventureiro se pendura no suporte e deixa ser levado pelo cabo de aço que escorrega até a lagoa, onde ele cai em um delicioso e divertido mergulho.
+            Se a sua preocupação é subir até o topo da duna, não se preocupe, pois há um trilho puxado a motor que leva os turistas até o local de descida dessas atrações. Além disso, depois que o turista cai na água no Aerobunda, há uma balsa que o leva até o local na beira da lagoa.<br/>
+            <b>Fonte:</b> <a href="https://marazulreceptivo.com.br/blog/lagoa-de-jacuma/">https://marazulreceptivo.com.br/blog/lagoa-de-jacuma/</a>
+          </p>        
+          <figure>
+            <div class="image">
+              <img src="{% static 'img/turismo/lagoa_jacuma.png'%}">
+            </div>
+            <figcaption style="
+                font-size: 12px;
+                text-align: center;
+                font-style: italic;">Fonte: https://marazulreceptivo.com.br/blog/lagoa-de-jacuma//figcaption>
+          </figure>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Cachoeirinha de Jacumã</span></h6>     
+          <p>
 
-            Taciti consectetur risus volutpat lectus porttitor nunc rhoncus quam tempor, platea nulla molestie curae
-            tellus duis aenean posuere, curabitur eros auctor nunc porttitor posuere fusce integer. fermentum proin
-            imperdiet congue donec pulvinar posuere massa, torquent mauris faucibus placerat aliquam tortor suscipit
-            dictum, velit tempor tortor maecenas tortor primis. diam suspendisse elementum placerat adipiscing hendrerit
-            vivamus litora, duis libero nisl netus euismod sagittis egestas elit, aptent potenti dui ullamcorper sapien
-            quisque. varius hendrerit quisque libero eros dapibus erat pellentesque senectus dictum etiam, a varius
-            curae cursus convallis eleifend egestas habitant. </p>
+          </p>
         </div>
         <div class="modal-footer">
 
@@ -1725,34 +1840,87 @@
         <div class="modal-body">
           <h6><span class="underline--magical">Boi de Reis de Matas (só de mulheres)</span></h6>
           <p>
-            A história do Boi-de-reis em Ceará-Mirim, provavelmente, se inicia com o desenvolvimento da economia canavieira, pois, há relatos de grupos existentes nos velhos engenhos primitivos.
-            O folguedo existente em Matas é remanescente de antigos grupos que existiam na ribeira do rio Ceará-Mirim entre as comunidades de Capela, Matas e Mineiros. Ele surgiu no início dos anos 1950 com a chegada de um taipuense que fazia a figura do Mateus e montou o grupo, cujo primeiro Mestre chamava-se Zé de Rosa.
-            A partir de 17 de maio de 1957, com a saída do Mateus, o senhor Luiz Chico assume o grupo e, também, a figura do Mateus, passando a liderar seus marujos até os dias atuais. Durante esses 65 anos o folguedo tem enfrentado as mais variadas dificuldades, tal como a morte dos velhos integrantes e a desvalorização do brinquedo pela sociedade. Apesar de todas as dificuldades, o Mestre Luiz Chico, atua firmemente  na condução de uma tradição tão importante para a história e cultura do município.
-            O diferencial desse grupo, com relação aos demais da região, é ser composto exclusivamente por mulheres. Essa maneira inovadora foi trazida também pelo Mestre Luiz Chico, já que tradicionalmente até os personagens femininos dentro da dança eram interpretados por homens.
-            O Boi-de-reis é formado por personagens humanos, animais e seres fantásticos. Os humanos são o Mateus, O Birico, Nanã, os Galantes e as Damas. Atualmente os animais são a Burrinha e o Boi, e representando os seres fantásticos, o Jaraguá.
-            Atualmente o folguedo tem sofrido muitas transformações, principalmente no que diz respeito às figuras, pois já não existe tempo suficiente para suas apresentações. As encenações que havia durante o evento, também, foram abolidas, pois a duração fica em torno de vinte a trinta minutos, o que impossibilita desenvolvê-las plenamente, principalmente a moagem do engenho e a matança e ressurreição do boi.
-            A representação do boi, atualmente, limita-se a danças e cantigas, como as cantigas de abertura, compreendendo saudações e louvações aos “donos da casa”, ao Messias, pelo seu nascimento e aos Santos Reis; loas declamadas pelo mestre e pelo trio de cômico, Mateus, Birico e Nanã; apresentação das figuras da Burrinha, Jaraguá e o Boi e as cantigas de despedidas.
-            Os enfeitados do boi são o mestre, as Damas e os Galantes. Eles se apresentam festivamente vestidos, cantam velhas cantigas religiosas, louvações e saudações, além de tradicionais baianos. O Mestre é o responsável pela brincadeira, é a pessoa que contrata as apresentações e convoca os componentes do grupo para os ensaios.
-            Os Galantes, em número de quatro, vestem-se de maneira idêntica ao Mestre. Durante a representação, dispõe-se em duas alas ou cordões e realizam evoluções, cruzamentos, meias-luas, etc. 
-            A figura principal do folguedo é o Boi. É o último que se apresenta. Depois que ele sai de cena, cantam-se as despedidas.            
-            </p>
-           <hr class="divisor">
-           <h6><span class="underline--magical">Comunidade Quilombola - Coqueiros</span></h6>
+            A história do Boi-de-reis em Ceará-Mirim, provavelmente, se inicia com o desenvolvimento da economia
+            canavieira, pois, há relatos de grupos existentes nos velhos engenhos primitivos.
+            O folguedo existente em Matas é remanescente de antigos grupos que existiam na ribeira do rio Ceará-Mirim
+            entre as comunidades de Capela, Matas e Mineiros. Ele surgiu no início dos anos 1950 com a chegada de um
+            taipuense que fazia a figura do Mateus e montou o grupo, cujo primeiro Mestre chamava-se Zé de Rosa.
+            A partir de 17 de maio de 1957, com a saída do Mateus, o senhor Luiz Chico assume o grupo e, também, a
+            figura do Mateus, passando a liderar seus marujos até os dias atuais. Durante esses 65 anos o folguedo tem
+            enfrentado as mais variadas dificuldades, tal como a morte dos velhos integrantes e a desvalorização do
+            brinquedo pela sociedade. Apesar de todas as dificuldades, o Mestre Luiz Chico, atua firmemente na condução
+            de uma tradição tão importante para a história e cultura do município.
+            O diferencial desse grupo, com relação aos demais da região, é ser composto exclusivamente por mulheres.
+            Essa maneira inovadora foi trazida também pelo Mestre Luiz Chico, já que tradicionalmente até os personagens
+            femininos dentro da dança eram interpretados por homens.
+            O Boi-de-reis é formado por personagens humanos, animais e seres fantásticos. Os humanos são o Mateus, O
+            Birico, Nanã, os Galantes e as Damas. Atualmente os animais são a Burrinha e o Boi, e representando os seres
+            fantásticos, o Jaraguá.
+            Atualmente o folguedo tem sofrido muitas transformações, principalmente no que diz respeito às figuras, pois
+            já não existe tempo suficiente para suas apresentações. As encenações que havia durante o evento, também,
+            foram abolidas, pois a duração fica em torno de vinte a trinta minutos, o que impossibilita desenvolvê-las
+            plenamente, principalmente a moagem do engenho e a matança e ressurreição do boi.
+            A representação do boi, atualmente, limita-se a danças e cantigas, como as cantigas de abertura,
+            compreendendo saudações e louvações aos “donos da casa”, ao Messias, pelo seu nascimento e aos Santos Reis;
+            loas declamadas pelo mestre e pelo trio de cômico, Mateus, Birico e Nanã; apresentação das figuras da
+            Burrinha, Jaraguá e o Boi e as cantigas de despedidas.
+            Os enfeitados do boi são o mestre, as Damas e os Galantes. Eles se apresentam festivamente vestidos, cantam
+            velhas cantigas religiosas, louvações e saudações, além de tradicionais baianos. O Mestre é o responsável
+            pela brincadeira, é a pessoa que contrata as apresentações e convoca os componentes do grupo para os
+            ensaios.
+            Os Galantes, em número de quatro, vestem-se de maneira idêntica ao Mestre. Durante a representação,
+            dispõe-se em duas alas ou cordões e realizam evoluções, cruzamentos, meias-luas, etc.
+            A figura principal do folguedo é o Boi. É o último que se apresenta. Depois que ele sai de cena, cantam-se
+            as despedidas.
+          </p>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Comunidade Quilombola - Coqueiros</span></h6>
           <p>
-            A comunidade de Coqueiros foi reconhecida como comunidade quilombola pela Fundação Cultural Palmares em janeiro de 2017, mas, desde 2007 que se vem discutindo a questão étnico-racial dentro da comunidade, tanto no que se refere ao acesso das políticas públicas quanto à questão do território.
-A comunidade de Coqueiros é uma comunidade quilombola que está localizada na zona rural do município de Ceará Mirim próximo às praias de Muriú, Porto Mirim e Jacumã, no estado do Rio Grande do Norte. Nos anos de aproximadamente 1855 (conforme historiadores), surge a comunidade de Coqueiros, cujo processo de formação e o seu nome é fruto das fugas dos escravos de uma fazenda localizada nas proximidades. 
-Historicamente, os moradores da comunidade sempre tiveram uma relação muito forte com a terra, como o quilombo de Coqueiros está situado às margens do vale do Ceará Mirim, o vale sempre representou como o lugar de sobrevivência, pois era ali no vale onde as famílias tiravam os seus sustentos.
-A economia da comunidade nas décadas passadas era voltada para a criação de animais e a prática da agricultura de subsistências, ou seja, pequenos gêneros agrícolas. No início, os primeiros moradores passaram por muitas dificuldades, como escassez de alimentos e recursos necessários para prover suas famílias. Os principais produtos produzidos na comunidade eram batata, macaxeira, feijão e milho, que serviam para subsistência, essa produção era feita no vale do Ceará Mirim.
-Apesar do reconhecimento perante a Lei como comunidade quilombola, no quilombo de Coqueiros, não há um processo de titulação de terras junto ao Instituto Nacional de Colonização e Reforma Agrária (INCRA).
-Atualmente, a exploração dessas terras se dá basicamente através de atividades agrícolas marcadas pelos laços de parentesco e por suas relações interpessoais. A principal atividade produtiva continua sendo a agricultura, que é desenvolvida de forma bastante precária, utilizando o boi e a enxada, elementos de suma importância para as comunidades remanescentes quilombolas, não só pela interação de suas identidades étnicas, mas também para a construção de processos de etnicidade e a luta por seus direitos como grupo étnico.
- 
-No quilombo de Coqueiros a questão central está baseada no reconhecimento como quilombola, hoje a comunidade através da associação comunitária busca acessar as políticas públicas voltadas para a população quilombola. Em relação ao território, a comunidade ainda não despertou para a questão da regularização fundiária junto ao INCRA, pois as famílias já possuem seus terrenos, quintais ou pedaços de terras.
+            A comunidade de Coqueiros foi reconhecida como comunidade quilombola pela Fundação Cultural Palmares em
+            janeiro de 2017, mas, desde 2007 que se vem discutindo a questão étnico-racial dentro da comunidade, tanto
+            no que se refere ao acesso das políticas públicas quanto à questão do território.
+            A comunidade de Coqueiros é uma comunidade quilombola que está localizada na zona rural do município de
+            Ceará Mirim próximo às praias de Muriú, Porto Mirim e Jacumã, no estado do Rio Grande do Norte. Nos anos de
+            aproximadamente 1855 (conforme historiadores), surge a comunidade de Coqueiros, cujo processo de formação e
+            o seu nome é fruto das fugas dos escravos de uma fazenda localizada nas proximidades.
+            Historicamente, os moradores da comunidade sempre tiveram uma relação muito forte com a terra, como o
+            quilombo de Coqueiros está situado às margens do vale do Ceará Mirim, o vale sempre representou como o lugar
+            de sobrevivência, pois era ali no vale onde as famílias tiravam os seus sustentos.
+            A economia da comunidade nas décadas passadas era voltada para a criação de animais e a prática da
+            agricultura de subsistências, ou seja, pequenos gêneros agrícolas. No início, os primeiros moradores
+            passaram por muitas dificuldades, como escassez de alimentos e recursos necessários para prover suas
+            famílias. Os principais produtos produzidos na comunidade eram batata, macaxeira, feijão e milho, que
+            serviam para subsistência, essa produção era feita no vale do Ceará Mirim.
+            Apesar do reconhecimento perante a Lei como comunidade quilombola, no quilombo de Coqueiros, não há um
+            processo de titulação de terras junto ao Instituto Nacional de Colonização e Reforma Agrária (INCRA).
+            Atualmente, a exploração dessas terras se dá basicamente através de atividades agrícolas marcadas pelos
+            laços de parentesco e por suas relações interpessoais. A principal atividade produtiva continua sendo a
+            agricultura, que é desenvolvida de forma bastante precária, utilizando o boi e a enxada, elementos de suma
+            importância para as comunidades remanescentes quilombolas, não só pela interação de suas identidades
+            étnicas, mas também para a construção de processos de etnicidade e a luta por seus direitos como grupo
+            étnico.
 
+            No quilombo de Coqueiros a questão central está baseada no reconhecimento como quilombola, hoje a comunidade
+            através da associação comunitária busca acessar as políticas públicas voltadas para a população quilombola.
+            Em relação ao território, a comunidade ainda não despertou para a questão da regularização fundiária junto
+            ao INCRA, pois as famílias já possuem seus terrenos, quintais ou pedaços de terras.
 
-<b>LITTLE, Paul F. 2002. Territórios sociais e povos tradicionais no Brasil: por uma antropologia da territorialidade. Série Antropologia, nº 32. Brasília. 
-Fonte: Artigo RBA Francisco Cândido UFRN</b>
-
-             </p>
+          </p>
+          <b>LITTLE, Paul F. 2002. Territórios sociais e povos tradicionais no Brasil: por uma antropologia da
+            territorialidade. Série Antropologia, nº 32. Brasília.
+            Fonte: Artigo RBA Francisco Cândido UFRN</b>
+          <hr class="divisor">
+          <h6><span class="underline--magical">Óleo de Bati</span></h6>
+          <p>
+            O nome completo do bati é batiputá ou em latim, Ourotea parviflora. É um arbusto da família das Ocnáceas, encontrado nos tabuleiros do nordeste brasileiro. É também conhecido como jabutapitá, do tupi ïbotï, que quer dizer flor.
+Tem consistência de uma manteiga e derrete facilmente. O sabor é herbáceo, mas delicado - nada tão marcante como um azeite de dendê ou de pequi. E a cor esverdeada lembra a do azeite de frutos imaturos. O que se faz com ele é principalmente peixe frito e farofas.
+A extração do óleo de bati já foi uma atividade corriqueira no Sul do Rio Grande do Norte no passado. Trata-se de hábitos e costumes dos povos das remanescentes indígenas, onde no município de Ceará-Mirim, são encontrados na comunidade indigena de Rio dos Índios. 
+As mulheres costumam colher os cachos e levar para casa para debulhar numa atividade coletiva. São necessários 15 litros de frutos para se extrair apenas 1 litro de óleo, num trabalho que envolve debulhar, socar no pilão, cozinhar, separar o óleo.
+É tão trabalhoso, que a pouca produção serve apenas para abastecer a demanda local, especialmente no período da Semana Santa, já que a data coincide com a safra do bati. Por isso não há comércio para o item. Hoje encontra-se  quase em extinção em nossos tabuleiros.
+            </p>
+            <b>Fonte:</b><a href="https://come-se.blogspot.com/2010/04/oleo-de-bati.html
+">https://come-se.blogspot.com/2010/04/oleo-de-bati.html
+            </a>
         </div>
         <div class="modal-footer">
 
@@ -1855,9 +2023,12 @@ Fonte: Artigo RBA Francisco Cândido UFRN</b>
           <p> <span style="display: block;"> Referências:</span>
           </p>
           <ul>
-            <li><a href="http://altovalecm.blogspot.com/p/lendas.html">http://altovalecm.blogspot.com/p/lendas.html</a></li>
-            <li><a href="http://cearamirimvelho.blogspot.com/2016/12/a-serpente-gigante-do-cemiterio-santa.html">http://cearamirimvelho.blogspot.com/2016/12/a-serpente-gigante-do-cemiterio-santa.html</a></li>
-          </ul>  
+            <li><a href="http://altovalecm.blogspot.com/p/lendas.html">http://altovalecm.blogspot.com/p/lendas.html</a>
+            </li>
+            <li><a
+                href="http://cearamirimvelho.blogspot.com/2016/12/a-serpente-gigante-do-cemiterio-santa.html">http://cearamirimvelho.blogspot.com/2016/12/a-serpente-gigante-do-cemiterio-santa.html</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
