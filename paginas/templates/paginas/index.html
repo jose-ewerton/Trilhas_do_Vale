@@ -100,13 +100,15 @@
               <li class="dropdown"><a href="{% url 'locais' %}"><span>Locais</span></a></li>
               {% else %}
               <li class="dropdown"><button
-                  style="font-weight: bold; font-size: 12px; margin-left: 15px; border-radius: 25px;"
+                  style="border-color: white;border-style:solid;
+                  border-width:2px; font-weight: bold; font-size: 12px; margin-left: 15px; border-radius: 25px;"
                   class="btn btn-success" type="button" href="#" data-bs-toggle="modal"
                   data-bs-target="#modalForm"><span>ENTRAR</span></button></li>
               {% endif %}
               {% if user.is_authenticated %}
               <li class="dropdown"><a class="btn" role="button"
-                  style="background-color:#578a9b; margin-left: 15px; font-size: 10px; border-radius: 20px;"
+                  style="background-color:#578a9b; margin-left: 15px; font-size: 10px;border-color: white;border-style:solid;
+                  border-width:2px; border-radius: 20px;"
                   href="/logout"><span style="margin-left:-15px; margin-right: 15px;">SAIR</span></a></li>
               {% endif %}
             </ul> <!-- nav-link scrollto: indica qual link está ativo naquela janela-->
@@ -1797,14 +1799,26 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
         </div>
         <div class="modal-body">
-          <h6><span class="underline--magical">Lagoa de Jacumã</span></h6>     
+          <h6><span class="underline--magical">Lagoa de Jacumã</span></h6>
           <p>
-            A Lagoa de Jacumã é o lugar perfeito para aqueles que buscam aventura, tendo em vista que disponibiliza atrativos como Skibunda, Aerobunda e Kamikaze. Além disso, também é o lugar perfeito para aqueles que buscam relaxar e passar o dia em família desfrutando do delicioso banho de águas cristalinas ofertado pela lagoa.
-            Para chegar ao local existem 2 formas, indo pelas dunas ou pela estrada de barro. Se optar por ir pelas dunas é necessário contratar um serviço de buggy, que te levará com toda segurança até a lagoa proporcionando momentos de aventura. 
-            Caso você tenha ficado curioso(a) para saber um pouco mais sobre os atrativos, aqui vai uma breve explicação sobre cada um deles: Skibunda - é utilizado uma prancha para escorregar sobre as dunas até a lagoa, Kamikaze - existe uma lona sobre as dunas, então a pessoa irá se deitar sobre uma prancha e deslizará nessa lona, e por fim, Aerobunda - é uma tirolesa que também cai na água da Lagoa, através de um cabo de aço que inicia no topo da duna, o aventureiro se pendura no suporte e deixa ser levado pelo cabo de aço que escorrega até a lagoa, onde ele cai em um delicioso e divertido mergulho.
-            Se a sua preocupação é subir até o topo da duna, não se preocupe, pois há um trilho puxado a motor que leva os turistas até o local de descida dessas atrações. Além disso, depois que o turista cai na água no Aerobunda, há uma balsa que o leva até o local na beira da lagoa.<br/>
-            <b>Fonte:</b> <a href="https://marazulreceptivo.com.br/blog/lagoa-de-jacuma/">https://marazulreceptivo.com.br/blog/lagoa-de-jacuma/</a>
-          </p>        
+            A Lagoa de Jacumã é o lugar perfeito para aqueles que buscam aventura, tendo em vista que disponibiliza
+            atrativos como Skibunda, Aerobunda e Kamikaze. Além disso, também é o lugar perfeito para aqueles que buscam
+            relaxar e passar o dia em família desfrutando do delicioso banho de águas cristalinas ofertado pela lagoa.
+            Para chegar ao local existem 2 formas, indo pelas dunas ou pela estrada de barro. Se optar por ir pelas
+            dunas é necessário contratar um serviço de buggy, que te levará com toda segurança até a lagoa
+            proporcionando momentos de aventura.
+            Caso você tenha ficado curioso(a) para saber um pouco mais sobre os atrativos, aqui vai uma breve explicação
+            sobre cada um deles: Skibunda - é utilizado uma prancha para escorregar sobre as dunas até a lagoa, Kamikaze
+            - existe uma lona sobre as dunas, então a pessoa irá se deitar sobre uma prancha e deslizará nessa lona, e
+            por fim, Aerobunda - é uma tirolesa que também cai na água da Lagoa, através de um cabo de aço que inicia no
+            topo da duna, o aventureiro se pendura no suporte e deixa ser levado pelo cabo de aço que escorrega até a
+            lagoa, onde ele cai em um delicioso e divertido mergulho.
+            Se a sua preocupação é subir até o topo da duna, não se preocupe, pois há um trilho puxado a motor que leva
+            os turistas até o local de descida dessas atrações. Além disso, depois que o turista cai na água no
+            Aerobunda, há uma balsa que o leva até o local na beira da lagoa.<br />
+            <b>Fonte:</b> <a
+              href="https://marazulreceptivo.com.br/blog/lagoa-de-jacuma/">https://marazulreceptivo.com.br/blog/lagoa-de-jacuma/</a>
+          </p>
           <figure>
             <div class="image">
               <img src="{% static 'img/turismo/lagoa_jacuma.png'%}">
@@ -1815,7 +1829,7 @@
                 font-style: italic;">Fonte: https://marazulreceptivo.com.br/blog/lagoa-de-jacuma//figcaption>
           </figure>
           <hr class="divisor">
-          <h6><span class="underline--magical">Cachoeirinha de Jacumã</span></h6>     
+          <h6><span class="underline--magical">Cachoeirinha de Jacumã</span></h6>
           <p>
 
           </p>
@@ -1912,15 +1926,25 @@
           <hr class="divisor">
           <h6><span class="underline--magical">Óleo de Bati</span></h6>
           <p>
-            O nome completo do bati é batiputá ou em latim, Ourotea parviflora. É um arbusto da família das Ocnáceas, encontrado nos tabuleiros do nordeste brasileiro. É também conhecido como jabutapitá, do tupi ïbotï, que quer dizer flor.
-Tem consistência de uma manteiga e derrete facilmente. O sabor é herbáceo, mas delicado - nada tão marcante como um azeite de dendê ou de pequi. E a cor esverdeada lembra a do azeite de frutos imaturos. O que se faz com ele é principalmente peixe frito e farofas.
-A extração do óleo de bati já foi uma atividade corriqueira no Sul do Rio Grande do Norte no passado. Trata-se de hábitos e costumes dos povos das remanescentes indígenas, onde no município de Ceará-Mirim, são encontrados na comunidade indigena de Rio dos Índios. 
-As mulheres costumam colher os cachos e levar para casa para debulhar numa atividade coletiva. São necessários 15 litros de frutos para se extrair apenas 1 litro de óleo, num trabalho que envolve debulhar, socar no pilão, cozinhar, separar o óleo.
-É tão trabalhoso, que a pouca produção serve apenas para abastecer a demanda local, especialmente no período da Semana Santa, já que a data coincide com a safra do bati. Por isso não há comércio para o item. Hoje encontra-se  quase em extinção em nossos tabuleiros.
-            </p>
-            <b>Fonte:</b><a href="https://come-se.blogspot.com/2010/04/oleo-de-bati.html
+            O nome completo do bati é batiputá ou em latim, Ourotea parviflora. É um arbusto da família das Ocnáceas,
+            encontrado nos tabuleiros do nordeste brasileiro. É também conhecido como jabutapitá, do tupi ïbotï, que
+            quer dizer flor.
+            Tem consistência de uma manteiga e derrete facilmente. O sabor é herbáceo, mas delicado - nada tão marcante
+            como um azeite de dendê ou de pequi. E a cor esverdeada lembra a do azeite de frutos imaturos. O que se faz
+            com ele é principalmente peixe frito e farofas.
+            A extração do óleo de bati já foi uma atividade corriqueira no Sul do Rio Grande do Norte no passado.
+            Trata-se de hábitos e costumes dos povos das remanescentes indígenas, onde no município de Ceará-Mirim, são
+            encontrados na comunidade indigena de Rio dos Índios.
+            As mulheres costumam colher os cachos e levar para casa para debulhar numa atividade coletiva. São
+            necessários 15 litros de frutos para se extrair apenas 1 litro de óleo, num trabalho que envolve debulhar,
+            socar no pilão, cozinhar, separar o óleo.
+            É tão trabalhoso, que a pouca produção serve apenas para abastecer a demanda local, especialmente no período
+            da Semana Santa, já que a data coincide com a safra do bati. Por isso não há comércio para o item. Hoje
+            encontra-se quase em extinção em nossos tabuleiros.
+          </p>
+          <b>Fonte:</b><a href="https://come-se.blogspot.com/2010/04/oleo-de-bati.html
 ">https://come-se.blogspot.com/2010/04/oleo-de-bati.html
-            </a>
+          </a>
         </div>
         <div class="modal-footer">
 
