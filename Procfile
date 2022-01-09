@@ -1,0 +1,1 @@
+web: gunicorn trilhas.wsgi --log-file -
