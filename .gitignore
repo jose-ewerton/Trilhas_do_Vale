@@ -2,6 +2,5 @@
 *~
 __pycache__
 ambiente_trilhas
-db.sqlite3
 /static
 .DS_Store
