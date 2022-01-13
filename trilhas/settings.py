@@ -79,14 +79,15 @@ WSGI_APPLICATION = 'trilhas.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'postgres', # The Server name from 1.5
-        'USER': 'postgres', # The username from 1.6
-        'PASSWORD': '123456', # The password from installation
-        'HOST': 'localhost', # Host name/address from 1.6,
-        'PORT': '5432' # Port from 1.6
+        'ENGINE': 'django.db.backends.mysql', 
+        'NAME': 'trilhas_bd',
+        'USER': 'trilhas',
+        'PASSWORD': 'trilhas.2022',
+        'HOST': 'localhost',  
+        'PORT': '3306',
     }
 }
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
