@@ -80,10 +80,10 @@ WSGI_APPLICATION = 'trilhas.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'trilhas_bd',
-        'USER': 'trilhas',
-        'PASSWORD': 'trilhas.2022',
-        'HOST': 'localhost',  
+        'NAME': 'heroku_e43816c8711a905',
+        'USER': 'b4290531d2862a',
+        'PASSWORD': '52095a46',
+        'HOST': 'us-cdbr-east-05.cleardb.net',  
         'PORT': '3306',
     }
 }
