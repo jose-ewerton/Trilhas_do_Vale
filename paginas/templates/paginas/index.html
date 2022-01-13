@@ -142,8 +142,22 @@
                 <p class="animate__animated animate__fadeInUp"> Quer conhecer a história de Ceará Mirim? Saber a origem
                   do seu nome? Ou quer descobrir a história que ninguém nunca te contou? Então venha trilhar esse e
                   vários outros caminhos conosco! </p>
-                <a class="btn-get-started scrollto animate__animated animate__fadeInUp" data-bs-toggle="modal"
-                  data-bs-target="#modalForm">Acesse já!</a>
+                {% if user.is_authenticated %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                </div>
+                {% else %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                  <div class="text-center"><a href="" class="btn-get-started" data-bs-toggle="modal"
+                      data-bs-target="#modalForm">Acesse já!</a></div>
+                </div>
+                {% endif %}
+
                 <!--Classes responsáveis pelos textos que aparecem em cima das imagens-->
               </div>
             </div>
@@ -155,8 +169,21 @@
                 <h2 class="animate__animated animate__fadeInDown">Eventos Culturais e Religiosos</h2>
                 <p class="animate__animated animate__fadeInUp">Descubra o que uma cidade rica como o Vale do Ceará Mirim
                   tem a lhe oferecer em eventos em cada época do ano.</p>
-                <a class="btn-get-started scrollto animate__animated animate__fadeInUp" data-bs-toggle="modal"
-                  data-bs-target="#modalForm">Acesse já!</a>
+                {% if user.is_authenticated %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                </div>
+                {% else %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                  <div class="text-center"><a href="" class="btn-get-started" data-bs-toggle="modal"
+                      data-bs-target="#modalForm">Acesse já!</a></div>
+                </div>
+                {% endif %}
               </div>
             </div>
           </div>
@@ -167,8 +194,21 @@
                 <h2 class="animate__animated animate__fadeInDown">Turismo</h2>
                 <p class="animate__animated animate__fadeInUp">Venha descobrir um pouco mais sobre as nossas trilhas
                   ecológicas, praias e engenhos que engradecem a cidade.</p>
-                <a class="btn-get-started scrollto animate__animated animate__fadeInUp" data-bs-toggle="modal"
-                  data-bs-target="#modalForm">Acesse já!</a>
+                {% if user.is_authenticated %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                </div>
+                {% else %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                  <div class="text-center"><a href="" class="btn-get-started" data-bs-toggle="modal"
+                      data-bs-target="#modalForm">Acesse já!</a></div>
+                </div>
+                {% endif %}
               </div>
             </div>
           </div>
@@ -179,8 +219,21 @@
                 <h2 class="animate__animated animate__fadeInDown">Curiosidades</h2>
                 <p class="animate__animated animate__fadeInUp">Explore lendas e memórias vivas que fazem parte da vida
                   de todo cearamirinense.</p>
-                <a class="btn-get-started scrollto animate__animated animate__fadeInUp" data-bs-toggle="modal"
-                  data-bs-target="#modalForm">Acesse já!</a>
+                {% if user.is_authenticated %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                </div>
+                {% else %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                  <div class="text-center"><a href="" class="btn-get-started" data-bs-toggle="modal"
+                      data-bs-target="#modalForm">Acesse já!</a></div>
+                </div>
+                {% endif %}
               </div>
             </div>
           </div>
@@ -191,8 +244,21 @@
                 <h2 class="animate__animated animate__fadeInDown">Culinária</h2>
                 <p class="animate__animated animate__fadeInUp">Aprecia uma boa comida caseira? O sabor da terra dos
                   verdes canaviais pode ser apreciado em vários pratos típicos da região.</p>
-                <a class="btn-get-started scrollto animate__animated animate__fadeInUp" data-bs-toggle="modal"
-                  data-bs-target="#modalForm">Acesse já!</a>
+                {% if user.is_authenticated %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                </div>
+                {% else %}
+                <div class="carousel-content animate__animated animate__lightSpeedInRight">
+                  <p>Ao se cadastrar você garante acesso a imagens exclusivas de vários dos lugares abordados no
+                    conteúdo desse site, assim como também uma experiência de filtrar aqueles que mais te interessam!
+                  </p>
+                  <div class="text-center"><a href="" class="btn-get-started" data-bs-toggle="modal"
+                      data-bs-target="#modalForm">Acesse já!</a></div>
+                </div>
+                {% endif %}
               </div>
             </div>
           </div>
@@ -551,7 +617,7 @@
 
             <div class="culinaria-info">
               <h4>Picado</h4>
-              <p>O picado é a carne de carneiro cortada em pequenos cubos, frita e temperada com alho e pimenta. </p>
+              <p>É a carne de carneiro cortada em pequenos cubos, frita e temperada com alho e pimenta. </p>
             </div>
           </div>
         </div>

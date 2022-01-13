@@ -509,25 +509,40 @@ h1, h2, h3, h4, h5, h6 {
 #hero .carousel-indicators li {
   cursor: pointer;
 }
+
 /* css do botÃ£o */
+
+#hero .carousel-content {
+  background: rgba(28, 23, 21, 0.7);
+  padding: 10px;
+  color: #fff;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  border-top: 5px solid #3f9945;
+}
+
 #hero .btn-get-started {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
-  padding: 8px 32px;
-  border-radius: 50px;
+  padding: 12px 32px;
+  border-radius: 20px;
   transition: 0.5s;
-  margin: 10px;
-  color: #3f9945;
-  background: #efeded;
+  line-height: 1;
+  margin: 5px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 3px solid #3f9945;
 }
-
 #hero .btn-get-started:hover {
   background: #3f9945;
-  color: #efeded;
+  color: #fff;
+  text-decoration: none;
 }
+
 section {
   overflow: hidden;
 }
