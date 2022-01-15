@@ -67,47 +67,47 @@
             <!-- navbar: barra de navegação-->
             <ul>
 
-              <li class="dropdown"><a href="../#historia"><span>História</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a id="link" href="../#historia"><span>História</span> <i class="bi bi-chevron-down"></i></a>
                 <!-- dropdown: responsavel pelos subtopicos/ bi bi-chevron-down: adiciona a seta que mostra os subtopicos -->
                 <ul>
-                  <li><a href="../#historia"> História de
+                  <li><a class="nav-link scrollto" href="../#historia"> História de
                       Ceará-Mirim</a></li>
-                  <li><a href="../#historia"> História não
+                  <li><a class="nav-link scrollto" href="../#historia"> História não
                       contada</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="../#eventos"><span>Eventos</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a id="link" href="../#eventos"><span>Eventos</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="../#eventos"> Eventos
+                  <li><a class="nav-link scrollto" href="../#eventos"> Eventos
                       Culturais</a></li>
-                  <li><a href="../#eventos"> Eventos
+                  <li><a class="nav-link scrollto" href="../#eventos"> Eventos
                       Religiosos</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="#turismo"><span>Turismo</span> <i class="bi bi-chevron-down"></i></a>
+              <li class="dropdown"><a id="link" href="#turismo"><span>Turismo</span> <i class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="../#turismo"> Turismo Histórico
+                  <li><a class="nav-link scrollto" href="../#turismo"> Turismo Histórico
                     </a></li>
-                  <li><a href="../#turismo"> Turismo Ecológico
+                  <li><a class="nav-link scrollto" href="../#turismo"> Turismo Ecológico
                     </a></li>
-                  <li><a href="../#turismo"> Ruínas do Vale </a>
+                  <li><a class="nav-link scrollto" href="../#turismo"> Ruínas do Vale </a>
                   </li>
-                  <li><a href="../#turismo"> Sol e Água Fresca
+                  <li><a class="nav-link scrollto" href="../#turismo"> Sol e Água Fresca
                     </a></li>
                 </ul>
               </li>
               </li>
-              <li class="dropdown"><a href="../#curiosidades"><span>Curiosidades</span> <i
+              <li class="dropdown"><a id="link" href="../#curiosidades"><span>Curiosidades</span> <i
                     class="bi bi-chevron-down"></i></a>
                 <ul>
-                  <li><a href="../#curiosidades"> Coisas da terra
+                  <li><a class="nav-link scrollto"  href="../#curiosidades"> Coisas da terra
                     </a></li>
-                  <li><a href="../#curiosidades"> Boca à Boca</a></li>
-                  <li><a href="../#curiosidades"> Memórias Vivas
+                  <li><a  class="nav-link scrollto" href="../#curiosidades"> Boca à Boca</a></li>
+                  <li><a  class="nav-link scrollto" href="../#curiosidades"> Memórias Vivas
                     </a></li>
                 </ul>
               </li>
-              <li><a class="nav-link scrollto" href="../#culinaria">Culinária</a></li>
+              <li><a id="link" class="nav-link scrollto" href="../#culinaria">Culinária</a></li>
               {% if user.is_authenticated %}
               <li class="dropdown"><a href="{% url 'locais' %}"><span>Locais</span></a></li>
               {% else %}
@@ -118,10 +118,9 @@
                   data-bs-target="#modalForm"><span>ENTRAR</span></button></li>
               {% endif %}
               {% if user.is_authenticated %}
-              <li class="dropdown"><a role="button" id="sair"
-                  style="background-color:#578a9b; border-color: white;border-style:solid;
-                  border-width:2px; margin-left: 15px; font-size: 10px; border-radius: 20px;"
-                  href="/logout"><span style="margin-left:-15px; margin-right: 15px;">SAIR</span></a></li>
+              <li class="dropdown"><a href="/logout"><button style="border-color: white;border-style:solid;
+                border-width:2px; cursor: pointer; background-color:#578a9b; font-weight: bold; font-size: 12px; margin-left: 10px; border-radius: 25px;"
+                class="btn btn-success"><span>SAIR</span></button></a></li>
               {% endif %}
             </ul> <!-- nav-link scrollto: indica qual link está ativo naquela janela-->
             <i class="bi bi-list mobile-nav-toggle"></i>
@@ -131,6 +130,8 @@
       </div>
     </div>
   </header>
+
+</header>
         {% endblock %}
 
 

@@ -63,11 +63,11 @@
 <!--list-topics start -->
 <section id="list-categories" class="list-categories">
     <div class="container">
-        <div style="position: absolute; z-index: 2;" class="categorias">
-            <ul style="position:relative; margin-top: -200px;">
+        <div style="position: absolute; width: 100%; z-index: 2;" class="categorias">
+            <ul style="position:relative; margin-top: -15%;">
                 {% for categoria in categorias %}
                 <li>
-                    <a class="btn" href="/locais/?categoria={{categoria.id}}">
+                    <a class="btn" id="btn_a" href="/locais/?categoria={{categoria.id}}">
                         <span>{{categoria.nome}}</span>
                     </a>
                 </li>

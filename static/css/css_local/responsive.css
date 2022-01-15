@@ -43,7 +43,7 @@
 	.single-welcome-hero-form {flex-direction: column;width: 100%;background: #fff; margin: 15px 0;padding: 20px 0;}
 	.welcome-hero-form {width: 100%;flex-direction: column;height: 250px;background: transparent;}
 
-	.list-topics-content {top: 0;margin: 60px auto;}
+	.list-categories ul{top: 0;margin: 60px auto;}
 
 	.single-how-works,.single-blog-item {max-width: 350px;margin: 30px auto;}
 

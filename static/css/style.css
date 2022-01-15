@@ -349,14 +349,6 @@ h1, h2, h3, h4, h5, h6 {
   color: #3f9945;
 }
 
-.navbar-mobile a#sair {
-  padding: 10px 10px 10px 60px;
-  margin: 10px 200px;
-  font-size: 15px;
-  color: #f8f9fa;
-  text-align: center;
-}
-
 .navbar-mobile .getstarted {
   margin: 15px;
 }

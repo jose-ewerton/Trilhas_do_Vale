@@ -203,7 +203,7 @@ html,body{height: 100%;}
     vertical-align: top;
     }
 
-.btn {
+#btn_a {
 	background-image: linear-gradient(to right, #578a9b 0%, #3f9945 100%);
 	border-radius: 20px;
     box-sizing: border-box;
@@ -221,11 +221,11 @@ html,body{height: 100%;}
 	z-index: 2;
 }
 
-.btn:hover {
+#btn_a:hover {
 	color: #fff;
 }
 
-.btn span {
+#btn_a span {
 	align-items: center;
 	background: #e7e8e9;
 	border-radius: 20px;
@@ -243,7 +243,7 @@ html,body{height: 100%;}
  
 }
 
-.btn:hover span {
+#btn_a:hover span {
 	background: transparent;
 }
 
