@@ -259,6 +259,10 @@ h1, h2, h3, h4, h5, h6 {
   color: #579a9b; /*quando arrasta para clicar no subtÃ³pico muda a cor, de verde para azul*/
 }
 
+.navbar .dropdown :hover, .navbar li span:hover {
+  color:#5ac461;
+}
+
 .navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;

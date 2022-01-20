@@ -95,19 +95,19 @@
                     </a></li>
                 </ul>
               </li>
-              <li><a  id="link" class="nav-link scrollto" href="#culinaria">Culinária</a></li>
+              <li><a  id="link" class="nav-link scrollto" href="#culinaria"><span>Culinária</span></a></li>
               {% if user.is_authenticated %}
               <li class="dropdown"><a  href="{% url 'locais' %}"><span>Locais</span></a></li>
               {% else %}
               <li class="dropdown"><button style="border-color: white;border-style:solid;
                   border-width:2px; font-weight: bold; font-size: 12px; margin-left: 15px; border-radius: 25px;"
                   class="btn btn-success" type="button" href="#" data-bs-toggle="modal"
-                  data-bs-target="#modalForm"><span>ENTRAR</span></button></li>
+                  data-bs-target="#modalForm">ENTRAR</button></li>
               {% endif %}
               {% if user.is_authenticated %}
-              <li class="dropdown"><a href="/logout"><button style="border-color: white;border-style:solid;
+              <li><a href="/logout"><button style="border-color: white;border-style:solid;
                 border-width:2px; cursor: pointer; background-color:#578a9b; font-weight: bold; font-size: 12px; margin-left: 10px; border-radius: 25px;"
-                class="btn btn-success"><span>SAIR</span></button></a></li>
+                class="btn btn-success">SAIR</button></a></li>
               {% endif %}
             </ul> <!-- nav-link scrollto: indica qual link está ativo naquela janela-->
             <i class="bi bi-list mobile-nav-toggle"></i>
