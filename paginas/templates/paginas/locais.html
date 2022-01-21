@@ -48,17 +48,11 @@
                 </form>
             </div>
         </div>
-    </div>
 
-</section>
-<!--/.welcome-hero-->
-<!--welcome-hero end -->
 
-<!--list-topics start -->
-<section id="list-categories" class="list-categories">
-    <div class="container">
-        <div style="position: absolute; width: 100%; z-index: 2;" class="categorias">
-            <ul style="position:relative; margin-top: -15%;">
+        <!--list-topics start -->
+        <div class="categorias">
+            <ul id="categorias" style="margin-top:8%; margin-left: -12px;">
                 {% for categoria in categorias %}
                 <li>
                     <a class="btn" id="btn_a" href="/locais/?categoria={{categoria.id}}">
@@ -68,12 +62,17 @@
                 {% endfor %}
             </ul>
         </div>
-    </div>
-    <!--/.container-->
+        <!--/.container-->
 
+
+        <!--/.list-topics-->
+        <!--list-topics end-->
+    </div>
 </section>
-<!--/.list-topics-->
-<!--list-topics end-->
+<!--/.welcome-hero-->
+<!--welcome-hero end -->
+
+
 
 <!--works start -->
 <section id="works" class="works">
